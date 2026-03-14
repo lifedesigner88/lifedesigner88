@@ -1,0 +1,62 @@
+# AI 진입점 — parksejong
+# 이 파일을 먼저 읽으면 이 사람을 1분 안에 이해할 수 있습니다.
+
+person_id: parksejong
+display_name: 박세종 (Park Sejong)
+username: lifedesigner88
+generated_on: "2026-03-14"
+
+one_line: >
+  교육자에서 개발자로 전직한 37세 비전공자.
+  120일 개근·프로젝트 1위 부트캠프 수료 후 1인 교육 플랫폼 세종클래스를 직접 만들었다.
+
+archetype: "reflective educator-builder"
+
+quick_facts:
+  birth_year: 1988
+  current_age: 38
+  location: Seoul, South Korea
+  email: lifedesigner88@gmail.com
+  github: https://github.com/lifedesigner88
+  website: https://sejongclass.kr/
+
+current_status:
+  phase: "1인 창업 + AI/개발 역량 고도화"
+  since: "2025-08"
+  tracks:
+    - "세종클래스 운영"
+    - "Python / AI Agent 개발"
+    - "알고리즘 학습 (백준)"
+    - "SW마에스트로 17기 도전"
+
+career_arc_summary:
+  - "2007-2010: 대학 입학 → 우울증·방황 → 재부팅"
+  - "2011-2015: 라이프디자이너 선언 → 너울가지 운영 → 졸업"
+  - "2015-2019: 국제캠프 PM (12개국, 4년 6개월)"
+  - "2019-2023: 입시컨설턴트 + 자격증 강사"
+  - "2023-2024: 개발자 부트캠프 → 1위 수료 → 플레이데이터"
+  - "2025-현재: 엔코아 퇴사 → 세종클래스 1인 창업"
+
+top_skills:
+  - TypeScript / React
+  - Spring Boot / Java
+  - Python (성장 중)
+  - AWS / Kubernetes / Terraform
+  - Supabase / PostgreSQL
+
+matching_tags:
+  - educator-builder
+  - science-curious
+  - community-organizer
+  - reflective-doer
+  - solo-founder
+
+navigation:
+  identity:   "01_identity/"
+  experience: "02_experience/"
+  skills:     "03_skills/"
+  story:      "04_story/"
+  interests:  "05_interests/"
+  goals:      "06_goals/"
+  matching:   "07_matching/"
+  ai_outputs: "08_ai_layer/outputs/"
