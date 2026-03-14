@@ -15,6 +15,8 @@
 | **이력서 생성** | AI가 자동으로 직무별 이력서 작성 | `08_ai_layer/prompts/`, `02_experience/` |
 | **자기소개 생성** | 상황에 맞는 자기소개를 AI가 뽑아냄 | `08_ai_layer/outputs/`, `01_identity/` |
 
+
+
 ---
 
 ## 폴더 구조
