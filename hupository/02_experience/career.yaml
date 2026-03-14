@@ -1,0 +1,67 @@
+career:
+  - id: youth_hostel
+    company: (사)한국유스호스텔연맹
+    role: "국제캠프기획 Project Manager"
+    start: "2015-03"
+    end: "2019-08"
+    duration: "4년 6개월"
+    type: full-time
+    visibility: public
+    summary: "12개국 대학생 국제캠프(WYR) 전체 총괄 기획·운영"
+    key_achievements:
+      - "WYR 2015~2019 시리즈 기획 및 운영 (인천, 서울, 파크텔, 양평 등)"
+      - "2017년부터 유럽 참가자 유치 — 진정한 국제 캠프로 발전"
+      - "다국적 참가자 100명+ 규모 이벤트 운영 경험"
+    skills_used:
+      - 이벤트 기획 및 운영
+      - 영어 커뮤니케이션
+      - 팀 관리
+    confidence: high
+
+  - id: educo
+    company: (주)동화세상에듀코
+    role: "입시컨설팅 / 방문·온라인 학습코칭"
+    start: "2019-09"
+    end: "2023-08"
+    duration: "4년 0개월"
+    type: full-time
+    visibility: public
+    summary: "초·중·고 방문 및 온라인 1:1 학습코칭, 의예·이공계 대입 컨설팅"
+    key_achievements:
+      - "의예과·이공계·자연과학 계열 학생부 관리"
+      - "코로나 시기 100% 온라인 수업 전환 주도"
+      - "2021년 유스호스텔연맹 업무 병행 107.5타임 달성"
+    skills_used:
+      - 수학·물리 교과 지도
+      - 입시 전략 설계
+      - 학생 동기부여 코칭
+    confidence: high
+
+  - id: coaching_institute
+    company: (사)한국코칭심리협회
+    role: "진로능력상담사 2급·3급 강사"
+    start: "2021-01"
+    end: "2023-08"
+    duration: "2년 8개월"
+    type: part-time
+    visibility: public
+    summary: "청소년 진로 상담 성인 자격증 과정 개발 및 강의"
+    key_achievements:
+      - "자격증 교육 커리큘럼 자체 개발 (3급 리모델링 포함)"
+      - "에듀코 업무 병행 — 교육의 내용과 시스템 양쪽을 동시에 다룸"
+    confidence: high
+
+  - id: encoa_playdata
+    company: (주)엔코아 — 플레이데이터 평생교육원
+    role: "교육관리보조"
+    start: "2024-08"
+    end: "2025-07"
+    duration: "1년"
+    type: full-time
+    visibility: public
+    summary: "개발자 부트캠프 수강생 전과정(모집·선발·수료) 관리"
+    key_achievements:
+      - "6개월 풀타임 교육 1년간 4개 반 (1반 30명, 총 120명) 운영"
+      - "9기·10기·11기·12기 수강생 관리"
+    departure_reason: "2025.08.01 퇴사 — 1인 창업(세종클래스) 집중"
+    confidence: high

@@ -1,0 +1,101 @@
+# Hupository Schema v1.0
+# 이 파일은 hupository 서비스의 데이터 구조 표준을 정의합니다.
+
+service:
+  name: hupository
+  version: "1.0"
+  tagline: "human + repository — 사람을 위한 저장소"
+
+person_namespace:
+  owner: parksejong
+  note: "이 저장소 자체가 한 사람의 네임스페이스. 루트(claude/)가 곧 사람 단위."
+  required_files:
+    - index.yaml
+
+layers:
+  01_identity:
+    purpose: "핵심 신원 및 정체성 사실"
+    format: yaml
+    visibility_default: public
+    files:
+      - core.yaml        # 이름, 생년, 연락처, 링크
+      - persona.yaml     # 자기인식, 별칭, 반복 역할
+      - values.yaml      # 가치관, 세계관
+
+  02_experience:
+    purpose: "학습/커리어/프로젝트 이력"
+    format: yaml
+    visibility_default: public
+    files:
+      - education.yaml
+      - career.yaml
+      - projects/{slug}.yaml
+
+  03_skills:
+    purpose: "역량 데이터 (매칭 + 이력서 생성에 사용)"
+    format: yaml
+    visibility_default: public
+    files:
+      - technical.yaml
+      - soft.yaml
+
+  04_story:
+    purpose: "서사 컨텍스트 — LLM이 사람을 깊이 이해하기 위한 레이어"
+    format: markdown
+    visibility_default: network
+    files:
+      - arc.yaml               # 삶의 버전 히스토리 요약
+      - chapters/*.md          # 시대별 서사
+
+  05_interests:
+    purpose: "관심사 — 매칭 신호"
+    format: yaml
+    visibility_default: public
+
+  06_goals:
+    purpose: "목표 및 현재 탐색 중인 것"
+    format: yaml
+    visibility_default: public
+
+  07_matching:
+    purpose: "SNS 매칭 레이어 — 사람 추천 엔진에서 소비"
+    format: yaml
+    visibility_default: public
+    files:
+      - signals.yaml     # 찾는 것, 열려있는 것, 잘 맞는 사람
+      - vectors.yaml     # 수치화된 매칭 벡터
+      - privacy.yaml     # 필드별 공개 정책
+
+  08_ai_layer:
+    purpose: "AI 생성 레이어 — 이력서/자기소개 생성"
+    format: mixed
+    visibility_default: public
+    files:
+      - prompts/resume_prompt.md
+      - prompts/intro_prompt.md
+      - prompts/matching_prompt.md
+      - outputs/resume_ko.md
+      - outputs/self_intro_30sec.md
+      - outputs/self_intro_full.md
+      - outputs/profile_tags.yaml
+
+confidence_scale:
+  high: "직접 확인된 사실 (본인 제공, 공식 문서)"
+  medium: "여러 근거를 합쳐 추정 가능"
+  low: "단일 근거 또는 약한 추정"
+
+visibility_levels:
+  public: "누구나 볼 수 있음"
+  network: "연결된 사람만"
+  private: "본인만"
+  secret: "암호화 또는 저장 안 함"
+
+matching_vector_dimensions:
+  - learning_drive       # 학습 욕구
+  - teaching_drive       # 가르치려는 욕구
+  - community_drive      # 커뮤니티 지향
+  - builder_drive        # 만드는 것을 좋아함
+  - scientific_curiosity # 과학적 호기심
+  - entrepreneurship     # 창업/독립 지향
+  - reflection_depth     # 회고/기록 깊이
+  # 0~5 척도
