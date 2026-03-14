@@ -1,0 +1,52 @@
+primary:
+  - domain: "개발 / 소프트웨어 엔지니어링"
+    depth: deep
+    since: 2023
+    trend: growing
+
+  - domain: "교육 / 학습 과학"
+    depth: very_deep
+    since: 2011
+
+  - domain: "뇌과학 / 신경과학"
+    depth: deep
+    since: 2020
+    note: "박자세(박문호의 자연과학 세상) 정회원"
+
+  - domain: "물리학 (입자물리까지)"
+    depth: intermediate_deep
+    since: 2021
+    note: "대학교과서 수준 독학"
+
+secondary:
+  - domain: "인생 설계 / 자기계발"
+    depth: deep
+    since: 2011
+
+  - domain: "커뮤니티 빌딩"
+    depth: deep
+    since: 2010
+
+  - domain: "신체 / 체력 관리"
+    depth: intermediate
+    since: 2022
+    note: "필라테스, 방송댄스, 100m 달리기"
+
+  - domain: "AI / 머신러닝"
+    depth: beginner_intermediate
+    since: 2025
+    trend: growing
+
+hobbies:
+  - 방송댄스 (2025~)
+  - 필라테스 (2024~)
+  - 독서 (뇌과학·물리·자기계발)
+  - 블로그 글쓰기 (연도별 회고)
+  - 알고리즘 문제풀이 (백준)
+  - 유튜브 콘텐츠 제작
+
+conversation_starters:
+  - "뇌과학, 물리학, 수학, AI"
+  - "어떻게 살아야 할지에 대한 질문"
+  - "교육 시스템, 학습법, 성장 설계"
+  - "서비스 기획, 커뮤니티 운영, 개인 브랜딩"
