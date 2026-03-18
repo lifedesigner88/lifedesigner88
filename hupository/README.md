@@ -127,15 +127,15 @@ hupository/
 
 | 목적 | 추천 진입점 |
 |------|-------------|
-| 이 사람이 누구인지 빠르게 파악 | `ai/index.yaml` |
-| 서사적 맥락으로 이해 | `data/04_story/chapters/*.md` |
-| 기술 스킬 확인 | `data/03_skills/technical.yaml` |
-| 경력/프로젝트 매칭 | `data/02_experience/` |
-| 정체성 · 가치관 · 전환 이력 | `data/01_identity/` |
-| 19년 성장 궤적 전체 | `data/timeline/year_reviews.yaml` |
-| 독서 목록 (연도별) | `data/05_interests/reading/` |
-| 독서 통계 · 성향 분석 | `data/05_interests/reading/stats.yaml` |
-| AI 자기소개서/이력서 출력물 | `ai/outputs/` |
+| 이 사람이 누구인지 빠르게 파악 | [ai/index.yaml](ai/index.yaml) |
+| 서사적 맥락으로 이해 | [data/04_story/chapters/](data/04_story/chapters/) |
+| 기술 스킬 확인 | [data/03_skills/technical.yaml](data/03_skills/technical.yaml) |
+| 경력/프로젝트 매칭 | [data/02_experience/](data/02_experience/) |
+| 정체성 · 가치관 · 전환 이력 | [data/01_identity/](data/01_identity/) |
+| 19년 성장 궤적 전체 | [data/timeline/year_reviews.yaml](data/timeline/year_reviews.yaml) |
+| 독서 목록 (연도별) | [data/05_interests/reading/](data/05_interests/reading/) |
+| 독서 통계 · 성향 분석 | [data/05_interests/reading/stats.yaml](data/05_interests/reading/stats.yaml) |
+| AI 자기소개서/이력서 출력물 | [ai/outputs/](ai/outputs/) |
 
 ---
 
