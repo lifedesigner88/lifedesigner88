@@ -1,16 +1,21 @@
 id: project_kip
 name: KIP
 full_name: 집단 지성 활용을 위한 지식 관리 시스템
+full_name_en: "Knowledge Is Power"
 type: team_project
 status: completed
 
 period:
-  start: "2024-03"
-  end: "2024-05"
+  start: "2024-03-14"
+  end: "2024-05-09"
 
 team:
   size: 4
   result: "6팀 중 1위 (한화시스템 BEYOND SW캠프 최종 프로젝트)"
+  my_contribution_pct:
+    frontend: 90
+    dba: 80
+    backend: 50
 
 summary: >
   그룹 내부의 문서와 노하우를 체계적으로 축적·공유하는 사내 지식관리 시스템.

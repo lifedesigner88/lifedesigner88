@@ -111,6 +111,7 @@ hupository/
 ## 주요 프로젝트
 
 ### 세종클래스 (2025–현재)
+- **URL:** https://sejongclass.kr
 - **설명:** 수학·물리·코딩·라이프디자인 강의 플랫폼
 - **특징:** 단독 풀스택 개발 (디자인·개발·결제·배포 전 과정)
 - **스택:** PostgreSQL · Supabase · TypeScript · React Router · TossPayments · Vercel · CloudFlare · Shadcn UI

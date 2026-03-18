@@ -8,6 +8,9 @@ backend:
   - name: Java
     level: intermediate
     used_in: [kip, bootcamp]
+  - name: MySQL
+    level: beginner
+    note: "포트폴리오 명시 스택"
   - name: Python
     level: intermediate
     trend: growing
@@ -52,6 +55,9 @@ infra_devops:
     used_in: [kip]
   - name: GitHub Actions
     level: intermediate
+  - name: GHCR
+    level: beginner
+    note: "GitHub Container Registry"
   - name: Vercel
     level: intermediate
     used_in: [sejongclass]
@@ -75,7 +81,7 @@ services:
 
 currently_learning:
   - Python (심화)
+  - FastAPI
+  - LangGraph
   - SQL (심화)
-  - Linux (인프라)
-  - AI Agent 개발
-  - 알고리즘 / 코딩테스트
+  - Linux / Ubuntu (인프라)

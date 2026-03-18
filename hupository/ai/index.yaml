@@ -52,15 +52,19 @@ matching_tags:
   - solo-founder
 
 navigation:
-  profile:    "../data/profile.yaml"
-  identity:   "../data/01_identity/"
-  experience: "../data/02_experience/"
-  skills:     "../data/03_skills/"
-  story:      "../data/04_story/"
-  interests:  "../data/05_interests/"
-  reading:    "../data/05_interests/reading/"
-  goals:      "../data/06_goals/"
-  matching:   "../data/07_matching/"
-  timeline:   "../data/timeline/"
-  sources:    "../data/sources.yaml"
-  ai_outputs: "outputs/"
+  profile:      "../data/profile.yaml"
+  identity:     "../data/01_identity/"
+  experience:   "../data/02_experience/"
+  skills:       "../data/03_skills/"
+  story:        "../data/04_story/"
+  interests:    "../data/05_interests/"
+  reading:      "../data/05_interests/reading/"
+  goals:        "../data/06_goals/"
+  matching:     "../data/07_matching/"
+  now:          "../data/08_now/"           # 현재 상태 (신규)
+  timeline:     "../data/timeline/"
+  sources:      "../data/sources.yaml"
+  ai_outputs:   "outputs/"
+  ai_context:   "context/"                 # AI 컨텍스트 조립 (신규)
+
+next_step_entry: "context/next_step.yaml"  # AI 다음 스텝 추론 진입점

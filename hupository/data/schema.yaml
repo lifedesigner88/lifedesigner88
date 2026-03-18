@@ -66,6 +66,19 @@ layers:
       - vectors.yaml     # 수치화된 매칭 벡터
       - privacy.yaml     # 필드별 공개 정책
 
+  08_now:
+    purpose: "현재 상태 레이어 — AI 다음 스텝 추론의 핵심 입력"
+    format: yaml
+    visibility_default: public
+    update_cadence: monthly
+    files:
+      - snapshot.yaml    # 각 트랙의 현재 상태, 제약조건, 보류 중인 분기점
+      - decisions.yaml   # 주요 의사결정 로그 (why 포함)
+    history_path: "08_now/history/{YYYY-MM}.yaml"
+    notes: >
+      snapshot.yaml 은 월 1회 업데이트.
+      업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
+
   08_ai_layer:
     purpose: "AI 생성 레이어 — 이력서/자기소개 생성"
     format: mixed
