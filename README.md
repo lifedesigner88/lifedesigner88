@@ -54,7 +54,8 @@
 
 커피챗, 스터디, 사이드 프로젝트 언제든 환영합니다.
 
-- lifedesigner88@gmail.com \
+📬 lifedesigner88@gmail.com
+
 📝 [블로그](https://blog.naver.com/lifedesigner88) · [세종클래스](https://sejongclass.kr) · [YouTube](https://www.youtube.com/@sejongclass)
 
 
