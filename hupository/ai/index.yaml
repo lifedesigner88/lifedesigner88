@@ -14,7 +14,7 @@ archetype: "reflective educator-builder"
 
 quick_facts:
   birth_year: 1988
-  current_age: 38
+  current_age: 37
   location: Seoul, South Korea
   email: lifedesigner88@gmail.com
   github: https://github.com/lifedesigner88
@@ -52,11 +52,15 @@ matching_tags:
   - solo-founder
 
 navigation:
-  identity:   "01_identity/"
-  experience: "02_experience/"
-  skills:     "03_skills/"
-  story:      "04_story/"
-  interests:  "05_interests/"
-  goals:      "06_goals/"
-  matching:   "07_matching/"
-  ai_outputs: "08_ai_layer/outputs/"
+  profile:    "../data/profile.yaml"
+  identity:   "../data/01_identity/"
+  experience: "../data/02_experience/"
+  skills:     "../data/03_skills/"
+  story:      "../data/04_story/"
+  interests:  "../data/05_interests/"
+  reading:    "../data/05_interests/reading/"
+  goals:      "../data/06_goals/"
+  matching:   "../data/07_matching/"
+  timeline:   "../data/timeline/"
+  sources:    "../data/sources.yaml"
+  ai_outputs: "outputs/"

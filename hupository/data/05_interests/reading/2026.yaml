@@ -1,0 +1,19 @@
+# 박세종 독서 목록 — 2026
+# visibility: network
+year: 2026
+total: 2
+
+books:
+  - title: "고유지능"
+    author: "앵거스 플레처"
+    rating: null
+    date_read: "2026-01-01"
+    publisher: "인플루엔셜"
+    category: "뇌과학"
+
+  - title: "뇌는 왜 친구를 원하는가"
+    author: "벤 라인"
+    rating: 4
+    date_read: "2026-01-25"
+    publisher: "더퀘스트"
+    category: "뇌과학"

@@ -7,15 +7,25 @@ career:
     duration: "4년 6개월"
     type: full-time
     visibility: public
-    summary: "12개국 대학생 국제캠프(WYR) 전체 총괄 기획·운영"
+    summary: "Hostelling International 주최 World Youth Rally(WYR) 국제캠프 시리즈 총괄 기획·운영"
+    wyr_series:
+      - {edition: 40, year: 2015, location: "연세대 국제캠퍼스(인천)", participants: 200, countries: "아시아 중심", note: "첫 PM. 메르스 사태 속 완수."}
+      - {edition: 41, year: 2016, location: "서울", participants: 150, countries: "8개국+인도", note: "디자인 직접 제작 시작"}
+      - {edition: 42, year: 2017, location: "서울 올림픽파크텔", participants: 147, countries: 18, note: "HI 본부 직원 직접 참가★ — 글로벌 행사로 격상"}
+      - {edition: 43, year: 2018, location: "서울·양평·부산", participants: 83, countries: 8, note: "이집트 비자 위기(23→6명) 현장 대응. 역대 최고 난도."}
+      - {edition: 44, year: 2019, location: "서울", participants: 70, countries: 12, note: "TNKR 탈북 청년 세션. 마지막 기수."}
     key_achievements:
-      - "WYR 2015~2019 시리즈 기획 및 운영 (인천, 서울, 파크텔, 양평 등)"
-      - "2017년부터 유럽 참가자 유치 — 진정한 국제 캠프로 발전"
-      - "다국적 참가자 100명+ 규모 이벤트 운영 경험"
+      - "WYR 40~44회 5년 연속 기획·운영 (총 ~550명+, 최대 18개국)"
+      - "2017년 HI 본부 직원 직접 참가 유치 — 아시아 지역 행사에서 글로벌 행사로 격상"
+      - "행사 전 과정 단독 담당: 기획·시각디자인·영상·예산·현장 운영·영어 커뮤니케이션"
+      - "메르스(2015), 이집트 비자 위기(2018), 가족 위기(2018) 등 돌발상황 현장 대응"
     skills_used:
-      - 이벤트 기획 및 운영
-      - 영어 커뮤니케이션
-      - 팀 관리
+      - 대규모 이벤트 기획·운영 (50~200명)
+      - 영어 국제 커뮤니케이션 (HI 본부 화상회의 포함)
+      - 시각디자인 (포스터·홍보물)
+      - 예산 관리
+      - 위기 대응
+    project_detail: "02_experience/projects/wyr.yaml"
     confidence: high
 
   - id: educo
