@@ -1,4 +1,4 @@
-# 박세종 (Park Sejong) · lifedesigner88
+# 🔥 박세종 (Park Sejong) · lifedesigner88
 
 > 설계하고, 만들고, 가르치는 것 — 그 세 가지가 하나로 연결된 삶을 살고 있습니다.
 
