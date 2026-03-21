@@ -86,6 +86,30 @@ goals:
             parent: "G-AI-BUILDER"
             notes: "09_journal 레이어가 이 목표의 첫 단계"
 
+          - id: "G-PM-01"
+            type: short_term
+            title: "PersonaMirror MVP 배포 (4/1 목표)"
+            horizon: "2주"
+            status: in_progress
+            parent: "G-AI-BUILDER"
+            notes: >
+              Progressive persona 대시보드. 질문 5개 → 기본 카드 → 답변 추가 시 대시보드 풍부화.
+              LangGraph + Claude API. 박세종 Hupository 데이터로 최종 비전 데모.
+              소마 합격 시 팀빌딩 자기소개 도구. 불합격 시 독립 서비스로 전환.
+            children:
+              - id: "G-PM-01-A"
+                title: "LangGraph 텍스트 페르소나 추출 노드 구현"
+                status: not_started
+              - id: "G-PM-01-B"
+                title: "Progressive 대시보드 프론트엔드 구현"
+                status: not_started
+              - id: "G-PM-01-C"
+                title: "Hupository 데모 계정 (최종 비전 대시보드)"
+                status: not_started
+              - id: "G-PM-01-D"
+                title: "공유 URL /persona/{id} 배포"
+                status: not_started
+
           - id: "G-AI-03"
             type: short_term
             title: "SW마에스트로 17기 합격 → AI 네트워크·역량 확보"
@@ -107,13 +131,13 @@ goals:
 # ─────────────────────────────────────────
 # snapshot.yaml 의 focus_priority 와 연동
 focus_now:
-  - id: "G-AI-03"        # SW마에스트로 17기 합격
+  - id: "G-AI-03"        # SW마에스트로 17기 — 결과 대기 (3/25)
     priority: 1
-  - id: "G-SEJONG-03"    # 클래스101 미팅
+  - id: "G-SEJONG-03"    # 클래스101 미팅 (3/27)
     priority: 2
-  - id: "G-SEJONG-01"    # 세종클래스 첫 유료 수강생
+  - id: "G-PM-01"        # PersonaMirror MVP (4/1)
     priority: 3
-  - id: "G-AI-01"        # AI Agent 역량
+  - id: "G-SEJONG-01"    # 세종클래스 첫 유료 수강생
     priority: 4
 
 # ─────────────────────────────────────────
