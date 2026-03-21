@@ -56,6 +56,12 @@ layers:
     purpose: "목표 및 현재 탐색 중인 것"
     format: yaml
     visibility_default: public
+    files:
+      - lifetime.yaml   # 평생 사명 + 10년 단위 목표 (최상위)
+      - tree.yaml       # 현재 10년의 장기→중간→단기 목표 계층 (lifetime 아래)
+      - goals.yaml      # 목표 목록 (what) — 레거시, tree.yaml 로 점진 통합
+      - progress.yaml   # 진척도 (how far)
+    hierarchy: "lifetime.yaml → tree.yaml → progress.yaml"
 
   07_matching:
     purpose: "SNS 매칭 레이어 — 사람 추천 엔진에서 소비"
@@ -79,7 +85,25 @@ layers:
       snapshot.yaml 은 월 1회 업데이트.
       업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
 
-  08_ai_layer:
+  09_journal:
+    purpose: "일상 기록 + 주간 컨설팅 레이어 — 장기목표 정렬 기반 하위목표 제시 및 실행 추적"
+    format: mixed
+    visibility_default: private
+    files:
+      - daily/YYYY-MM-DD.md      # AI와 나눈 하루 대화 raw 기록 (매일)
+      - weekly/YYYY-WXX.yaml     # AI가 생성한 주간 활동 요약 (주 1회)
+      - sessions/YYYY-WXX.md     # 주간 컨설팅 세션 기록 — 숙제 체크 + 다음 주 하위목표 (주 1회)
+    prompts:
+      - ai/prompts/daily_collect.md    # 오늘 뭐했어? 대화 수집
+      - ai/prompts/weekly_summary.md   # 7일치 → 주간 요약 생성
+      - ai/prompts/weekly_consult.md   # 장기목표 정렬 진단 + 하위목표 제시 (핵심)
+    flow: >
+      [매일]   AI 대화 → daily/YYYY-MM-DD.md 저장.
+      [주 1회] 7일치 daily → weekly/YYYY-WXX.yaml 생성.
+      [주 1회] weekly + 직전 sessions + tree/snapshot →
+               sessions/YYYY-WXX.md 생성 (숙제 체크 + 다음 주 하위목표 + 데이터 업데이트 제안).
+
+  ai_layer:
     purpose: "AI 생성 레이어 — 이력서/자기소개 생성"
     format: mixed
     visibility_default: public
@@ -91,6 +115,34 @@ layers:
       - outputs/self_intro_30sec.md
       - outputs/self_intro_full.md
       - outputs/profile_tags.yaml
+
+# ─────────────────────────────────────────
+# 데이터 표기 규칙 (Conventions)
+# ─────────────────────────────────────────
+conventions:
+
+  age:
+    standard: "만나이 (대한민국 법정 기준)"
+    rule: >
+      이 저장소의 모든 나이 표기는 만나이를 사용한다.
+      만나이 = 생일이 지난 경우 (현재 연도 - 출생 연도),
+               생일이 지나지 않은 경우 (현재 연도 - 출생 연도 - 1).
+    example: "1988년 9월생 → 2026년 3월 기준 만 37세"
+    applied_to:
+      - "lifetime.yaml 의 age_range"
+      - "index.yaml 의 current_age"
+      - "모든 파일의 나이 관련 필드"
+    note: "한국식 세는나이(+1), 연나이 사용 금지."
+
+  date:
+    standard: "ISO 8601"
+    rule: "날짜는 YYYY-MM-DD, 주는 YYYY-WXX (ISO 8601 월요일 시작)"
+
+  week:
+    standard: "ISO 8601"
+    rule: "한 주는 월요일 00:00 ~ 일요일 23:59"
+    saturday: "주간 활동 정리 (weekly_summary)"
+    sunday: "보완 & 다음 주 계획 (weekly_consult)"
 
 confidence_scale:
   high: "직접 확인된 사실 (본인 제공, 공식 문서)"

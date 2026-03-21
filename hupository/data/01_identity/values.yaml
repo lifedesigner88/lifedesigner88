@@ -34,6 +34,30 @@ core_values:
       교육도 플랫폼화, 배포도 코드화(Terraform).
     evidence_level: medium
 
+# ─────────────────────────────────────────
+# UN SDGs 정렬
+# 2026-03-21 대화에서 확인: 현재 가치관·강점과 공명하는 목표
+# ─────────────────────────────────────────
+sdg_alignment:
+  confirmed_on: "2026-03-21"
+  aligned_goals:
+    - sdg: 4
+      label: "양질의 교육 (Quality Education)"
+      resonance: high
+      reason: "15년간 교육·커리큘럼 설계, 세종클래스, teaching_drive"
+    - sdg: 8
+      label: "양질의 일자리와 경제성장 (Decent Work and Economic Growth)"
+      resonance: high
+      reason: "1인 창업, AI 빌더 전환, 기술 기반 자립 모델"
+    - sdg: 10
+      label: "불평등 감소 (Reduced Inequalities)"
+      resonance: medium
+      reason: "라이프디자인 — 누구나 자신의 삶을 설계할 수 있어야 한다는 신념"
+    - sdg: 17
+      label: "글로벌 파트너십 (Partnerships for the Goals)"
+      resonance: medium
+      reason: "12개국 국제캠프 PM, 커뮤니티 빌더 경험"
+
 core_questions:
   - "어떻게 사는 것이 사람답게 사는 것일까?"
   - "사람의 삶을 더 잘 설계하게 도울 수 있는가?"

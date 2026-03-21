@@ -51,6 +51,11 @@ matching_tags:
   - reflective-doer
   - solo-founder
 
+sdg_alignment:
+  primary:   ["SDG4 양질의 교육", "SDG8 양질의 일자리"]
+  secondary: ["SDG10 불평등 감소", "SDG17 글로벌 파트너십"]
+  confirmed_on: "2026-03-21"
+
 navigation:
   profile:      "../data/profile.yaml"
   identity:     "../data/01_identity/"
@@ -59,12 +64,18 @@ navigation:
   story:        "../data/04_story/"
   interests:    "../data/05_interests/"
   reading:      "../data/05_interests/reading/"
-  goals:        "../data/06_goals/"
+  goals:        "../data/06_goals/"        # goals / progress / tree
   matching:     "../data/07_matching/"
   now:          "../data/08_now/"           # 현재 상태 (신규)
+  journal:      "../data/09_journal/"       # 일상 기록 (daily/weekly)
   timeline:     "../data/timeline/"
   sources:      "../data/sources.yaml"
   ai_outputs:   "outputs/"
   ai_context:   "context/"                 # AI 컨텍스트 조립 (신규)
+  sessions:     "../data/09_journal/sessions/"  # 주간 컨설팅 세션 기록
 
 next_step_entry: "context/next_step.yaml"  # AI 다음 스텝 추론 진입점
+daily_collect_entry: "prompts/daily_collect.md"   # 일상 기록 수집 진입점
+weekly_summary_entry: "prompts/weekly_summary.md" # 주간 요약 진입점
+goal_review_entry: "prompts/goal_review.md"        # 목표 트리 리뷰 진입점
+weekly_consult_entry: "prompts/weekly_consult.md"  # 주간 컨설팅 세션 진입점 (핵심)
