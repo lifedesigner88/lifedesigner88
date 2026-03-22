@@ -1,7 +1,7 @@
 # 현재 상태 스냅샷 — data/08_now/snapshot.yaml
 # 월 1회 업데이트. 과거 스냅샷은 history/{YYYY-MM}.yaml 로 보관.
 
-as_of: "2026-03-18"
+as_of: "2026-03-22"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -9,7 +9,7 @@ as_of: "2026-03-18"
 active_tracks:
 
   sejongclass:
-    status: running          # planned | running | paused | done
+    status: active           # planned | running | paused | done
     description: "수학·물리·코딩·라이프디자인 강의 플랫폼 (단독 풀스택 운영)"
     url: https://sejongclass.kr
     registered_users: 48    # 가입 유저 (지원서 기준 2026-03-14)
@@ -19,16 +19,25 @@ active_tracks:
     blockers:
       - "홍보/마케팅 채널 없음"
       - "강의 콘텐츠 제작 속도"
-    notes: "플랫폼 개발 완료, 48명 가입. 수익화 단계 진입 필요."
+    new_series:
+      category: "인생"
+      title: "2026"
+      format: "매주 일요일 저녁 — 편집 없는 주간 리뷰 (한 주 실천 + 다음 주 계획 + 장기 계획)"
+      total: "52강 (52주)"
+      structure: "4분기 × 3개월 × 4강"
+      started: "2026-03-22"
+      setup_today: true
+    notes: "사업자 미등록, 데모 운영 형태. 인생 카테고리 2026 시리즈 오늘(3/22) 세팅 및 1화 업로드 예정."
 
   sw_maestro_17:
-    status: interview_scheduled   # not_applied | applied | coding_test_passed | interview_scheduled | pending | accepted | rejected
+    status: pending               # not_applied | applied | coding_test_passed | interview_scheduled | pending | accepted | rejected
     coding_test_ended: "2026-03-07"
     coding_test_result: "passed"  # 3/11 합격 통보
     coding_test_passed_on: "2026-03-11"
     interview_datetime: "2026-03-20T09:30:00+09:00"
-    result: null                  # 면접 후 결과 대기
-    notes: "코딩테스트 합격. 면접 3/20 오전 9시 30분."
+    interview_completed: "2026-03-20"
+    result: null                  # 결과 발표 3/25 오후 2시
+    notes: "면접 완료(3/20). 결과 발표 3/25 오후 2시 대기 중."
 
   algorithm_study:
     status: paused           # 목표 달성 후 일시 중단
@@ -42,29 +51,67 @@ active_tracks:
       유튜브 40분 풀이 영상 업로드 → 소마 지원자 유입.
       클래스101 강의 제작 제안으로 이어짐.
 
+  weekly_blog:
+    status: active
+    platform: "네이버 블로그"
+    url: "https://blog.naver.com/lifedesigner88"
+    category: "매주쓰는글"
+    total_posts: 179          # 2026-03-22 기준
+    frequency: "매주 (주 1회)"
+    started: "2025-08"        # 25년 34주차 SejongClass 개발 시작 무렵
+    format: "주간 리뷰 — 한 주 활동 + 다음 주 계획"
+    workflow: "블로그 작성 → 영상 촬영 (블로그 보면서) → 유튜브 업로드 → 블로그에 영상 링크 추가"
+    notes: >
+      세종클래스 유튜브 주간 시리즈(2026 인생 강의)의 소재 베이스.
+      블로그 글 = 유튜브 스크립트. 같은 내용을 영상으로 추가 발행 예정.
+
   eunpyeong_youth_network:
     status: active
     description: "은평청년네트워크 10기 정식 위원 — 일자리창업분과 (2026.01~12)"
     organization: "은평구청 청장년희망과"
+    last_event: "2026-03-19T19:00:00+09:00 모임 참석 완료"
     next_event: "2026-03-24T19:00:00+09:00 일자리창업분과 모임"
     notes: "세종클래스·AI 창업 경험을 정책 제안에 연결 가능. 지역 네트워크 확장 기회."
 
+  seoul_citizen_budget:
+    status: applied          # considering | applied | accepted | rejected
+    description: "서울시 시민참여예산위원 지원"
+    applied_on: "2026-03-20"
+    notes: "온라인 지원 완료(3/20). 결과 대기 중."
+
   class101_opportunity:
-    status: scheduled        # 새로 추가된 기회
+    status: scheduled
     description: "클래스101 — 소마 코딩테스트 준비 알고리즘 강의 제작 제안"
     interview_datetime: "2026-03-27T15:00:00+09:00"
     trigger: "유튜브 알고리즘 풀이 영상 → 소마 지원자 유입 → 클래스101 발견"
-    notes: "3/27 오후 3시 미팅. 수락 시 세종클래스 외 수익 채널 확보 가능."
+    strategy:
+      goal: "수익 극대화보다 팬 확보 우선 — 소마 이후 마케팅 채널로 활용"
+      production: "PD 제작 지원 수령 검토 (아웃바운드 케이스라 가능성 있음) — 3/27 미팅에서 확인"
+      launch_target: "2026년 5월 말 — 소마 본과정(6월) 시작 전 출시 완료"
+      launch_plan: "소마 합격/불합격 관계없이 4~5월에 기획·제작·출시 집중"
+      revenue_note: >
+        소마 본 연수과정(6~11월) 중 수동적 수익 발생은 그레이존.
+        문제 시 정산 시점을 12월 이후로 조율하는 방향으로 클래스101과 협의 가능.
+      long_term: "소마 팀 제품 홍보 채널 + 세종클래스 외 수익 채널"
+    notes: "3/27 미팅에서 확인할 것: PD 지원 여부, 수익 배분 비율, 개별판매 vs 구독형"
 
   ai_agent_dev:
-    status: exploring        # exploring | active | paused | done
-    current_project: "Hupository — AI 기반 개인 데이터 구조화"
-    learning_resources:
-      - "LangGraph"
-      - "FastAPI"
+    status: active           # exploring | active | paused | done
+    current_project: "PersonaMirror — Progressive Persona Dashboard"
+    mvp_deadline: "2026-03-25"
+    stack: "React 19 / FastAPI / LangGraph / Claude API / PostgreSQL / Redis"
+    progress:
+      completed:
+        - "LangGraph ai-worker 파이프라인 (pending → Claude → persona JSON)"
+        - "Level 1 Persona Card (archetype · top 3 values · one-liner)"
+        - "데모 페이지 /persona/demo (Hupository 데이터)"
+      in_progress:
+        - "GET /persona/:id 실제 백엔드 엔드포인트"
+      not_started:
+        - "Q&A 패널 POST /persona/:id/ask"
     notes: >
-      Hupository 자체가 AI Agent 개발 실습 프로젝트.
-      Vector/Tensor DB 구조 학습 필요성 인식.
+      3/25 바이브코딩으로 기능 구현 완료 목표.
+      이후 코드 분석하며 학습 → 클래스101 강의 소재로 연결 예정.
 
 # ─────────────────────────────────────────
 # 현재 제약 조건
@@ -81,28 +128,35 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — 면접 준비 (3/20)"
-  2: "class101_opportunity — 미팅 준비 (3/27)"
-  3: "sejongclass — 첫 유료 수강생 확보"
-  4: "ai_agent_dev — Hupository 고도화"
+  1: "sw_maestro_17 — 결과 대기 (3/25 오후 2시)"
+  2: "ai_agent_dev — PersonaMirror MVP (3/25 바이브코딩 완료 목표)"
+  3: "class101_opportunity — 미팅 준비 (3/27)"
+  4: "sejongclass — 소마 결과 이후 재개 여부 결정"
 
 # ─────────────────────────────────────────
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
-  - trigger: "SW마에스트로 17기 면접 결과 (3/20 이후)"
+  - trigger: "SW마에스트로 17기 합격 발표 (3/25 오후 2시)"
     if_accepted: >
-      프로그램 집중 참여.
-      세종클래스는 최소 유지 모드.
-      class101 강의는 병행 가능 여부 검토 후 결정.
+      4~5월 예비과정 + 클래스101 강의 기획·제작 병행.
+      6월 본과정 시작 전 강의 출시 완료 목표.
+      소마 팀빌딩에서 알고리즘 강의 채널 보유 강점으로 활용.
+      세종클래스는 소마 종료(11월) 이후 재개.
     if_rejected: >
-      세종클래스 수익화 + class101 강의 제작 병행.
-      취업 준비 비중 재조정 검토.
+      4~5월 클래스101 강의 제작 + PersonaMirror 독립 서비스 전환 병행.
+      세종클래스 재개 및 수익화 집중.
 
   - trigger: "클래스101 미팅 결과 (3/27)"
-    if_accepted: "알고리즘 강의 콘텐츠 제작 일정 수립. 세종클래스와 시너지 검토."
+    if_accepted: >
+      4~5월 강의 기획·제작 착수. PD 지원 여부 확정.
+      합격/불합격 관계없이 5월 말 출시 목표.
     if_rejected: "유튜브 자체 채널로 콘텐츠 전환 검토."
 
   - trigger: "세종클래스 첫 유료 수강생 발생"
     if_yes: "마케팅 채널 확장, 콘텐츠 증설"
     if_no: "홍보 전략 재검토 (90일 내 미발생 시)"
+
+  - trigger: "서울시 시민참여예산위원 결과"
+    if_accepted: "지역 커뮤니티 활동 확장 — 소마와 병행 가능한 수준 유지"
+    if_rejected: "은평청년네트워크 집중 유지"
