@@ -79,10 +79,14 @@ layers:
     update_cadence: monthly
     files:
       - snapshot.yaml    # 각 트랙의 현재 상태, 제약조건, 보류 중인 분기점
-      - decisions.yaml   # 주요 의사결정 로그 (why 포함)
+      - decisions.yaml   # 주요 의사결정 로그 (why 포함, 장기효력 있는 결정만)
     history_path: "08_now/history/{YYYY-MM}.yaml"
+    operating_rule: >
+      08_now 는 "그래서 지금 상태가 무엇인가?"에 답하는 정본이다.
+      daily/session 에서 나온 내용 중 다음 주에도 유효한 사실, 제약, 분기점만 압축해 승격한다.
     notes: >
       snapshot.yaml 은 월 1회 업데이트.
+      긴 서사, 감정, 판단 과정은 09_journal 에 두고 여기에는 현재 상태만 남긴다.
       업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
 
   09_journal:
@@ -90,16 +94,22 @@ layers:
     format: mixed
     visibility_default: private
     files:
-      - {decade}/{year}/{month}/{week}/YYYY-MM-DD.md
-      - {decade}/{year}/{month}/{week}/session.md
+      - "{decade}/{year}/{month}/{week}/YYYY-MM-DD.md"
+      - "{decade}/{year}/{month}/{week}/session_draft.md"
+      - "{decade}/{year}/{month}/{week}/session.md"
     prompts:
       - ai/prompts/daily_reflection.md
       - ai/prompts/weekly_coaching.md
       - ai/prompts/monthly_review.md
+    operating_rule: >
+      09_journal 은 "왜 이렇게 보고 있는가?"를 담는 레이어다.
+      daily 는 하루 단위 사실/감정/배움, session_draft 는 진행 중인 해석과 질문,
+      session.md 는 주간 코칭의 확정 결론을 담는다.
     flow: >
       [매일]   GPT 대화 → {decade}/{year}/{month}/{week}/YYYY-MM-DD.md 저장.
+      [세션 진행 중] 판단/질문/미확정 해석은 session_draft.md 에 누적.
       [주 1회] recent daily + 직전 session + lifetime/tree/snapshot →
-               {decade}/{year}/{month}/{week}/session.md 생성.
+               session_draft.md 작성/보강 후 session.md 확정.
       [월 1회] recent session + lifetime/tree/progress/snapshot →
                ai/outputs/monthly_review/YYYY-MM.md 생성.
 
