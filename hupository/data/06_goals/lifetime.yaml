@@ -109,7 +109,7 @@ goal_discovery_framework:
   when_to_use: >
     lifetime_mission 또는 decade_mission 이 비어있거나,
     사용자가 장기목표를 정하는 데 막막함을 느낄 때.
-  how: "ai/prompts/goal_review.md — 프롬프트 B-1 참조"
+  how: "ai/prompts/monthly_review.md 참조"
   current_sdg_alignment:
     # values.yaml · vectors.yaml 기준 현재 높은 공명 가능성
     - sdg: 4
@@ -129,7 +129,7 @@ goal_discovery_framework:
 # 정렬 체크 원칙 ★ (최우선)
 # ─────────────────────────────────────────
 alignment_check_principle: >
-  AI는 매주 컨설팅 세션(weekly_consult.md)마다
+  AI는 매주 코칭 세션(weekly_coaching.md)마다
   현재의 결정·활동이 이 파일의 lifetime_mission 및 현재 10년 decade_mission 에서
   벗어나고 있는지 반드시 확인해야 한다.
 

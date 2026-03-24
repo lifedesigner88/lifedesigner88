@@ -1,8 +1,9 @@
-# AI 다음 스텝 추론 컨텍스트 — ai/context/next_step.yaml
-# AI가 "박세종의 다음 스텝"을 추론할 때 읽어야 할 파일 순서와 추론 힌트.
+# 다음 스텝 코칭 컨텍스트 — ai/context/next_step.yaml
+# GPT가 "박세종의 다음 스텝"을 빠르게 코칭할 때 읽는 컨텍스트.
 
 context_for: "next_step_recommendation"
-generated_on: "2026-03-18"
+preferred_model: "GPT-5.4"
+generated_on: "2026-03-24"
 
 # ─────────────────────────────────────────
 # 파일 읽기 순서 (우선순위 높은 것부터)
@@ -12,18 +13,21 @@ priority_reads:
     file: "../../data/08_now/snapshot.yaml"
     purpose: "현재 각 트랙의 상태, 제약조건, 보류 중인 외부 이벤트"
   2:
-    file: "../../data/06_goals/goals.yaml"
-    purpose: "단기/장기 목표 전체"
+    file: "../../data/06_goals/lifetime.yaml"
+    purpose: "평생 사명 + 현재 10년 사명"
   3:
+    file: "../../data/06_goals/tree.yaml"
+    purpose: "현재 장기/중간/단기 목표 구조"
+  4:
     file: "../../data/06_goals/progress.yaml"
     purpose: "각 목표의 현재 진척도"
-  4:
-    file: "../../data/08_now/decisions.yaml"
-    purpose: "최근 주요 의사결정과 그 근거 — 방향성 맥락"
   5:
-    file: "../../data/07_matching/vectors.yaml"
-    purpose: "강점 벡터 — 어떤 방향으로 힘이 가장 강한가"
+    file: "../../data/09_journal/{최근 session}.md"
+    purpose: "직전 주간 코칭 맥락"
   6:
+    file: "../../data/08_now/decisions.yaml"
+    purpose: "최근 주요 의사결정과 방향성 맥락"
+  7:
     file: "../../data/01_identity/values.yaml"
     purpose: "핵심 가치관 — 추천이 가치관과 일치하는지 검증"
 
@@ -53,16 +57,16 @@ inference_hints:
 # ─────────────────────────────────────────
 output_format:
   structure:
-    - "현재 상태 요약 (2-3줄)"
-    - "핵심 분기점 (보류 중인 외부 이벤트 기반)"
-    - "지금 당장 해야 할 것 (1순위 액션, 구체적)"
-    - "하지 말아야 할 것 (분산 위험 경고)"
-    - "90일 목표 제안"
-  tone: "직접적이고 간결하게. 철학적 설명보다 실행 중심으로."
+    - "현재 상태 요약 (2줄)"
+    - "지금 가장 중요한 초점 1개"
+    - "다음 3개 행동"
+    - "지금 안 해도 되는 것"
+    - "확인해야 할 질문 1개"
+  tone: "직접적이고 간결하게. 실행 중심."
   language: "한국어"
 
 # ─────────────────────────────────────────
 # 출력 저장 위치
 # ─────────────────────────────────────────
 output_path: "../outputs/next_step/"
-output_naming: "YYYY-MM.md"   # 예: 2026-03.md
+output_naming: "YYYY-MM-DD.md"

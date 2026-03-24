@@ -1,25 +1,35 @@
-# AI 레이어 — 이력서·자기소개 생성
+# AI 레이어 — GPT 코칭 운영 가이드
 
-이 폴더에는 두 가지가 있습니다:
+이 폴더의 1차 목적은 GPT가 이 사람의 데이터를 읽고
+매일 생각을 정리하고, 장기목표를 점검하고, 다음 행동을 코칭하는 것입니다.
 
-## `prompts/` — AI에게 줄 프롬프트
+## 핵심 루프
 
 | 파일 | 용도 |
 |------|------|
-| `resume_prompt.md` | 직무별 이력서 생성 프롬프트 |
-| `intro_prompt.md` | 상황별 자기소개 생성 프롬프트 |
-| `matching_prompt.md` | 사람 매칭 설명 생성 프롬프트 |
+| `prompts/daily_reflection.md` | 하루를 정리하고 내일의 한 가지 초점을 뽑음 |
+| `context/weekly_coaching.yaml` + `prompts/weekly_coaching.md` | 최근 1주 데이터를 읽고 주간 코칭 세션 진행 |
+| `prompts/monthly_review.md` | 최근 1개월 데이터를 읽고 목표 구조를 재조정 |
+| `context/next_step.yaml` | 지금 당장 무엇을 해야 할지 빠르게 코칭 |
 
-**사용법:** `index.yaml` + 관련 data 파일들을 컨텍스트로 넣고 프롬프트를 실행하면 됩니다.
-
-## `outputs/` — 생성된 결과물
+## 보조 유틸리티
 
 | 파일 | 내용 |
 |------|------|
+| `prompts/intro_prompt.md` | 자기소개 생성 |
+| `prompts/resume_prompt.md` | 이력서 생성 |
+| `prompts/matching_prompt.md` | 매칭 설명 생성 |
+
+## `outputs/` — 저장 가능한 산출물
+
+| 경로 | 내용 |
+|------|------|
+| `outputs/monthly_review/` | 월간 리뷰 보관 |
+| `outputs/next_step/` | 수시 계획 코칭 결과 보관 |
 | `resume_ko.md` | 한국어 이력서 (개발자 지원용) |
 | `self_intro_30sec.md` | 30초 자기소개 (엘리베이터 피치) |
 | `self_intro_full.md` | 풀 자기소개 (면접·네트워킹용) |
 | `profile_tags.yaml` | SNS 프로필용 태그 모음 |
 
-> 결과물은 언제든 프롬프트로 재생성할 수 있습니다.
-> 데이터가 업데이트되면 outputs도 재생성하세요.
+기본 원칙은 `data/`를 단일 사실 소스로 유지하고,
+`ai/outputs/`에는 코칭 결과나 파생 문서만 저장하는 것입니다.

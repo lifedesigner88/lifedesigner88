@@ -1,16 +1,22 @@
-# AI 진입점 — parksejong
+# GPT 진입점 — parksejong
 # 이 파일을 먼저 읽으면 이 사람을 1분 안에 이해할 수 있습니다.
 
 person_id: parksejong
 display_name: 박세종 (Park Sejong)
 username: lifedesigner88
-generated_on: "2026-03-14"
+generated_on: "2026-03-24"
 
 one_line: >
   교육자에서 개발자로 전직한 37세 비전공자.
   120일 개근·프로젝트 1위 부트캠프 수료 후 1인 교육 플랫폼 세종클래스를 직접 만들었다.
 
 archetype: "reflective educator-builder"
+
+primary_use_case: "매일 생각 정리, 장기목표 점검, 앞으로의 계획 코칭"
+
+assistant_preference:
+  primary_model_family: "GPT-5.4"
+  style: "질문 중심, 구조화, 짧고 선명한 코칭"
 
 quick_facts:
   birth_year: 1988
@@ -67,15 +73,20 @@ navigation:
   goals:        "../data/06_goals/"        # goals / progress / tree
   matching:     "../data/07_matching/"
   now:          "../data/08_now/"           # 현재 상태 (신규)
-  journal:      "../data/09_journal/"       # 일상 기록 (daily/weekly)
+  journal:      "../data/09_journal/"       # 일일 리플렉션 + 주간 코칭
   timeline:     "../data/timeline/"
   sources:      "../data/sources.yaml"
   ai_outputs:   "outputs/"
-  ai_context:   "context/"                 # AI 컨텍스트 조립 (신규)
-  sessions:     "../data/09_journal/sessions/"  # 주간 컨설팅 세션 기록
+  ai_context:   "context/"
 
-next_step_entry: "context/next_step.yaml"  # AI 다음 스텝 추론 진입점
-daily_collect_entry: "prompts/daily_collect.md"   # 일상 기록 수집 진입점
-weekly_summary_entry: "prompts/weekly_summary.md" # 주간 요약 진입점
-goal_review_entry: "prompts/goal_review.md"        # 목표 트리 리뷰 진입점
-weekly_consult_entry: "prompts/weekly_consult.md"  # 주간 컨설팅 세션 진입점 (핵심)
+coaching_entries:
+  daily_reflection: "prompts/daily_reflection.md"
+  weekly_coaching_context: "context/weekly_coaching.yaml"
+  weekly_coaching: "prompts/weekly_coaching.md"
+  monthly_review: "prompts/monthly_review.md"
+  next_step: "context/next_step.yaml"
+
+secondary_entries:
+  intro: "prompts/intro_prompt.md"
+  resume: "prompts/resume_prompt.md"
+  matching: "prompts/matching_prompt.md"

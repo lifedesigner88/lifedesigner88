@@ -1,14 +1,14 @@
-# Hupository Schema v1.0
+# Hupository Schema v1.2
 # 이 파일은 hupository 서비스의 데이터 구조 표준을 정의합니다.
 
 service:
   name: hupository
-  version: "1.0"
+  version: "1.2"
   tagline: "human + repository — 사람을 위한 저장소"
 
 person_namespace:
   owner: parksejong
-  note: "이 저장소 자체가 한 사람의 네임스페이스. 루트(claude/)가 곧 사람 단위."
+  note: "이 저장소 자체가 한 사람의 네임스페이스. 공개 데이터 루트(hupository/)가 곧 사람 단위."
   required_files:
     - index.yaml
 
@@ -86,31 +86,38 @@ layers:
       업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
 
   09_journal:
-    purpose: "일상 기록 + 주간 컨설팅 레이어 — 장기목표 정렬 기반 하위목표 제시 및 실행 추적"
+    purpose: "일일 리플렉션 + 주간 코칭 레이어 — 장기목표 정렬과 다음 행동 점검"
     format: mixed
     visibility_default: private
     files:
-      - daily/YYYY-MM-DD.md      # AI와 나눈 하루 대화 raw 기록 (매일)
-      - weekly/YYYY-WXX.yaml     # AI가 생성한 주간 활동 요약 (주 1회)
-      - sessions/YYYY-WXX.md     # 주간 컨설팅 세션 기록 — 숙제 체크 + 다음 주 하위목표 (주 1회)
+      - {decade}/{year}/{month}/{week}/YYYY-MM-DD.md
+      - {decade}/{year}/{month}/{week}/session.md
     prompts:
-      - ai/prompts/daily_collect.md    # 오늘 뭐했어? 대화 수집
-      - ai/prompts/weekly_summary.md   # 7일치 → 주간 요약 생성
-      - ai/prompts/weekly_consult.md   # 장기목표 정렬 진단 + 하위목표 제시 (핵심)
+      - ai/prompts/daily_reflection.md
+      - ai/prompts/weekly_coaching.md
+      - ai/prompts/monthly_review.md
     flow: >
-      [매일]   AI 대화 → daily/YYYY-MM-DD.md 저장.
-      [주 1회] 7일치 daily → weekly/YYYY-WXX.yaml 생성.
-      [주 1회] weekly + 직전 sessions + tree/snapshot →
-               sessions/YYYY-WXX.md 생성 (숙제 체크 + 다음 주 하위목표 + 데이터 업데이트 제안).
+      [매일]   GPT 대화 → {decade}/{year}/{month}/{week}/YYYY-MM-DD.md 저장.
+      [주 1회] recent daily + 직전 session + lifetime/tree/snapshot →
+               {decade}/{year}/{month}/{week}/session.md 생성.
+      [월 1회] recent session + lifetime/tree/progress/snapshot →
+               ai/outputs/monthly_review/YYYY-MM.md 생성.
 
   ai_layer:
-    purpose: "AI 생성 레이어 — 이력서/자기소개 생성"
+    purpose: "GPT 코칭 및 파생 문서 레이어"
     format: mixed
     visibility_default: public
     files:
+      - context/weekly_coaching.yaml
+      - context/next_step.yaml
+      - prompts/daily_reflection.md
+      - prompts/weekly_coaching.md
+      - prompts/monthly_review.md
       - prompts/resume_prompt.md
       - prompts/intro_prompt.md
       - prompts/matching_prompt.md
+      - outputs/monthly_review/
+      - outputs/next_step/
       - outputs/resume_ko.md
       - outputs/self_intro_30sec.md
       - outputs/self_intro_full.md
@@ -141,8 +148,8 @@ conventions:
   week:
     standard: "ISO 8601"
     rule: "한 주는 월요일 00:00 ~ 일요일 23:59"
-    saturday: "주간 활동 정리 (weekly_summary)"
-    sunday: "보완 & 다음 주 계획 (weekly_consult)"
+    saturday: "주간 회고 메모 정리"
+    sunday: "주간 코칭 세션"
 
 confidence_scale:
   high: "직접 확인된 사실 (본인 제공, 공식 문서)"

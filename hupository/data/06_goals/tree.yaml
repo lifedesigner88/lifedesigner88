@@ -96,17 +96,19 @@ goals:
             stack:
               frontend: "React 19, React Router v7, TypeScript, Tailwind CSS, Vite"
               backend: "FastAPI, SQLAlchemy, PostgreSQL 16"
-              ai_worker: "Python, LangGraph, Claude API (claude-haiku-4-5)"
+              ai_worker: "Python, LangGraph, OpenAI API (GPT-5.4 family)"
               monorepo: "Nx, pnpm (Node 24.11.0), uv (Python 3.11.15)"
               infra: "Docker Compose, Redis 7.4"
             notes: >
               Progressive persona 대시보드. AI 인터뷰(질문 5개) → Level 1 카드 → 답변 누적 시 풍부화.
               소마 합격 시 팀빌딩 자기소개 도구. 불합격 시 독립 서비스로 전환.
               3/25까지 바이브코딩으로 기능 구현 완료.
+              3/23 기준 배포 파이프라인 구축이 최우선.
+              합격 시 소마 커뮤니티 팀 매칭 유즈케이스로 확장, 탈락 시 개인 인생컨설팅 프로젝트로 전환.
               이후 코드 분석하며 학습 → 강의 영상 제작 연결 (G-SEJONG-03 시너지).
             children:
               - id: "G-PM-01-A"
-                title: "LangGraph ai-worker 파이프라인 (pending jobs → Claude → persona JSON)"
+                title: "LangGraph ai-worker 파이프라인 (pending jobs → GPT persona synthesis → persona JSON)"
                 status: completed
               - id: "G-PM-01-B"
                 title: "Level 1 Persona Card (archetype · top 3 values · one-liner)"

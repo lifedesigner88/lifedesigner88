@@ -1,7 +1,7 @@
 # 현재 상태 스냅샷 — data/08_now/snapshot.yaml
 # 월 1회 업데이트. 과거 스냅샷은 history/{YYYY-MM}.yaml 로 보관.
 
-as_of: "2026-03-22"
+as_of: "2026-03-23"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -99,10 +99,10 @@ active_tracks:
     status: active           # exploring | active | paused | done
     current_project: "PersonaMirror — Progressive Persona Dashboard"
     mvp_deadline: "2026-03-25"
-    stack: "React 19 / FastAPI / LangGraph / Claude API / PostgreSQL / Redis"
+    stack: "React 19 / FastAPI / LangGraph / OpenAI API (GPT-5.4 family) / PostgreSQL / Redis"
     progress:
       completed:
-        - "LangGraph ai-worker 파이프라인 (pending → Claude → persona JSON)"
+        - "LangGraph ai-worker 파이프라인 (pending → GPT persona synthesis → persona JSON)"
         - "Level 1 Persona Card (archetype · top 3 values · one-liner)"
         - "데모 페이지 /persona/demo (Hupository 데이터)"
       in_progress:
@@ -111,6 +111,8 @@ active_tracks:
         - "Q&A 패널 POST /persona/:id/ask"
     notes: >
       3/25 바이브코딩으로 기능 구현 완료 목표.
+      3/23 기준 배포 인프라 패턴(Caddy + GHCR + GitHub Actions + Lightsail) 분석 완료.
+      3/25 결과 발표 후 합격 시 팀 매칭 유즈케이스로 확장, 탈락 시 개인 프로젝트 방향으로 전환 예정.
       이후 코드 분석하며 학습 → 클래스101 강의 소재로 연결 예정.
 
 # ─────────────────────────────────────────

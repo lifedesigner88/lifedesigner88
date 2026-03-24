@@ -44,7 +44,7 @@ decisions:
     date: "2026-02"
     decision: "소마 코딩테스트 대비 — 30일 300문제 자체 제작 후 유튜브 공개"
     rationale: >
-      AI(Gemini, Claude, ChatGPT)로 모의고사를 직접 출제하면
+      AI(Gemini, GPT 기반 도구들)로 모의고사를 직접 출제하면
       학습 효과와 콘텐츠 자산을 동시에 얻을 수 있다는 판단.
       공개하면 소마 지원자 네트워크도 생긴다.
     alternatives_rejected:
@@ -64,6 +64,21 @@ decisions:
     alternatives_rejected: []
     outcome: "pending"   # 3/27 미팅 후 수락/거절 결정
     outcome_note: null
+
+  - id: "D006"
+    date: "2026-03-23"
+    decision: "PersonaMirror를 소마·클래스101과 별개로 지속할 핵심 과업으로 유지"
+    rationale: >
+      Hupository 데이터를 실제 유즈케이스로 보여주는 첫 번째 제품이며,
+      소마 합격 여부와 관계없이 장기 사명(G-LIFE)을 구현하는 가장 직접적인 실험체이기 때문.
+      외부 기회는 가속 수단일 뿐, PersonaMirror 자체는 계속 밀어야 할 축으로 판단.
+    alternatives_rejected:
+      - option: "소마 합격 시에만 팀 매칭 도구로 한정"
+        why_rejected: "외부 결과에 종속되면 장기 방향성이 약해짐"
+      - option: "소마 불합격 시 프로젝트 중단"
+        why_rejected: "이미 확보한 데모와 방향성을 버리기엔 장기 가치가 큼"
+    outcome: "pending"
+    outcome_note: "3/25 결과 발표 후 합격/탈락 시나리오에 따라 운영 방식만 분기"
 
   # ─ 새 결정은 아래에 추가 ─
   # - id: "D006"

@@ -16,7 +16,7 @@ short_term:
       status: in_progress
       completion_pct: 15
       notes: >
-        Hupository 프로젝트 자체가 실습. Codex, Claude, Gemini 활용 경험 축적.
+        Hupository 프로젝트 자체가 실습. GPT-5.4, Codex, Gemini 활용 경험 축적.
         LangGraph 학습 중. Vector/Tensor DB 구조 학습 필요성 인식.
 
     - goal: "알고리즘·코테 역량 강화 (백준 30회 완성)"
