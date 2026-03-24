@@ -59,8 +59,8 @@ layers:
     files:
       - lifetime.yaml   # 평생 사명 + 10년 단위 목표 (최상위)
       - tree.yaml       # 현재 10년의 장기→중간→단기 목표 계층 (lifetime 아래)
-      - goals.yaml      # 목표 목록 (what) — 레거시, tree.yaml 로 점진 통합
-      - progress.yaml   # 진척도 (how far)
+      - goals.yaml      # 레거시 목표 목록 (read-only archive)
+      - progress.yaml   # tree.yaml 기준 진척도 (how far)
     hierarchy: "lifetime.yaml → tree.yaml → progress.yaml"
 
   07_matching:
@@ -76,7 +76,7 @@ layers:
     purpose: "현재 상태 레이어 — AI 다음 스텝 추론의 핵심 입력"
     format: yaml
     visibility_default: public
-    update_cadence: monthly
+    update_cadence: "event_driven + monthly_review"
     files:
       - snapshot.yaml    # 각 트랙의 현재 상태, 제약조건, 보류 중인 분기점
       - decisions.yaml   # 주요 의사결정 로그 (why 포함, 장기효력 있는 결정만)
@@ -84,9 +84,10 @@ layers:
     operating_rule: >
       08_now 는 "그래서 지금 상태가 무엇인가?"에 답하는 정본이다.
       daily/session 에서 나온 내용 중 다음 주에도 유효한 사실, 제약, 분기점만 압축해 승격한다.
+      이벤트가 생기면 바로 갱신하고, 월 1회 정리한다.
     notes: >
-      snapshot.yaml 은 월 1회 업데이트.
-      긴 서사, 감정, 판단 과정은 09_journal 에 두고 여기에는 현재 상태만 남긴다.
+      snapshot.yaml 은 이벤트 발생 시 갱신하고 월 1회 정리한다.
+      긴 서사, 감정, 판단 과정과 전술 메모는 09_journal 에 두고 여기에는 durable state 만 남긴다.
       업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
 
   09_journal:

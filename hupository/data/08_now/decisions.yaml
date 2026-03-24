@@ -80,6 +80,23 @@ decisions:
     outcome: "pending"
     outcome_note: "3/25 결과 발표 후 합격/탈락 시나리오에 따라 운영 방식만 분기"
 
+  - id: "D007"
+    date: "2026-03-25"
+    decision: "소마 합격 직후 공유되는 첫 링크의 front door는 ASM 17 Community보다 박세종 Creator PR을 우선"
+    rationale: >
+      300명 규모의 합격자 자기소개 노션에서는 긴 기능 설명보다
+      박세종이 어떤 사람이고 왜 같이 팀하면 좋은지, 그리고 실제로 바로 만들 수 있는 사람인지가
+      몇 초 안에 보여야 한다는 판단.
+      내부 정보공유 노션이 이미 강하게 열릴 가능성이 높아 공용 정보공유 시스템 자체보다
+      유튜브·AI 데모·서비스 링크를 통한 PR/실행력 증명이 더 중요한 차별점이 된다.
+    alternatives_rejected:
+      - option: "ASM 17 Community 브랜딩과 대시보드 흐름을 루트 front door로 계속 유지"
+        why_rejected: "커뮤니티 도구는 보이지만 박세종이라는 사람과 팀 핏이 먼저 기억되기 어렵다"
+      - option: "장기 비전 설명을 길게 앞세우기"
+        why_rejected: "300명 노션 환경에서는 추상 비전보다 짧은 카피와 이미 만든 증거가 더 잘 읽힌다"
+    outcome: "pending"
+    outcome_note: "3/25 결과 발표 전 리팩토링과 실제 공유 반응으로 검증 예정"
+
   # ─ 새 결정은 아래에 추가 ─
   # - id: "D006"
   #   date: "YYYY-MM"

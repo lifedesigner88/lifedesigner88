@@ -1,7 +1,8 @@
 # 현재 상태 스냅샷 — data/08_now/snapshot.yaml
-# 월 1회 업데이트. 과거 스냅샷은 history/{YYYY-MM}.yaml 로 보관.
+# 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
+# 과거 스냅샷은 history/{YYYY-MM}.yaml 로 보관합니다.
 
-as_of: "2026-03-23"
+as_of: "2026-03-25"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -26,8 +27,7 @@ active_tracks:
       total: "52강 (52주)"
       structure: "4계절 × 3개월 × 월 4~5강 (ISO 주차 기준, 총 ~52강)"
       started: "2026-03-22"
-      setup_today: true
-    notes: "사업자 미등록, 데모 운영 형태. 인생 카테고리 2026 시리즈 오늘(3/22) 세팅 및 1화 업로드 예정."
+    notes: "사업자 미등록 데모 운영. 인생 카테고리 2026 주간 리뷰 시리즈를 시작했고, 초기 업로드 리듬을 안정화하는 단계."
 
   sw_maestro_17:
     status: pending               # not_applied | applied | coding_test_passed | interview_scheduled | pending | accepted | rejected
@@ -37,7 +37,7 @@ active_tracks:
     interview_datetime: "2026-03-20T09:30:00+09:00"
     interview_completed: "2026-03-20"
     result: null                  # 결과 발표 3/25 오후 2시
-    notes: "면접 완료(3/20). 결과 발표 3/25 오후 2시 대기 중."
+    notes: "면접 완료(3/20). 결과 발표 3/25 오후 2시 전 대기 중."
 
   algorithm_study:
     status: paused           # 목표 달성 후 일시 중단
@@ -96,27 +96,28 @@ active_tracks:
         소마 본 연수과정(6~11월) 중 수동적 수익 발생은 그레이존.
         문제 시 정산 시점을 12월 이후로 조율하는 방향으로 클래스101과 협의 가능.
       long_term: "소마 팀 제품 홍보 채널 + 세종클래스 외 수익 채널"
-    notes: "3/27 미팅에서 확인할 것: PD 지원 여부, 수익 배분 비율, 개별판매 vs 구독형"
+    notes: "3/27 미팅 핵심 확인 포인트: PD 지원 여부, 수익 배분 구조, 개별판매 vs 구독형, 소마 병행 시 정산/출시 조건."
 
   ai_agent_dev:
     status: active           # exploring | active | paused | done
-    current_project: "PersonaMirror — Progressive Persona Dashboard"
+    current_project: "PersonaMirror first public use case — ASM 17 Community / Creator PR context"
     mvp_deadline: "2026-03-25"
     stack: "React 19 / FastAPI / LangGraph / OpenAI API (GPT-5.4 family) / PostgreSQL / Redis"
     progress:
       completed:
         - "LangGraph ai-worker 파이프라인 (pending → GPT persona synthesis → persona JSON)"
-        - "Level 1 Persona Card (archetype · top 3 values · one-liner)"
-        - "데모 페이지 /persona/demo (Hupository 데이터)"
+        - "Creator PR 페이지 /persona/sejong (최신 Hupository 데이터 기반)"
+        - "Seoul Dashboard 운영 보드 (verification-aware access / preview mode / reviewed-member tracking)"
+        - "AI Sejong login-only multi-turn chat (DB history / grounding / session control / rate limit)"
       in_progress:
-        - "GET /persona/:id 실제 백엔드 엔드포인트"
+        - "공개 entry flow와 공유 링크 품질 정리"
+        - "합격 직후 공유용 카피/링크 패키지 정리"
       not_started:
-        - "Q&A 패널 POST /persona/:id/ask"
+        - "실제 유입 반응 반영 및 팀 매칭/운영 확장"
     notes: >
-      3/25 바이브코딩으로 기능 구현 완료 목표.
-      3/23 기준 배포 인프라 패턴(Caddy + GHCR + GitHub Actions + Lightsail) 분석 완료.
-      3/25 결과 발표 후 합격 시 팀 매칭 유즈케이스로 확장, 탈락 시 개인 프로젝트 방향으로 전환 예정.
-      이후 코드 분석하며 학습 → 클래스101 강의 소재로 연결 예정.
+      Hupository 기반 PersonaMirror의 첫 공개 유즈케이스다.
+      단기 목적은 ASM 17 Community / Creator PR 맥락에서 팀빌딩 자기소개와 실행력 증명을 동시에 보여주는 front door를 만드는 것이다.
+      장기 목적은 라이프디자인/퍼스널 AI 서비스의 공개 진입점으로 확장하는 것이다.
 
 # ─────────────────────────────────────────
 # 현재 제약 조건
@@ -133,10 +134,10 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — 결과 대기 (3/25 오후 2시)"
-  2: "ai_agent_dev — PersonaMirror MVP (3/25 바이브코딩 완료 목표)"
+  1: "sw_maestro_17 — 결과 발표 대기 (3/25 오후 2시)"
+  2: "ai_agent_dev — 공개 entry flow와 공유 링크 정리"
   3: "class101_opportunity — 미팅 준비 (3/27)"
-  4: "sejongclass — 소마 결과 이후 재개 여부 결정"
+  4: "sejongclass — 첫 유료 수강생 확보"
 
 # ─────────────────────────────────────────
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
@@ -144,12 +145,14 @@ focus_priority:
 pending_decisions:
   - trigger: "SW마에스트로 17기 합격 발표 (3/25 오후 2시)"
     if_accepted: >
+      내부 합격자 노션에 PR 링크를 가장 먼저 공유.
       4~5월 예비과정 + 클래스101 강의 기획·제작 병행.
       6월 본과정 시작 전 강의 출시 완료 목표.
       소마 팀빌딩에서 알고리즘 강의 채널 보유 강점으로 활용.
       세종클래스는 소마 종료(11월) 이후 재개.
     if_rejected: >
       4~5월 클래스101 강의 제작 + PersonaMirror 독립 서비스 전환 병행.
+      PR/AI 데모 링크는 개인 프로젝트 홍보 자산으로 재사용.
       세종클래스 재개 및 수익화 집중.
 
   - trigger: "클래스101 미팅 결과 (3/27)"

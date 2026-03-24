@@ -27,18 +27,21 @@ reading_order:
     file: "../../data/06_goals/tree.yaml"
     purpose: "현재 장기/중간/단기 목표 구조"
   4:
+    file: "../../data/09_journal/{이번주}/session_draft.md"
+    purpose: "진행 중 세션이 있다면 가장 최신 해석과 판단"
+  5:
     file: "../../data/09_journal/{이번주}/YYYY-MM-DD.md"
     purpose: "이번 주의 실제 활동 기록"
-  5:
+  6:
     file: "../../data/09_journal/{직전주}/session.md"
     purpose: "지난주 약속 점검"
-  6:
+  7:
     file: "../../data/06_goals/progress.yaml"
     purpose: "누적 진척도 변화 체크"
-  7:
+  8:
     file: "../../data/08_now/decisions.yaml"
     purpose: "방향성에 영향을 준 최근 결정"
-  8:
+  9:
     file: "../../data/01_identity/values.yaml"
     purpose: "추천이 가치관과 어긋나지 않는지 점검"
 
@@ -63,4 +66,5 @@ coaching_hints:
     - "어떤 G-ID에 연결되는가"
     - "에너지와 현실 제약 안에서 가능한가"
 
+work_in_progress_path: "../../data/09_journal/{decade}/{year}/{month}/{week}/session_draft.md"
 output_path: "../../data/09_journal/{decade}/{year}/{month}/{week}/session.md"

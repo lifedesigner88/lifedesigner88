@@ -20,10 +20,10 @@ priority_reads:
     purpose: "현재 장기/중간/단기 목표 구조"
   4:
     file: "../../data/06_goals/progress.yaml"
-    purpose: "각 목표의 현재 진척도"
+    purpose: "tree.yaml 기준 각 목표의 현재 진척도"
   5:
-    file: "../../data/09_journal/{최근 session}.md"
-    purpose: "직전 주간 코칭 맥락"
+    file: "../../data/09_journal/{최근 session_draft 또는 session}.md"
+    purpose: "가장 최신 세션 맥락"
   6:
     file: "../../data/08_now/decisions.yaml"
     purpose: "최근 주요 의사결정과 방향성 맥락"

@@ -1,6 +1,10 @@
-# weekly_review.md — 주간 리뷰 저널 양식
+# weekly_review.md — private extracted weekly review template
 
 저장 위치: `doc/journal/{decade}/{year}/{month}/{week}/weekly_review.md`
+
+이 문서는 `data/09_journal/`와 `session.md`를 바탕으로 요청 시 뽑아내는
+private 주간 리뷰 추출물 템플릿이다.
+정본은 아니며, 읽기 좋은 요약/서사 문서를 만들 때 사용한다.
 
 ---
 
@@ -65,7 +69,7 @@
 
 ## 작성 규칙
 
-- **소스**: `session.md` + 해당 주 daily 파일 전수
+- **소스**: `data/09_journal/`의 `session.md` + 해당 주 daily 파일 전수
 - **날짜 표기**: `M/D(요일)` 형식 — 예) 3/25(수)
 - **하루 제목**: 그날의 에너지·사건을 2~4단어로 압축 — 예) `면접 당일`, `의도적 회복`, `개발 몰입`
 - **서술 톤**: 1인칭 과거형. 건조하지 않게, 과장하지 않게. 사실이 감각을 끌고 오도록.
@@ -73,4 +77,5 @@
 - **핵심 결정**: session.md의 `decisions_made` 기반. 5개 이내.
 - **배운 것**: session.md의 `learnings` 기반. 단순 사실보다 의미 중심으로.
 - **다음 주 계획**: session.md의 `assigned_goals` + `follow_up` 기반. 날짜·시간 명시.
+- **역할 구분**: 이 문서는 private extracted output 이며, 원본 상태/결정/목표 데이터는 `hupository/data/`를 기준으로 본다.
 - **이 시리즈에 대해** 섹션은 첫 번째 리뷰(W12)에만 포함.
