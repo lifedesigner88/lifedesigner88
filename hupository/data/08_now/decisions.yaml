@@ -38,7 +38,7 @@ decisions:
       합격 시 세종클래스 최소 유지 모드로 전환.
     alternatives_rejected: []
     outcome: "pending"
-    outcome_note: null
+    outcome_note: "3/25 최종 결과 예비 3번(303등). 3/30 1차 서류 등록 마감 이후 추가합격 연락 가능성 대기 중."
 
   - id: "D004"
     date: "2026-02"
@@ -78,7 +78,7 @@ decisions:
       - option: "소마 불합격 시 프로젝트 중단"
         why_rejected: "이미 확보한 데모와 방향성을 버리기엔 장기 가치가 큼"
     outcome: "pending"
-    outcome_note: "3/25 결과 발표 후 합격/탈락 시나리오에 따라 운영 방식만 분기"
+    outcome_note: "3/25 결과가 예비 3번(303등)으로 확인돼, 외부 결과와 무관하게 PersonaMirror를 계속 밀어야 한다는 판단이 더 강화됨."
 
   - id: "D007"
     date: "2026-03-25"
@@ -95,7 +95,7 @@ decisions:
       - option: "장기 비전 설명을 길게 앞세우기"
         why_rejected: "300명 노션 환경에서는 추상 비전보다 짧은 카피와 이미 만든 증거가 더 잘 읽힌다"
     outcome: "pending"
-    outcome_note: "3/25 결과 발표 전 리팩토링과 실제 공유 반응으로 검증 예정"
+    outcome_note: "3/25 결과가 예비 3번(303등)으로 나와 합격자 전용 즉시 공유는 보류됐지만, Creator PR front door 전략은 waitlist 대기/독립 PR 자산으로 계속 유지."
 
   # ─ 새 결정은 아래에 추가 ─
   # - id: "D006"
