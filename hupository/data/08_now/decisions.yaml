@@ -97,6 +97,23 @@ decisions:
     outcome: "pending"
     outcome_note: "3/25 결과가 예비 3번(303등)으로 나와 합격자 전용 즉시 공유는 보류됐지만, Creator PR front door 전략은 waitlist 대기/독립 PR 자산으로 계속 유지."
 
+  - id: "D008"
+    date: "2026-03-26"
+    decision: "PersonaMirror의 팀 유사도/사람 추천 기능은 보류하고, 예비합격 공개용 최소 리팩토링 후 프로젝트 해부·도메인 학습을 먼저 진행"
+    rationale: >
+      예비 3번 상태가 되면서 원래 상정했던 소마 커뮤니티 기능의 즉시성이 약해졌다.
+      또한 사람 추천은 pgvector나 임베딩 거리 계산만 익히면 되는 문제가 아니라,
+      사람이 왜 잘 맞는다고 느끼는지, 추천 근거를 어떻게 설명할지,
+      대화 후 피드백을 어떻게 다시 학습 루프로 넣을지까지 함께 다뤄야 하는 도메인이라는 판단이 생겼다.
+      현재 상태에서 계속 바이브코딩만으로 밀면 추천 이유를 설명하지 못한 채 기능만 붙이는 위험이 크다고 봤다.
+    alternatives_rejected:
+      - option: "pgvector 기반 사람 추천 MVP를 바로 개발"
+        why_rejected: "추천 근거와 신뢰성을 설명하지 못한 채 기능만 늘어날 가능성이 큼"
+      - option: "소마 커뮤니티 기능을 계속 확장"
+        why_rejected: "예비 3번 상태에서는 당장 사용할 커뮤니티 맥락과 긴급성이 약해짐"
+    outcome: "pending"
+    outcome_note: "당분간은 Creator PR 데모를 공개 가능한 수준으로 정리하고, 이후 PersonaMirror 해부와 사람-사람 매칭/팀핏/코칭 도메인 학습을 진행한다. 3/26 작업 기준 Team-fit Explorer 자체는 PR-first shell 안의 stable v1 demo surface까지 정리되었지만, 추천 고도화는 계속 보류한다."
+
   # ─ 새 결정은 아래에 추가 ─
   # - id: "D006"
   #   date: "YYYY-MM"
