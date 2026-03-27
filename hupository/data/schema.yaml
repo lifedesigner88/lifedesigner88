@@ -10,7 +10,12 @@ person_namespace:
   owner: parksejong
   note: "이 저장소 자체가 한 사람의 네임스페이스. 공개 데이터 루트(hupository/)가 곧 사람 단위."
   required_files:
-    - index.yaml
+    - README.md
+    - data/profile.yaml
+
+private_runtime_note: >
+  코칭 규칙, 프롬프트, AI 런타임 계약은 private repository 루트의 /ai 레이어에서 관리한다.
+  이 공개 mirror 에서는 data 구조와 공개 가능한 상태만 설명한다.
 
 layers:
   01_identity:
@@ -99,9 +104,9 @@ layers:
       - "{decade}/{year}/{month}/{week}/session_draft.md"
       - "{decade}/{year}/{month}/{week}/session.md"
     prompts:
-      - ai/prompts/daily_reflection.md
-      - ai/prompts/weekly_coaching.md
-      - ai/prompts/monthly_review.md
+      - "private ai layer (/ai/prompts/daily_reflection.md)"
+      - "private ai layer (/ai/prompts/weekly_coaching.md)"
+      - "private ai layer (/ai/prompts/monthly_review.md)"
     operating_rule: >
       09_journal 은 "왜 이렇게 보고 있는가?"를 담는 레이어다.
       daily 는 하루 단위 사실/감정/배움, session_draft 는 진행 중인 해석과 질문,
@@ -112,27 +117,7 @@ layers:
       [주 1회] recent daily + 직전 session + lifetime/tree/snapshot →
                session_draft.md 작성/보강 후 session.md 확정.
       [월 1회] recent session + lifetime/tree/progress/snapshot →
-               ai/outputs/monthly_review/YYYY-MM.md 생성.
-
-  ai_layer:
-    purpose: "GPT 코칭 및 파생 문서 레이어"
-    format: mixed
-    visibility_default: public
-    files:
-      - context/weekly_coaching.yaml
-      - context/next_step.yaml
-      - prompts/daily_reflection.md
-      - prompts/weekly_coaching.md
-      - prompts/monthly_review.md
-      - prompts/resume_prompt.md
-      - prompts/intro_prompt.md
-      - prompts/matching_prompt.md
-      - outputs/monthly_review/
-      - outputs/next_step/
-      - outputs/resume_ko.md
-      - outputs/self_intro_30sec.md
-      - outputs/self_intro_full.md
-      - outputs/profile_tags.yaml
+               private doc/journal/monthly_review/YYYY-MM.md 생성.
 
 # ─────────────────────────────────────────
 # 데이터 표기 규칙 (Conventions)
@@ -148,7 +133,7 @@ conventions:
     example: "1988년 9월생 → 2026년 3월 기준 만 37세"
     applied_to:
       - "lifetime.yaml 의 age_range"
-      - "index.yaml 의 current_age"
+      - "private ai/index.yaml 의 current_age"
       - "모든 파일의 나이 관련 필드"
     note: "한국식 세는나이(+1), 연나이 사용 금지."
 

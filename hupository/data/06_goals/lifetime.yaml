@@ -109,7 +109,7 @@ goal_discovery_framework:
   when_to_use: >
     lifetime_mission 또는 decade_mission 이 비어있거나,
     사용자가 장기목표를 정하는 데 막막함을 느낄 때.
-  how: "ai/prompts/monthly_review.md 참조"
+  how: "private AI layer(/ai/prompts/monthly_review.md) 참조"
   current_sdg_alignment:
     # values.yaml · vectors.yaml 기준 현재 높은 공명 가능성
     - sdg: 4
