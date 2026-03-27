@@ -23,7 +23,7 @@ layers:
     format: yaml
     visibility_default: public
     files:
-      - core.yaml        # 이름, 생년, 연락처, 링크
+      - core.yaml        # 기본 신원, 한 줄 요약, 가벼운 방향 신호
       - persona.yaml     # 자기인식, 별칭, 반복 역할
       - values.yaml      # 가치관, 세계관
 
