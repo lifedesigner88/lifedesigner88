@@ -1,9 +1,9 @@
 ---
 session: 2026-W13
-period: "2026-03-23 ~ 2026-03-29"
-generated_on: "2026-03-25"
+period: "2026-03-23(월) ~ 2026-03-29(일)"
+generated_on: "2026-03-25(수)"
 based_on:
-  daily_files: "2026-03-23 ~ 2026-03-25"
+  daily_files: "2026-03-23(월) ~ 2026-03-25(수)"
   prev_session: "hupository/data/09_journal/2020s/2026/03/W12/session.md"
   note: "3/25 밤 세션 마감본 — 예비 3번 결과, PR 자산 재정렬, 공개 반응까지 반영"
 ---

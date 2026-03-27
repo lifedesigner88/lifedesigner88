@@ -100,7 +100,7 @@ layers:
     format: mixed
     visibility_default: private
     files:
-      - "{decade}/{year}/{month}/{week}/YYYY-MM-DD.md"
+      - "{decade}/{year}/{month}/{week}/YYYY-MM-DD(요일).md"
       - "{decade}/{year}/{month}/{week}/session_draft.md"
       - "{decade}/{year}/{month}/{week}/session.md"
     prompts:
@@ -112,7 +112,7 @@ layers:
       daily 는 하루 단위 사실/감정/배움, session_draft 는 진행 중인 해석과 질문,
       session.md 는 주간 코칭의 확정 결론을 담는다.
     flow: >
-      [매일]   GPT 대화 → {decade}/{year}/{month}/{week}/YYYY-MM-DD.md 저장.
+      [매일]   GPT 대화 → {decade}/{year}/{month}/{week}/YYYY-MM-DD(요일).md 저장.
       [세션 진행 중] 판단/질문/미확정 해석은 session_draft.md 에 누적.
       [주 1회] recent daily + 직전 session + lifetime/tree/snapshot →
                session_draft.md 작성/보강 후 session.md 확정.
@@ -140,6 +140,11 @@ conventions:
   date:
     standard: "ISO 8601"
     rule: "날짜는 YYYY-MM-DD, 주는 YYYY-WXX (ISO 8601 월요일 시작)"
+
+  journal_daily_filename:
+    standard: "YYYY-MM-DD(요일).md"
+    rule: "09_journal 의 daily 파일명은 ISO 날짜 뒤에 한국어 요일을 괄호로 붙인다."
+    example: "2026-03-27(금).md"
 
   week:
     standard: "ISO 8601"
