@@ -191,6 +191,60 @@ decisions:
     outcome: "success"
     outcome_note: "2026-03-27 대화에서, 이 경험이 훗날 소마 팀 운영과 협업 태도의 기준으로 남아야 한다는 점을 사용자 본인이 분명히 확인했다."
 
+  - id: "D013"
+    date: "2026-03-28"
+    decision: "현재 팀빌딩 공개용 데모 프로젝트명은 `find-team-feat`으로 고정한다"
+    rationale: >
+      초기에는 Hupository 기반 장기 비전을 설명하는 이름으로 `PersonaMirror`를 썼고,
+      3/25에는 800명 단체카톡방 운영자와 대화한 뒤 공유 링크의 front door를 박세종 PR 중심으로 급하게 pivot하며
+      `sejong-pr` 감각이 생겼다.
+      그러나 3/28 세션에서 현재 공개 페이지의 1차 고객은 `팀빌딩 문제에 막막함을 느끼는 사람`이며,
+      첫 화면은 내 소개보다 `나는 이 문제를 어떻게 접근하고 있는가`를 더 먼저 보여줘야 한다는 점이 분명해졌다.
+      `find-team-feat`은 지금 데모가 약속하는 범위인 `후보를 좁히고 대화를 시작하게 돕는 팀빌딩 문제 접근`을
+      `sejong-pr`보다 더 직접적으로 드러낸다.
+    alternatives_rejected:
+      - option: "PersonaMirror 유지"
+        why_rejected: "장기 비전 이름으로는 유효하지만, 현재 팀빌딩 공개 데모의 문제 중심 front door를 바로 설명하기엔 너무 넓다"
+      - option: "sejong-pr 유지"
+        why_rejected: "박세종 PR front door라는 중간 피벗은 설명하지만, 독자가 당장 겪는 팀빌딩 문제를 전면에 두지는 못한다"
+    outcome: "success"
+    outcome_note: "앞으로 현재 공개용 데모 프로젝트와 관련된 문서·카피에서는 `find-team-feat`을 우선 사용한다."
+
+  - id: "D014"
+    date: "2026-03-28"
+    decision: "현재 팀빌딩 공개용 데모 프로젝트명은 `team-fit`으로 다시 축약해 고정한다"
+    rationale: >
+      같은 날 `find-team-feat`까지는 문제 중심 방향이 잘 잡혔지만,
+      실제로 반복해서 부르고 공유하기에는 이름이 길다는 판단이 생겼다.
+      `team-fit`은 지금 데모가 다루는 핵심 문제를 유지하면서도 더 짧고,
+      노션·카피·대화에서 반복 사용하기 쉬운 이름이다.
+    alternatives_rejected:
+      - option: "find-team-feat 유지"
+        why_rejected: "문제의식은 분명하지만 실제 공유와 반복 호출에 다소 길다"
+      - option: "sejong-pr 재사용"
+        why_rejected: "박세종 PR front door의 맥락은 담지만 팀빌딩 문제 자체를 이름에서 직접 드러내지 못한다"
+    outcome: "success"
+    outcome_note: "앞으로 현재 공개용 데모 프로젝트와 관련된 문서·카피에서는 `team-fit`을 우선 사용한다."
+
+  - id: "D015"
+    date: "2026-03-28"
+    decision: "team-fit의 root experience는 박세종 PR 소개보다 `누구와 먼저 대화할지 좁히는` 탐색형 데모로 둔다"
+    rationale: >
+      3/28 개발 과정에서 현재 독자가 가장 먼저 반응하는 지점은 `박세종이 누구인가` 자체보다
+      `팀빌딩에서 누구와 먼저 대화해야 하는지 막막하다`는 문제라는 점이 더 선명해졌다.
+      그래서 기존 team-fit checklist를 유지하기보다
+      `문제 한 문장 + MBTI 5축 + SDGs 최대 3개 + 800자 Markdown + AI 후속 질문 3회`의 interview-first flow로 바꾸고,
+      추천도 `최적 팀원 확정`이 아니라 `우선 대화해볼 3명`을 제안하는 conversation-priority 구조로 재설계했다.
+      결과 화면 역시 단순 판정 페이지보다 recommendation, fit-score feedback, candidate directory,
+      lighter transcript UI를 포함한 editable workspace 쪽이 현재 제품 약속과 더 잘 맞는다고 판단했다.
+    alternatives_rejected:
+      - option: "박세종 PR 중심 소개 페이지를 계속 root experience로 유지"
+        why_rejected: "신뢰 레이어로는 유효하지만, 팀빌딩 문제를 풀고 싶어 들어온 독자의 현재 고민과 첫 접속이 느려진다"
+      - option: "추천 결과를 최적 팀원 확정처럼 보이는 매칭기 구조로 설계"
+        why_rejected: "현재 데이터와 도메인 이해 수준에서 과한 확실성을 약속하게 되고, 실제 가치인 대화 시작 지원을 흐릴 수 있다"
+    outcome: "success"
+    outcome_note: "앞으로 team-fit은 `대화 우선순위 설계`를 중심 철학으로 삼고, PR 정보는 이를 받쳐주는 신뢰 레이어로 배치한다."
+
   # ─ 새 결정은 아래에 추가 ─
   # - id: "D006"
   #   date: "YYYY-MM"
