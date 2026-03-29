@@ -125,7 +125,7 @@ goals:
             type: short_term
             title: "Hupository 강의 시리즈 기획 (강의 소재화)"
             horizon: "3개월"
-            status: not_started
+            status: in_progress
             parent: "G-LIFEDESIGN-SVC"
           - id: "G-LS-02"
             type: short_term
@@ -150,11 +150,11 @@ goals:
 focus_now:
   - id: "G-AI-03"        # SW마에스트로 17기 — 결과 대기 (3/25)
     priority: 1
-  - id: "G-PM-01"        # PersonaMirror MVP (3/25)
+  - id: "G-SEJONG-01"    # 세종클래스 주차별 업로드 리듬
     priority: 2
-  - id: "G-SEJONG-03"    # 클래스101 미팅 (3/27)
+  - id: "G-LS-01"        # Hupository 사용법 콘텐츠
     priority: 3
-  - id: "G-SEJONG-01"    # 첫 유료 수강생 확보
+  - id: "G-PM-01"        # team-fit 공유 패키지
     priority: 4
 
 # ─────────────────────────────────────────

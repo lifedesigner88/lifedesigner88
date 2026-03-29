@@ -141,6 +141,20 @@ conventions:
     standard: "ISO 8601"
     rule: "날짜는 YYYY-MM-DD, 주는 YYYY-WXX (ISO 8601 월요일 시작)"
 
+  datetime_local:
+    standard: "ISO 8601 with local offset"
+    rule: "시간은 YYYY-MM-DDTHH:MM:SS+09:00 같이 로컬 오프셋 포함 형식을 권장한다."
+
+  journal_time_fields:
+    standard:
+      - "record_started_at"
+      - "consultation_started_at"
+      - "timezone"
+      - "time_reference_note"
+    rule: >
+      daily 와 session 기록에는 가능하면 기록 시작 시각과 상담 시작 시각을 함께 남긴다.
+      기록 시작 시각이 근사치라면 time_reference_note 에 그 사실을 남긴다.
+
   journal_daily_filename:
     standard: "YYYY-MM-DD(요일).md"
     rule: "09_journal 의 daily 파일명은 ISO 날짜 뒤에 한국어 요일을 괄호로 붙인다."
