@@ -101,7 +101,6 @@ layers:
     visibility_default: private
     files:
       - "{decade}/{year}/{month}/{week}/YYYY-MM-DD(요일).md"
-      - "{decade}/{year}/{month}/{week}/session_draft.md"
       - "{decade}/{year}/{month}/{week}/session.md"
     prompts:
       - "private ai layer (/ai/prompts/daily_reflection.md)"
@@ -109,13 +108,12 @@ layers:
       - "private ai layer (/ai/prompts/monthly_review.md)"
     operating_rule: >
       09_journal 은 "왜 이렇게 보고 있는가?"를 담는 레이어다.
-      daily 는 하루 단위 사실/감정/배움, session_draft 는 진행 중인 해석과 질문,
-      session.md 는 주간 코칭의 확정 결론을 담는다.
+      daily 는 하루 단위 사실/감정/배움,
+      session.md 는 월요일에 직전 한 주를 회고하며 확정하는 주간 코칭 결론을 담는다.
     flow: >
       [매일]   GPT 대화 → {decade}/{year}/{month}/{week}/YYYY-MM-DD(요일).md 저장.
-      [세션 진행 중] 판단/질문/미확정 해석은 session_draft.md 에 누적.
-      [주 1회] recent daily + 직전 session + lifetime/tree/snapshot →
-               session_draft.md 작성/보강 후 session.md 확정.
+      [주 1회/월요일] 직전 주 recent daily + 직전 session + lifetime/tree/snapshot →
+               coaching framework 평가를 포함한 session.md 확정.
       [월 1회] recent session + lifetime/tree/progress/snapshot →
                private doc/journal/monthly_review/YYYY-MM.md 생성.
 
@@ -164,7 +162,8 @@ conventions:
     standard: "ISO 8601"
     rule: "한 주는 월요일 00:00 ~ 일요일 23:59"
     saturday: "주간 회고 메모 정리"
-    sunday: "주간 코칭 세션"
+    sunday: "주간 기록 마감"
+    monday: "직전 한 주 주간 코칭 세션"
 
 confidence_scale:
   high: "직접 확인된 사실 (본인 제공, 공식 문서)"

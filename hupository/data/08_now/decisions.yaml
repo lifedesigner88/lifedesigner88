@@ -37,8 +37,8 @@ decisions:
       AI 역량 고도화와 네트워크 확보를 위한 최선의 기회.
       합격 시 세종클래스 최소 유지 모드로 전환.
     alternatives_rejected: []
-    outcome: "pending"
-    outcome_note: "3/25 최종 결과 예비 3번(303등). 3/30 1차 서류 등록 마감 이후 추가합격 연락 가능성 대기 중."
+    outcome: "success"
+    outcome_note: "3/25 최종 결과는 예비 3번(303등)이었고, 2026-03-30 추가합격 문자 수신으로 최종 합격이 확정됐다."
 
   - id: "D004"
     date: "2026-02"

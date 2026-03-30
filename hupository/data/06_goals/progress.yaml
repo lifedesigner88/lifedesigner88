@@ -2,7 +2,7 @@
 # tree.yaml 기준 각 목표의 현재 진척과 근거를 기록합니다.
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 
-as_of: "2026-03-29"
+as_of: "2026-03-30"
 tracking_basis: "tree.yaml"
 
 goal_progress:
@@ -17,8 +17,8 @@ goal_progress:
       target: null
     notes: >
       플랫폼과 초기 유입 기반은 열렸고, 첫 결제 전환이 다음 분기점이다.
-      2026 주간 리뷰 시리즈를 시작했고, W12 에피소드 업로드를 완료했다.
-      오늘은 세종클래스 주차별 유튜브 업로드를 실제 공개물로 다시 잇는 쪽으로 정리했고,
+      2026 주간 리뷰 시리즈는 2026-03-29 기준 W13 에피소드 업로드까지 완료했다.
+      세종클래스 주차별 유튜브 업로드 리듬을 실제 공개물로 다시 잇기 시작한 상태이며,
       다음 공개물은 `휴포지토리 사용법` 콘텐츠로 이어갈 계획이다.
       다만 실제 주간 업로드 리듬은 아직 안정화 중이다.
 
@@ -73,8 +73,8 @@ goal_progress:
 
   - id: "G-AI-03"
     title: "SW마에스트로 17기 합격 → AI 네트워크·역량 확보"
-    status: in_progress
-    completion_pct: 80
+    status: done
+    completion_pct: 100
     milestones:
       - step: "코딩테스트"
         status: passed
@@ -83,12 +83,15 @@ goal_progress:
       - step: "면접"
         status: completed
         datetime: "2026-03-20T09:30:00+09:00"
-      - step: "최종 발표"
-        status: pending
-        datetime: "2026-03-25T14:00:00+09:00"
+      - step: "최종 결과"
+        status: passed
+        announced_on: "2026-03-25T14:00:00+09:00"
+        accepted_on: "2026-03-30"
+        note: "예비 3번에서 추가합격 문자 수신"
     notes: >
-      결과에 따라 단기 운영 전략이 갈린다.
-      합격 시 팀빌딩 가속 옵션, 불합격 시 PersonaMirror와 클래스101 쪽으로 무게 이동.
+      2026-03-30 기준 예비 3번에서 추가합격 문자 수신으로 최종 합격이 확정됐다.
+      이제 AI 네트워크·팀빌딩 가속 옵션이 실제 경로가 되었고,
+      등록 및 팀빌딩 준비가 단기 운영 전략의 최우선 분기점이 되었다.
 
   - id: "G-LS-01"
     title: "Hupository 강의 시리즈 기획 (강의 소재화)"
