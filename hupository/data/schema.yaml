@@ -158,6 +158,14 @@ conventions:
     rule: "09_journal 의 daily 파일명은 ISO 날짜 뒤에 한국어 요일을 괄호로 붙인다."
     example: "2026-03-27(금).md"
 
+  public_anonymization:
+    standard: "public mirror third-party anonymization"
+    rule: >
+      `hupository/`는 공개 mirror 이므로, 타인의 실명과 직접 식별자는 기본적으로 익명화한다.
+      역할명, 후보 ID, 이니셜, 관계 설명 같은 비실명 표기를 우선 사용한다.
+      이 규칙은 주로 `data/` 아래 공개 저장 대상에 적용한다.
+    private_exception: "`doc/`와 `ai/` 같은 private 레이어는 필요하면 실명을 유지할 수 있다."
+
   week:
     standard: "ISO 8601"
     rule: "한 주는 월요일 00:00 ~ 일요일 23:59"
