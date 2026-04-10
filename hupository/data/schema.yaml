@@ -17,6 +17,10 @@ private_runtime_note: >
   코칭 규칙, 프롬프트, AI 런타임 계약은 private repository 루트의 /ai 레이어에서 관리한다.
   이 공개 mirror 에서는 data 구조와 공개 가능한 상태만 설명한다.
 
+private_companion_note: >
+  private repository 에는 session_context, raw journal, monthly review 같은 companion layer 가 있지만
+  이는 public schema 의 일부가 아니며 운영 계약은 private repo 루트의 AGENTS.md 와 /ai 에서 관리한다.
+
 layers:
   01_identity:
     purpose: "핵심 신원 및 정체성 사실"
@@ -94,30 +98,6 @@ layers:
       snapshot.yaml 은 이벤트 발생 시 갱신하고 월 1회 정리한다.
       긴 서사, 감정, 판단 과정과 전술 메모는 private/journal/raw 에 두고 여기에는 durable state 만 남긴다.
       업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
-
-private_companion_layers:
-  journal_raw:
-    canonical_path: "../private/journal/raw/"
-    purpose: "일일 리플렉션 + 주간 코칭 레이어 — 장기목표 정렬과 다음 행동 점검"
-    format: mixed
-    visibility_default: private
-    files:
-      - "{decade}/{year}/{month}/{week}/YYYY-MM-DD(요일).md"
-      - "{decade}/{year}/{month}/{week}/session.md"
-    prompts:
-      - "private ai layer (/ai/prompts/daily_reflection.md)"
-      - "private ai layer (/ai/prompts/weekly_coaching.md)"
-      - "private ai layer (/ai/prompts/monthly_review.md)"
-    operating_rule: >
-      private/journal/raw 는 "왜 이렇게 보고 있는가?"를 담는 private 정본 레이어다.
-      daily 는 하루 단위 사실/감정/배움,
-      session.md 는 월요일에 직전 한 주를 회고하며 확정하는 주간 코칭 결론을 담는다.
-    flow: >
-      [매일]   GPT 대화 → private/journal/raw/{decade}/{year}/{month}/{week}/YYYY-MM-DD(요일).md 저장.
-      [주 1회/월요일] 직전 주 recent daily + 직전 session + lifetime/tree/snapshot →
-               coaching framework 평가를 포함한 session.md 확정.
-      [월 1회] recent session + lifetime/tree/progress/snapshot →
-               private/journal/monthly_review/YYYY-MM.md 생성.
 
 # ─────────────────────────────────────────
 # 데이터 표기 규칙 (Conventions)
