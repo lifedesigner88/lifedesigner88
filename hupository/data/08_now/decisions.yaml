@@ -2,7 +2,7 @@
 # AI가 현시점 맥락을 빠르게 파악하고 다음 행동을 논의할 때 읽는 live decision 레이어.
 # 결과가 끝났거나 다른 결정에 의해 대체된 항목은 ../09_history/decisions/ 로 이동한다.
 
-as_of: "2026-04-10"
+as_of: "2026-04-11"
 archive_ref:
   decisions: "../09_history/decisions/2026-04.yaml"
 selection_rule:
@@ -76,8 +76,10 @@ decisions:
         why_rejected: "사용자에게 직접 약속하는 가치보다 내부 구조화 엔진으로 둘 때 제품 정의가 더 선명하다"
     outcome: "pending"
     outcome_note: >
-      현재 계약 초안은 encounter / relation key / report schema / consent-unlock 구조와
-      self / pair / group report 누적 모델, 6주 MVP 마일스톤(M0~M5)까지 정리된 상태다.
+      현재 working scope는 encounter / relation key / report schema / consent-unlock 구조와
+      relation repository / personal repository 누적 모델까지 포함한다.
+      4/29 14:00 배포를 우선 기준으로 두고,
+      2인 초기 MVP를 먼저 닫은 뒤 3~4인 확장과 추천 기능은 후속 단계에서 검토한다.
       큰 방향은 팀이 합의한 상태이고,
       다음 단계는 멘토 피드백과 함께 first user loop, M0 계약, MVP 범위를 차차 구체화하는 것이다.
 
@@ -117,3 +119,27 @@ decisions:
         why_rejected: "동시 집중 용량이 2인 상황에서 현재는 seed 투자 가능성을 만드는 경로에 더 명확히 무게를 둘 필요가 있다"
     outcome: "pending"
     outcome_note: "2026-04-10 기준 현재 제약의 중심은 `세종클래스 첫 매출`보다 `11월 말 seed 투자 가능 수준 도달`이다."
+
+  - id: "D023"
+    date: "2026-04-11"
+    decision: "첫 초기 MVP는 2인 relation_key 기반 누적 저장소 구조를 우선 구현하고, 2026-04-29 14:00 배포를 현재 기준 마감으로 둔다"
+    rationale: >
+      지금 제품의 핵심 가치는 단일 encounter 저장이 아니라,
+      특정 유저 조합이 relation_key를 이루고 같은 조합의 반복 대화가 relation repository에 누적되며,
+      동시에 각 개인의 personal repository에도 반영된다는 점에 있다.
+      처음부터 3~4인 완전 대응이나 추천 기능까지 함께 구현하려 하면
+      4월 안에 end-to-end 데모를 닫기 어렵고,
+      반대로 encounter 1회 저장만 우선 구현하면 이 제품만의 구조적 차별점이 흐려진다.
+      따라서 4/29에는 2인 조합 기준의 로그인, encounter 생성/초대, 각 기기 녹음 파일 업로드,
+      worker 처리, relation/personal repository 반영, report 조회까지를 우선 완성하는 편이 맞다.
+    alternatives_rejected:
+      - option: "처음부터 3~4인 조합과 추천 기능까지 함께 구현"
+        why_rejected: "현재 기간과 팀 리소스 안에서 end-to-end 품질을 보장하기 어렵고, 출시 마감이 흔들릴 가능성이 크다"
+      - option: "개별 encounter 저장만 먼저 구현하고 relation repository는 뒤로 미룬다"
+        why_rejected: "반복 대화 누적과 자기 이해라는 제품의 본질이 약해져 팀 설명과 차별점이 흐려질 수 있다"
+    outcome: "pending"
+    outcome_note: >
+      2026-04-11 회의 전 기준 working decision이다.
+      DB는 우선 Supabase free tier를 사용하고,
+      배포는 demo-infra의 Team-310 경로와 Lightsail 인스턴스 구조를 현재 기준으로 둔다.
+      팀 회의 후 세부 범위와 저장 전략은 다시 정리한다.

@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-04-10"
+as_of: "2026-04-11"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -15,9 +15,22 @@ active_tracks:
     overall_rank: 303
     waitlist_rank: 3
     team_status: "핵심 3인 팀 구성 완료"
-    current_phase: "mentor_matching + mvp_contracting"
+    current_phase: "mentor_matching + 2026-04-29_mvp_build"
     product_direction: "Hupository를 내부 엔진으로 두는 RRS 기반 오프라인 관계 리포팅 플랫폼"
     current_role: "backend / infra"
+    team_role_split:
+      owner: "backend / infra + workspace / ci-cd"
+      teammate_a: "product / frontend / mentor outreach"
+      teammate_b: "ai worker / audio pipeline"
+    mvp_target_release: "2026-04-29T14:00:00+09:00"
+    mvp_working_scope:
+      release_shape: "2인 encounter 중심 초기 MVP"
+      core_value: "같은 조합의 반복 대화를 relation repository와 personal repository에 함께 누적"
+      relation_unit: "2~4명 user 조합별 relation_key"
+      first_supported_group_size: 2
+      future_extension: "3~4인 group encounter와 신뢰 기반 오프라인 만남 추천"
+      initial_stack: "React 19 / FastAPI / Python 3.11 / AI worker / Supabase free tier / Lightsail"
+      deployment_reference: "demo-infra의 Team-310 경로를 기준으로 Lightsail 인스턴스에 배포"
     mentor_matching:
       target_mentors: 3
       candidate_pool_estimate: 130
@@ -26,11 +39,12 @@ active_tracks:
       meetings_scheduled: 5
       selection_window: "2026-04 ~ 2026-05"
       desired_lock_in: "2026-04"
-    next_milestone: "담당 멘토 3인 매칭과 encounter / relation key / report schema / consent-unlock 구조 고정"
+    next_milestone: "담당 멘토 3인 매칭과 4/29 초기 MVP용 encounter / relation key / report schema / relation repository 구조 고정"
     notes: >
       4/7 팀 브랜딩과 역할 분담을 닫았고, 4/8 Nx 모노레포와 Lightsail 배포로 초기 개발 틀을 만들었다.
       4/9 첫 멘토 피드백 이후 큰 방향은 팀 합의가 됐고,
-      현재는 멘토 미팅과 병행해 6주 MVP 범위와 설명 문장을 투자 가능 수준으로 정리하는 단계다.
+      현재는 멘토 미팅과 병행해 4/29 14:00에 배포할 2인 초기 MVP 범위와 설명 문장을 투자 가능 수준으로 정리하는 단계다.
+      핵심 구조는 특정 유저 조합이 relation_key를 이루고, 같은 조합의 대화를 relation repository와 각 개인의 personal repository에 함께 누적하는 모델이다.
 
   sejongclass:
     status: active
