@@ -88,16 +88,31 @@ layers:
     update_cadence: "event_driven + monthly_review"
     files:
       - snapshot.yaml    # 각 트랙의 현재 상태, 제약조건, 보류 중인 분기점
-      - decisions.yaml   # 주요 의사결정 로그 (why 포함, 장기효력 있는 결정만)
-    history_path: "08_now/history/{YYYY-MM}.yaml"
+      - decisions.yaml   # 현재 판단을 직접 움직이는 live decision만
+    archive_path: "09_history/"
     operating_rule: >
       08_now 는 "그래서 지금 상태가 무엇인가?"에 답하는 정본이다.
       daily/session 에서 나온 내용 중 다음 주에도 유효한 사실, 제약, 분기점만 압축해 승격한다.
       이벤트가 생기면 바로 갱신하고, 월 1회 정리한다.
     notes: >
       snapshot.yaml 은 이벤트 발생 시 갱신하고 월 1회 정리한다.
+      decisions.yaml 은 AI가 현시점 맥락을 빠르게 읽기 위한 live decision만 유지한다.
       긴 서사, 감정, 판단 과정과 전술 메모는 private/journal/raw 에 두고 여기에는 durable state 만 남긴다.
-      업데이트 전 이전 버전을 history/ 에 복사하여 스냅샷 이력 보존.
+      지나가거나 대체된 snapshot/decision 은 09_history/ 로 내려 보관한다.
+
+  09_history:
+    purpose: "과거 now 스냅샷과 닫힌 의사결정 보관 레이어"
+    format: yaml
+    visibility_default: public
+    files:
+      - now_snapshots/{YYYY-MM}.yaml
+      - decisions/{YYYY-MM}.yaml
+    operating_rule: >
+      08_now 에서 내려온 과거 스냅샷과 종료/대체된 결정을 보관한다.
+      현재 코칭에서는 기본 입력이 아니며, 과거 맥락 추적이 필요할 때만 읽는다.
+    notes: >
+      history 는 "예전에 무엇이었나?"를 위한 보관소다.
+      now 와 history 를 같은 레이어로 섞지 않고, 현재 정본과 과거 기록의 역할을 분리한다.
 
 # ─────────────────────────────────────────
 # 데이터 표기 규칙 (Conventions)
