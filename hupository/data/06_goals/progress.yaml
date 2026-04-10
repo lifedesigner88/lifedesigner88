@@ -45,7 +45,7 @@ goal_progress:
     status: in_progress
     completion_pct: 20
     notes: >
-      09_journal → 08_now 운영 루프는 작동 중이다.
+      private/journal/raw → 08_now 운영 루프는 작동 중이다.
       상위 데이터 자동 승격과 추출 자동화는 다음 단계다.
 
   - id: "G-PM-01"
