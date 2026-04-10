@@ -1,6 +1,6 @@
 # 현재 상태 스냅샷 — data/08_now/snapshot.yaml
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
-# 과거 스냅샷은 history/{YYYY-MM}.yaml 로 보관합니다.
+# 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
 as_of: "2026-04-10"
 
@@ -9,203 +9,97 @@ as_of: "2026-04-10"
 # ─────────────────────────────────────────
 active_tracks:
 
+  sw_maestro_17:
+    status: accepted
+    accepted_on: "2026-03-30"
+    overall_rank: 303
+    waitlist_rank: 3
+    team_status: "핵심 3인 팀 구성 완료"
+    current_phase: "mentor_matching + mvp_contracting"
+    product_direction: "Hupository를 내부 엔진으로 두는 RRS 기반 오프라인 관계 리포팅 플랫폼"
+    current_role: "backend / infra"
+    mentor_matching:
+      target_mentors: 3
+      candidate_pool_estimate: 130
+      target_meetings: 20
+      meetings_completed: 2
+      meetings_scheduled: 5
+      selection_window: "2026-04 ~ 2026-05"
+      desired_lock_in: "2026-04"
+    next_milestone: "담당 멘토 3인 매칭과 encounter / relation key / report schema / consent-unlock 구조 고정"
+    notes: >
+      4/7 팀 브랜딩과 역할 분담을 닫았고, 4/8 Nx 모노레포와 Lightsail 배포로 초기 개발 틀을 만들었다.
+      4/9 첫 멘토 피드백 이후 큰 방향은 팀 합의가 됐고,
+      현재는 멘토 미팅과 병행해 6주 MVP 범위와 설명 문장을 투자 가능 수준으로 정리하는 단계다.
+
   sejongclass:
-    status: active           # planned | running | paused | done
+    status: active
     description: "수학·물리·코딩·라이프디자인 강의 플랫폼 (단독 풀스택 운영)"
     url: https://sejongclass.kr
-    registered_users: 48    # 가입 유저 (지원서 기준 2026-03-14)
+    registered_users: 48
     paying_students: 0
     monthly_revenue_krw: 0
+    current_mode: "background_maintenance"
     next_milestone: "첫 유료 수강생 확보"
+    next_public_item: "`휴포지토리 사용법` 콘텐츠"
     blockers:
       - "홍보/마케팅 채널 없음"
       - "강의 콘텐츠 제작 속도"
-    new_series:
-      category: "인생"
-      title: "2026"
-      format: "매주 일요일 저녁 — 편집 없는 주간 리뷰 (한 주 실천 + 다음 주 계획 + 장기 계획)"
-      total: "52강 (52주)"
-      structure: "4계절 × 3개월 × 월 4~5강 (ISO 주차 기준, 총 ~52강)"
-      started: "2026-03-22"
-    notes: "사업자 미등록 데모 운영. 인생 카테고리 2026 주간 리뷰 시리즈를 시작했고, 2026-03-29에 W13 에피소드 업로드를 완료했다. 세종클래스 주차별 유튜브 업로드 리듬을 실제 공개물로 다시 잇기 시작한 상태이며, 다음 공개물은 `휴포지토리 사용법` 콘텐츠로 이어갈 계획이다."
+    notes: "장기적으로 중요한 축이지만, 당분간은 SW마에스트로 우선순위 뒤에서 유지 모드로 둔다."
 
-  sw_maestro_17:
-    status: accepted              # not_applied | applied | coding_test_passed | interview_scheduled | pending | accepted | rejected
-    coding_test_ended: "2026-03-07"
-    coding_test_result: "passed"  # 3/11 합격 통보
-    coding_test_passed_on: "2026-03-11"
-    interview_datetime: "2026-03-20T09:30:00+09:00"
-    interview_completed: "2026-03-20"
-    result_announced_on: "2026-03-25"
-    result: "accepted"
-    waitlist_rank: 3
-    overall_rank: 303
-    first_registration_deadline: "2026-03-30"
-    accepted_on: "2026-03-30"
+  ai_agent_dev:
+    status: active
+    current_project: "team-fit"
+    current_mode: "maintenance + learning asset"
+    stack: "React 19 / FastAPI / LangGraph / OpenAI API / PostgreSQL / Redis"
+    next_milestone: "필요 시 독립 공유용 카피·링크 패키지 정리"
     notes: >
-      3/25 최종 결과는 예비 3번(303등)이었고, 2026-03-30 추가합격 문자 수신으로 합격이 확정됐다.
-      2026-04-02~04를 거치며 핵심 3인 팀 구성이 사실상 마무리됐고,
-      이후 초점은 프로젝트 방향 정리, 팀 브랜딩, 멘토/엑스퍼트 매칭으로 이동했다.
-      2026-04-07에는 팀 프로필/단체 사진 촬영과 공개 반응을 통해 초기 팀 브랜딩 신호를 확보했다.
-      역할은 팀원 A가 휴포지토리 데이터를 모아 페르소나로 나타내는 코어 기능,
-      박세종이 백엔드와 Nx 기반 모노레포/배포 구조,
-      팀원 B가 프론트 화면과 멘토 일정 정렬을 맡는 쪽으로 구체화됐다.
-      2026-04-08에는 Nx 모노레포에 ai-worker, backend, frontend 기본 구성을 잡고
-      AWS Lightsail 배포까지 닫으며 초기 개발 틀을 확인했다.
-      2026-04-09 첫 멘토 피드백 이후, Hupository는 front product가 아니라
-      사람·상태·관계를 구조화하는 내부 엔진으로 두고,
-      현재 첫 제품 방향은 실제 오프라인 만남과 녹음 데이터를 바탕으로
-      self / pair / 3~4인 group report를 누적하는 `RRS 기반 관계 리포팅 플랫폼`으로 좁혀졌다.
-      가능한 모든 조합을 계산하는 것이 아니라 실제 발생한 encounter만 관계 자산으로 남기며,
-      큰 방향은 팀 합의가 됐고, 핵심 계약은 encounter, relation key, report schema, consent/unlock 구조를 중심으로 차차 구체화해간다.
-      현재 최우선 과제는 4~5월 동안 약 130명의 멘토 후보 중,
-      2026-06~11 6개월 동안 팀을 이끌 담당 멘토 3명을 매칭하는 일이다.
-      각 멘토는 약 100개 팀 중 최대 2개 팀만 맡을 수 있어 빠르게 접근해야 하며,
-      팀은 프로필/단체 사진과 팀 소개 PPT를 활용해 문제의식과 실행력을 함께 어필하는 전략을 쓰고 있다.
-      제품 측면의 즉시 과제는 멘토 미팅과 병행해 relation contract와 6주 MVP 마일스톤을 차례로 선명하게 만드는 것이다.
-
-  algorithm_study:
-    status: paused           # 목표 달성 후 일시 중단
-    platform: baekjoon
-    current_tier: "platinum_5"    # 3/7 기준 플래티넘 5 달성
-    sessions_completed: 30        # 30일 300문제 완성
-    target_sessions: 30
-    last_active: "2026-03-07"
-    notes: >
-      소마 코딩테스트용 30일 300문제 완성 후 중단.
-      유튜브 40분 풀이 영상 업로드 → 소마 지원자 유입.
-      클래스101 강의 제작 제안으로 이어짐.
+      team-fit은 독립 PR/학습 자산으로 유지한다.
+      추천 고도화보다 현재는 소마 제품 개발과 관계 리포팅 도메인 구체화를 우선한다.
 
   weekly_blog:
     status: active
     platform: "네이버 블로그"
     url: "https://blog.naver.com/lifedesigner88"
-    category: "매주쓰는글"
-    total_posts: 179          # 2026-03-22 기준
     frequency: "매주 (주 1회)"
-    started: "2025-08"        # 25년 34주차 SejongClass 개발 시작 무렵
-    format: "주간 리뷰 — 한 주 활동 + 다음 주 계획"
-    workflow: "블로그 작성 → 영상 촬영 (블로그 보면서) → 유튜브 업로드 → 블로그에 영상 링크 추가"
-    notes: >
-      세종클래스 유튜브 주간 시리즈(2026 인생 강의)의 소재 베이스.
-      블로그 글 = 유튜브 스크립트. 같은 내용을 영상으로 추가 발행 예정.
+    role: "세종클래스/휴포지토리 공개 리듬의 베이스"
+    notes: "블로그 글은 유튜브 스크립트와 연결되며, 지금은 유지 리듬 자체가 의미 있다."
 
-  eunpyeong_youth_network:
-    status: active
-    description: "은평청년네트워크 10기 정식 위원 — 일자리창업분과 (2026.01~12)"
-    organization: "은평구청 청장년희망과"
-    last_event: "2026-03-24T19:00:00+09:00 일자리창업분과 모임 참석 완료"
-    next_event: "2026-04-16 정책교육 (정기회의 일정표 기준, 19:00~21:00 / 장소·시간 변동 가능)"
-    notes: >
-      세종클래스·AI 창업 경험을 정책 제안에 연결 가능. 지역 네트워크 확장 기회.
-      2026 정기회의 일정표 확보: 5/21 정책 회의, 6월 워크숍(미정), 7/16 정책 회의,
-      8/20 정책 회의, 9/19 청년축제, 10/15 정책발표회, 11월 네트워크 교류, 12월 사회기여활동 및 성과공유회.
-
-  seoul_citizen_budget:
-    status: applied          # considering | applied | accepted | rejected
-    description: "서울시 시민참여예산위원 지원"
-    applied_on: "2026-03-20"
-    notes: "온라인 지원 완료(3/20). 결과 대기 중."
+  algorithm_study:
+    status: paused
+    platform: "baekjoon"
+    current_tier: "platinum_5"
+    last_active: "2026-03-07"
+    notes: "소마 코딩테스트용 30일 300문제 완성 후 중단. 현재는 직접 우선순위가 아니다."
 
   class101_opportunity:
     status: paused
     description: "클래스101 — 소마 코딩테스트 준비 알고리즘 강의 제작 제안"
-    interview_datetime: "2026-03-27T15:00:00+09:00"
     first_meeting_completed: "2026-03-27T15:00:00+09:00"
-    next_event: null
-    trigger: "유튜브 알고리즘 풀이 영상 → 소마 지원자 유입 → 클래스101 발견"
-    strategy:
-      current_mode: "당분간 진행하지 않음"
-      priority_reason: "현재는 SW마에스트로 팀 프로젝트, 멘토 3인 매칭, MVP 구체화에 집중"
-      reopen_condition: "소마 우선 과제가 한 단계 정리된 뒤에만 재검토"
-    notes: >
-      3/27 1차 오픈 미팅 27분 진행.
-      2026-03-30 실제로는 후속 메일이나 1:1 카카오톡 링크가 오지 않았다.
-      이후 2026-04-10 기준 사용자는 클래스101 제작을 당분간 진행하지 않고,
-      SW마에스트로 팀 프로젝트와 멘토 3인 매칭에 집중하기로 결정했다.
-      따라서 현재는 pause가 아니라 명시적 비집중 상태로 보고, 새 여력이 생기기 전까지 추가 제작 투자는 하지 않는다.
+    current_mode: "당분간 진행하지 않음"
+    reopen_condition: "소마 우선 과제가 한 단계 정리된 뒤에만 재검토"
+    notes: "현재는 SW마에스트로 팀 프로젝트, 멘토 3인 매칭, MVP 구체화에 집중한다."
 
-  ai_agent_dev:
-    status: active           # exploring | active | paused | done
-    current_project: "team-fit — who-to-talk-to-first exploration root + conversation-priority demo"
-    project_name_history:
-      - name: "PersonaMirror"
-        period: "~2026-03-24"
-        note: "Hupository 기반 첫 공개 유즈케이스를 설명하던 초기 이름"
-      - name: "sejong-pr"
-        period: "2026-03-25 ~ 2026-03-27"
-        note: "800명 단체카톡방 운영자와 대화 후, 공유 링크의 front door를 박세종 PR 중심으로 급하게 pivot하며 사용한 이름"
-      - name: "find-team-feat"
-        period: "2026-03-28"
-        note: "팀빌딩 문제를 전면에 둔 이름이었지만, 당일 기준 너무 길다고 판단해 다시 축약"
-      - name: "team-fit"
-        period: "2026-03-28 ~"
-        note: "현재 공개용 데모 프로젝트명"
-    mvp_deadline: "2026-03-25"
-    stack: "React 19 / FastAPI / LangGraph / OpenAI API (GPT-5.4 family) / PostgreSQL / Redis"
-    progress:
-      completed:
-        - "LangGraph ai-worker 파이프라인 (pending → GPT persona synthesis → persona JSON)"
-        - "Creator PR 페이지 /persona/sejong (최신 Hupository 데이터 기반)"
-        - "Seoul Dashboard 운영 보드 (verification-aware access / preview mode / reviewed-member tracking)"
-        - "AI Sejong login-only multi-turn chat (DB history / grounding / session control / rate limit)"
-        - "루트 `/`를 ASM17 커뮤니티 툴 중심에서 박세종 PR 중심 front door로 재구성"
-        - "AI Sejong / 유튜브 / 블로그 / PR 프로젝트 / 서울 대시보드를 박세종을 이해시키는 증거 자산 순서로 재배치"
-        - "홈/PR 화면을 30초 설득용 구조로 압축하고 핵심 섹션(히어로/포트폴리오/연락/팀원상/SDGs) 중심으로 정리"
-        - "AI Sejong 전용 페이지 설명과 grounding 데이터, 세션 리셋, 질문 제한, placeholder, quota 표시를 실제 동작 기준으로 정리"
-        - "README, OG 메타데이터, changelog를 현재 방향과 동기화"
-        - "team-fit(구 Team-fit Explorer)를 PR-first shell 안의 stable v1 surface로 정리"
-        - "team-fit에 guest preview / 2-step profile intake / optional signal 규칙 강화 / approval-gated recommendations / richer detail dialogs를 반영"
-        - "로컬 startup/demo 기본 동작과 기본 설명을 실제 shipping 범위 기준으로 더 안전하게 정리"
-        - "제품 front door를 Sejong-first PR surface에서 `누구와 먼저 대화할지 좁히는 team-fit exploration root`로 재구성"
-        - "기존 checklist intake를 `문제 한 문장 + MBTI 5축 + SDGs 최대 3개 + 800자 Markdown + AI 후속 질문 3회` 흐름으로 교체"
-        - "추천 결과를 `final teammate certainty`가 아닌 `conversation priority` 기준의 3인 추천으로 재설계"
-        - "저장 상태를 recommendation 결과, fit-score feedback, broader candidate directory, lighter transcript UI를 포함한 editable workspace로 정리"
-        - "repo 브랜딩, 문서, demo seed data, runtime behavior를 현재 제품 방향과 동기화"
-        - "첫 `팀핏 탐색` demo를 root `/`의 team-fit flow 기준으로 다시 조여, 가입 → 검증 → 프로필 → AI 후속 질문 → 추천 검토 → 계정 관리까지 이어지는 end-to-end 동선을 정리"
-        - "추천 검토, verification/access control, creator/profile polish를 포함해 공개 데모의 핵심 surface를 한 번에 설명 가능한 수준으로 다듬음"
-        - "로드맵을 chronological pivots와 code-reading hierarchy를 함께 보여주는 study-oriented map으로 재작성"
-        - "top-level README intro를 larger `귀인` 프로젝트 안의 team-building demo이자 `10일 바이브코딩 첫 데모`로 압축"
-      in_progress:
-        - "team-fit 공개용 최소 리팩토링 및 기능 동결"
-        - "예비 대기/독립 공유 겸용 카피·링크 패키지 정리"
-        - "관심자 연결용 팀 카카오톡방 준비"
-      not_started:
-        - "실제 유입 반응 반영 및 팀 매칭/운영 확장"
-        - "추천/팀 유사도 기능 — 프로젝트 해부·도메인 학습 후 재검토"
-    notes: >
-      Hupository 기반 team-fit의 첫 공개 유즈케이스다.
-      현재 제품의 정체성은 박세종 PR을 보조 신뢰 레이어로 두고,
-      팀빌딩에서 `누구와 먼저 대화할지`를 좁히는 문제를 탐색하는 root experience에 더 가깝다.
-      단기 목적은 team-fit 데모를 실제로 보여줄 수 있는 구조로 리팩토링해,
-      문제 정의, 입력 흐름, 추천 철학, 결과 workspace를 한 번에 이해시키는 것이다.
-      장기 목적은 라이프디자인/퍼스널 AI 서비스의 공개 진입점으로 확장하는 것이다.
-      3/26 기준 팀 유사도/사람 추천 기능은 당장 붙이지 않고 보류했다.
-      예비 3번 상태로 소마 커뮤니티 기능의 즉시성이 약해졌고, 사람 추천은 pgvector/임베딩만으로 해결되지 않으며
-      신뢰, 설명 가능성, 대화 후 피드백 구조까지 함께 다뤄야 하는 도메인이라는 판단이 생겼다.
-      3/25에는 800명 단체카톡방 운영자와 대화 후 공유 링크의 front door를 박세종 PR 중심으로 급하게 pivot하며 `sejong-pr` 감각이 생겼고,
-      3/28에는 독자가 먼저 마주하는 팀빌딩 문제를 전면에 두는 방향으로 `find-team-feat`까지 갔다가,
-      이름이 길다고 판단해 같은 날 현재 공개 프로젝트명을 `team-fit`으로 다시 축약했다.
-      기존 asm17.huposit.kr 방향은 PR 신뢰 레이어를 유지하되, root의 메인 약속을 팀 빌딩 문제 자체에 더 가깝게 두는 쪽으로 정리됐다.
-      3/28 작업 기준 intake는 `문제 한 문장 + MBTI 5축 + SDGs 최대 3개 + 800자 Markdown + AI 후속 질문 3회`의 interview-first flow로 바뀌었고,
-      추천 결과는 `최적 팀원 확정`이 아니라 `우선 대화해볼 3명`을 제안하는 conversation-priority 철학으로 재구성됐다.
-      저장 상태도 recommendation 결과, fit-score feedback, broader candidate directory, lighter transcript UI를 포함한 editable workspace로 옮겨갔다.
-      repo 브랜딩, 문서, demo seed data, runtime behavior도 이 방향에 맞춰 함께 정리되었다.
-      3/29 작업 기준으로는 첫 `팀핏 탐색` demo의 root `/` 흐름을 예전 creator-PR 설명보다 team-fit exploration 중심으로 더 조였고,
-      가입 → 검증 → 프로필 작성 → AI 후속 질문 → 추천 검토 → 계정 관리까지 이어지는 end-to-end 동선이 한 번에 보이도록 다듬었다.
-      또한 roadmap은 chronological pivots와 code-reading hierarchy를 함께 보여주는 학습용 지도로 다시 작성했고,
-      top-level README는 현재 repo를 larger `귀인` 프로젝트 안의 team-building demo이자 `10일 바이브코딩 첫 데모`로 압축해 소개하는 방향으로 정리했다.
-      다음 단계는 예비합격 공개용 최소 리팩토링 후, team-fit을 해부하며 Python/FastAPI/Nx/Docker/배포 구조와
-      사람-사람 매칭/팀핏/코칭 도메인을 함께 학습하는 것이다.
+  eunpyeong_youth_network:
+    status: active
+    description: "은평청년네트워크 10기 정식 위원 — 일자리창업분과 (2026.01~12)"
+    next_event: "2026-04-16 정책교육 (정기회의 일정표 기준, 19:00~21:00 / 장소·시간 변동 가능)"
+    notes: "지역 네트워크 확장 기회로 유지하되, 현재 1순위 축은 아니다."
+
+  seoul_citizen_budget:
+    status: applied
+    description: "서울시 시민참여예산위원 지원"
+    applied_on: "2026-03-20"
+    notes: "결과 대기 중."
 
 # ─────────────────────────────────────────
 # 현재 제약 조건
 # ─────────────────────────────────────────
 constraints:
-  financial_runway_months: null   # 업데이트 필요
-  primary_constraint: "수익 창출 시급 (세종클래스 첫 매출)"
-  simultaneous_focus_capacity: 2  # 지금 동시에 진지하게 집중 가능한 트랙 수
-  energy_level: null              # low | medium | high — 업데이트 필요
+  financial_runway_months: null
+  primary_constraint: "2026-11 말 SW마에스트로 수료 시점에 3억 규모 seed 투자를 받을 수 있는 팀/제품 진척을 만들어야 함"
+  simultaneous_focus_capacity: 2
+  energy_level: null
   location: "Seoul"
   work_mode: "solo"
 
@@ -213,9 +107,9 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — 4월 멘토 3인 매칭이 최우선; 멘토 미팅과 팀 소개 자료로 빠르게 어필"
-  2: "sejongclass — W13 업로드 완료, 다음은 `휴포지토리 사용법` 콘텐츠"
-  3: "ai_agent_dev — team-fit 독립 공유용 카피·링크 패키지 정리"
+  1: "sw_maestro_17 — 11월 말 seed 투자 가능성을 키우는 경로가 최우선; 당장 4월은 멘토 3인 매칭과 MVP 계약 고정"
+  2: "ai_agent_dev — RRS 관계 리포팅 MVP 구조와 팀 설명 문장을 투자 가능 수준의 이야기로 정리"
+  3: "sejongclass — 장기적으로 중요하지만 당분간은 1순위 제약에서 잠시 내려둠"
   4: "weekly_blog — 세종클래스/휴포지토리 공개 리듬의 베이스 유지"
 
 # ─────────────────────────────────────────
@@ -226,9 +120,9 @@ pending_decisions:
     if_yes: "2026-06~11 멘토링 리듬 확정, 팀의 방향 검증과 네트워크 활용 가속"
     if_no: "4월 안에 유력 멘토 접촉을 더 늘리고 팀 소개 자료/어필 전략을 재조정"
 
-  - trigger: "세종클래스 첫 유료 수강생 발생"
-    if_yes: "마케팅 채널 확장, 콘텐츠 증설"
-    if_no: "홍보 전략 재검토 (90일 내 미발생 시)"
+  - trigger: "2026-11 말까지 3억 규모 seed 투자 가능 수준의 팀/제품 진척 도달"
+    if_yes: "SW마에스트로 이후 첫 투자 라운드와 제품/팀 확장 준비"
+    if_no: "제품 wedge, 사용자 검증, 팀 설명, 투자 서사 중 어디가 약한지 다시 진단"
 
   - trigger: "서울시 시민참여예산위원 결과"
     if_accepted: "지역 커뮤니티 활동 확장 — 소마와 병행 가능한 수준 유지"
