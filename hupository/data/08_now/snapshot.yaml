@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-04-12"
+as_of: "2026-04-13"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -14,8 +14,8 @@ active_tracks:
     accepted_on: "2026-03-30"
     overall_rank: 303
     waitlist_rank: 3
-    team_status: "신혜정 팀원 이탈로 2인 체제로 전환, product / frontend / mentor outreach 공백 발생"
-    current_phase: "team_reorg + mentor_matching + 2026-04-29_mvp_scope_recheck"
+    team_status: "팀원 1명 이탈로 2인 체제로 전환, product / frontend / mentor outreach 공백 발생"
+    current_phase: "team_reorg + transparent_recruiting + mentor_matching + 2026-04-29_mvp_scope_recheck"
     product_direction: "Hupository를 내부 엔진으로 두는 RRS 기반 오프라인 관계 리포팅 플랫폼"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
@@ -66,9 +66,11 @@ active_tracks:
     notes: >
       4/7 팀 브랜딩과 역할 분담을 닫았고, 4/8 Nx 모노레포와 Lightsail 배포로 초기 개발 틀을 만들었다.
       4/9 첫 멘토 피드백 이후 큰 방향은 팀 합의가 됐고,
-      4/12 신혜정 팀원 이탈로 현재는 2인 체제로 전환됐다.
+      4/12 팀원 1명 이탈로 현재는 2인 체제로 전환됐다.
       제품 컨셉, 프론트엔드, PM, 멘토 섭외 일부 공백이 생겼기 때문에,
       멘토 미팅과 병행해 4/29 14:00에 배포할 초기 MVP 범위를 다시 최소화하고 역할을 재배치해야 한다.
+      동시에 4/14부터는 300명 규모 연수생/멘토/엑스퍼트/사무국 앞에 현재 상황과 팀 문화를 투명하게 공유하고,
+      이미 팀이 있는 연수생에게도 직접 제안을 병행하며 5/10까지 애자일 팀빌딩으로 fit을 검증할 계획이다.
       핵심 구조는 특정 유저 조합이 relation_key를 이루고, 같은 조합의 대화를 relation repository와 각 개인의 personal repository에 함께 누적하는 모델이다.
       장기적으로는 2026년 소마 공식 일정에 맞춰 5월 기획심의, 8월 중간점검, 11월 최종점검, 12월 데모데이를
       투자 준비의 계단으로 사용해 수료 시점 전후 3억 규모 seed 투자 검토가 가능한 상태를 만드는 것이 현재 기준 연간 목표다.
@@ -139,7 +141,7 @@ active_tracks:
 constraints:
   financial_runway_months: null
   primary_constraint: "2026-11 말 SW마에스트로 수료 시점에 3억 규모 seed 투자를 받을 수 있는 팀/제품 진척을 만들어야 함"
-  team_capacity_note: "2026-04-12 기준 2인 체제로 전환돼 product / frontend / PM / mentor outreach 공백을 안고 간다."
+  team_capacity_note: "2026-04-13 기준 2인 체제로 전환돼 product / frontend / PM / mentor outreach 공백을 안고 가며, 5/10까지 애자일 팀빌딩을 병행한다."
   simultaneous_focus_capacity: 2
   energy_level: null
   location: "Seoul"
