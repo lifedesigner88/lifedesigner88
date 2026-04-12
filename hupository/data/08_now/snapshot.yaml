@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-04-11"
+as_of: "2026-04-12"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -14,14 +14,15 @@ active_tracks:
     accepted_on: "2026-03-30"
     overall_rank: 303
     waitlist_rank: 3
-    team_status: "핵심 3인 팀 구성 완료"
-    current_phase: "mentor_matching + 2026-04-29_mvp_build"
+    team_status: "신혜정 팀원 이탈로 2인 체제로 전환, product / frontend / mentor outreach 공백 발생"
+    current_phase: "team_reorg + mentor_matching + 2026-04-29_mvp_scope_recheck"
     product_direction: "Hupository를 내부 엔진으로 두는 RRS 기반 오프라인 관계 리포팅 플랫폼"
+    long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
     team_role_split:
       owner: "backend / infra + workspace / ci-cd"
-      teammate_a: "product / frontend / mentor outreach"
       teammate_b: "ai worker / audio pipeline"
+      open_gap: "product / frontend / PM / mentor outreach 재배치 필요"
     mvp_target_release: "2026-04-29T14:00:00+09:00"
     mvp_working_scope:
       release_shape: "2인 encounter 중심 초기 MVP"
@@ -39,12 +40,38 @@ active_tracks:
       meetings_scheduled: 5
       selection_window: "2026-04 ~ 2026-05"
       desired_lock_in: "2026-04"
-    next_milestone: "담당 멘토 3인 매칭과 4/29 초기 MVP용 encounter / relation key / report schema / relation repository 구조 고정"
+    one_year_milestones:
+      - period: "2026-04"
+        focus: "멘토 3인 매칭, 4/29 초기 MVP 범위 고정, 초기 팀 운영 리듬과 제품 설명 문장 정리"
+      - period: "2026-05"
+        focus: "프로젝트 기획심의 준비와 통과, 첫 고객군 가설 정리, 인터뷰·파일럿 후보 확보"
+      - period: "2026-06 ~ 2026-08"
+        focus: "본 연수 1단계. MVP 실행, 초기 사용자/파일럿 검증, BM 가설 정리, 8월 중간점검"
+      - period: "2026-09 ~ 2026-11"
+        focus: "본 연수 2단계. 제품 고도화, 시장검증 확대, 투자 서사·IR 자료 정리, 11월 최종점검"
+      - period: "2026-12"
+        focus: "데모데이·수료식과 연결해 3억 규모 seed 투자 검토가 가능한 상태로 라운드 오픈"
+      - period: "2027-01 ~ 2027-02"
+        focus: "우수팀 선발 시 글로벌 AI·SW 역량 강화 교육 연계, 후속 투자 미팅·제품/팀 확장 준비"
+    official_schedule_anchor:
+      pre_program: "2026-04-06 ~ 2026-05-31"
+      project_review: "2026-05-28 ~ 2026-05-30"
+      main_program: "2026-06-01 ~ 2026-11-19"
+      mid_check: "2026-08-20 ~ 2026-08-22"
+      final_check_round_1: "2026-11-12 ~ 2026-11-14"
+      final_check_round_2: "2026-11-20 ~ 2026-11-21"
+      demo_day_and_graduation: "2026-12"
+      global_program_if_selected: "2027-01 ~ 2027-02"
+    next_milestone: "2인 체제 기준 역할 재배치, 멘토 3인 전략 재정렬, 4/29 초기 MVP 최소범위 재확인"
     notes: >
       4/7 팀 브랜딩과 역할 분담을 닫았고, 4/8 Nx 모노레포와 Lightsail 배포로 초기 개발 틀을 만들었다.
       4/9 첫 멘토 피드백 이후 큰 방향은 팀 합의가 됐고,
-      현재는 멘토 미팅과 병행해 4/29 14:00에 배포할 2인 초기 MVP 범위와 설명 문장을 투자 가능 수준으로 정리하는 단계다.
+      4/12 신혜정 팀원 이탈로 현재는 2인 체제로 전환됐다.
+      제품 컨셉, 프론트엔드, PM, 멘토 섭외 일부 공백이 생겼기 때문에,
+      멘토 미팅과 병행해 4/29 14:00에 배포할 초기 MVP 범위를 다시 최소화하고 역할을 재배치해야 한다.
       핵심 구조는 특정 유저 조합이 relation_key를 이루고, 같은 조합의 대화를 relation repository와 각 개인의 personal repository에 함께 누적하는 모델이다.
+      장기적으로는 2026년 소마 공식 일정에 맞춰 5월 기획심의, 8월 중간점검, 11월 최종점검, 12월 데모데이를
+      투자 준비의 계단으로 사용해 수료 시점 전후 3억 규모 seed 투자 검토가 가능한 상태를 만드는 것이 현재 기준 연간 목표다.
 
   sejongclass:
     status: active
@@ -112,6 +139,7 @@ active_tracks:
 constraints:
   financial_runway_months: null
   primary_constraint: "2026-11 말 SW마에스트로 수료 시점에 3억 규모 seed 투자를 받을 수 있는 팀/제품 진척을 만들어야 함"
+  team_capacity_note: "2026-04-12 기준 2인 체제로 전환돼 product / frontend / PM / mentor outreach 공백을 안고 간다."
   simultaneous_focus_capacity: 2
   energy_level: null
   location: "Seoul"
@@ -130,6 +158,10 @@ focus_priority:
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
+  - trigger: "신혜정 팀원 이탈 이후 2인 체제로 4/29 MVP를 유지할지, 역할 재배치와 팀 재구성을 먼저 할지"
+    if_yes: "2인 체제 기준 최소범위를 빠르게 고정하고 멘토 매칭도 그 현실에 맞게 다시 설계"
+    if_no: "새 팀원 탐색 또는 일정 재조정으로 4월 계획 자체를 다시 짜야 함"
+
   - trigger: "SW마에스트로 담당 멘토 3인 선정 (2026-04~05)"
     if_yes: "2026-06~11 멘토링 리듬 확정, 팀의 방향 검증과 네트워크 활용 가속"
     if_no: "4월 안에 유력 멘토 접촉을 더 늘리고 팀 소개 자료/어필 전략을 재조정"
