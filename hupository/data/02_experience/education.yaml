@@ -1,4 +1,44 @@
 education:
+  - id: bulgwang_middle_school
+    institution: 불광중학교
+    type: middle_school
+    start: "2001-03"
+    end: "2004-02"
+    status: graduated
+    achievements:
+      - label: "초기 컴퓨팅 역량"
+        detail: "중1 시기에 워드프로세서 2급, 인터넷정보검색사 2급을 연속 취득."
+      - label: "수학·과학·컴퓨터 강점"
+        detail: "수학, 과학, 기술가정, 컴퓨터 영역에서 교과우수·교과왕을 다수 수상."
+      - label: "리더십과 운영 책임"
+        detail: "학급회장, 편집부, PC정비반, 교단선진화 기자재 관리 등으로 학교 운영 역할을 경험."
+      - label: "성실성과 공적 책임감"
+        detail: "3년간 무결석에 가까운 출결과 64시간 봉사활동으로 꾸준함을 보임."
+    note: >
+      중학교 시기부터 과학 호기심, 컴퓨팅 친화성, 수학적 강점, 학교 운영 참여가 함께 나타났다.
+      훗날 교육과 기술을 연결하는 빌더로 수렴하는 초기 신호로 읽을 수 있다.
+    confidence: high
+
+  - id: daesung_high_school
+    institution: 대성고등학교
+    type: high_school
+    start: "2004-03"
+    end: "2007-02"
+    status: graduated
+    achievements:
+      - label: "3년 개근"
+        detail: "고등학교 3년 연속 개근으로 성실성과 자기관리 역량을 증명."
+      - label: "이공계 성취"
+        detail: "수학, 물리, 화학에서 상위권 성취를 보이며 연구 지향성이 두드러짐."
+      - label: "과학·정보 소양"
+        detail: "과학반 활동, 정보소양인증 이수 등으로 과학·기술 기반을 확장."
+      - label: "학급 학습부장 경험"
+        detail: "학급 학습부장으로 학습 분위기 조성과 운영 책임을 맡음."
+    note: >
+      고등학교에서는 수학·과학 성취, 연구원 지향성, 과학반 활동, 정보소양 축적이 선명해졌다.
+      현재의 AI·소프트웨어 학습과 교육 설계 활동은 이 시기의 이공계 기반과 문제 해결 성향의 연장선에 있다.
+    confidence: high
+
   - id: seoultech_eecs
     institution: 서울시립대학교
     department: 전자전기컴퓨터공학부
