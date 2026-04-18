@@ -2,7 +2,7 @@
 # AI가 현시점 맥락을 빠르게 파악하고 다음 행동을 논의할 때 읽는 live decision 레이어.
 # 결과가 끝났거나 다른 결정에 의해 대체된 항목은 ../09_history/decisions/ 로 이동한다.
 
-as_of: "2026-04-15"
+as_of: "2026-04-18"
 archive_ref:
   decisions: "../09_history/decisions/2026-04.yaml"
 selection_rule:
@@ -59,30 +59,6 @@ decisions:
     outcome: "success"
     outcome_note: "소마 팀 운영과 앞으로의 협업 기준으로 계속 유지한다."
 
-  - id: "D020"
-    date: "2026-04-09"
-    decision: "Hupository는 front product가 아니라 내부 엔진으로 두고, 첫 제품은 `RRS 기반 오프라인 관계 리포팅 플랫폼`으로 좁힌다"
-    rationale: >
-      첫 멘토 피드백과 팀 논의를 거치며,
-      기록 자체를 전면에 두는 제품보다 실제 오프라인 대화 이후의 관계 데이터를 해석하는 쪽이
-      지금 팀의 문제의식과 더 잘 맞는다고 봤다.
-      핵심은 가능한 모든 조합을 계산하는 것이 아니라, 실제로 발생한 encounter만 관계 자산으로 남기는 것이다.
-      Hupository는 사람·상태·관계를 구조화하는 내부 엔진으로 사용하고,
-      제품 표면은 self / pair / group report를 누적 생성하는 관계 인텔리전스 경험으로 설계한다.
-    alternatives_rejected:
-      - option: "기관용 멘토링 증강 솔루션을 첫 wedge로 계속 고정"
-        why_rejected: "문제 범위가 여전히 넓었고, 실제 대화 이후 관계 해석이라는 데이터 축이 더 자기다운 방향으로 떠올랐다"
-      - option: "Hupository 자체를 front product로 바로 민다"
-        why_rejected: "사용자에게 직접 약속하는 가치보다 내부 구조화 엔진으로 둘 때 제품 정의가 더 선명하다"
-    outcome: "pending"
-    outcome_note: >
-      현재 working scope는 encounter / relation key / report schema / consent-unlock 구조와
-      relation repository / personal repository 누적 모델까지 포함한다.
-      4/29 14:00 배포를 우선 기준으로 두고,
-      2인 초기 MVP를 먼저 닫은 뒤 3~4인 확장과 추천 기능은 후속 단계에서 검토한다.
-      큰 방향은 팀이 합의한 상태이고,
-      다음 단계는 멘토 피드백과 함께 first user loop, M0 계약, MVP 범위를 차차 구체화하는 것이다.
-
   - id: "D021"
     date: "2026-04-10"
     decision: "클래스101 경로는 당분간 진행하지 않고, SW마에스트로 팀 프로젝트와 멘토 3인 매칭에 집중한다"
@@ -119,30 +95,6 @@ decisions:
         why_rejected: "동시 집중 용량이 2인 상황에서 현재는 seed 투자 가능성을 만드는 경로에 더 명확히 무게를 둘 필요가 있다"
     outcome: "pending"
     outcome_note: "2026-04-10 기준 현재 제약의 중심은 `세종클래스 첫 매출`보다 `11월 말 seed 투자 가능 수준 도달`이다."
-
-  - id: "D023"
-    date: "2026-04-11"
-    decision: "첫 초기 MVP는 2인 relation_key 기반 누적 저장소 구조를 우선 구현하고, 2026-04-29 14:00 배포를 현재 기준 마감으로 둔다"
-    rationale: >
-      지금 제품의 핵심 가치는 단일 encounter 저장이 아니라,
-      특정 유저 조합이 relation_key를 이루고 같은 조합의 반복 대화가 relation repository에 누적되며,
-      동시에 각 개인의 personal repository에도 반영된다는 점에 있다.
-      처음부터 3~4인 완전 대응이나 추천 기능까지 함께 구현하려 하면
-      4월 안에 end-to-end 데모를 닫기 어렵고,
-      반대로 encounter 1회 저장만 우선 구현하면 이 제품만의 구조적 차별점이 흐려진다.
-      따라서 4/29에는 2인 조합 기준의 로그인, encounter 생성/초대, 각 기기 녹음 파일 업로드,
-      worker 처리, relation/personal repository 반영, report 조회까지를 우선 완성하는 편이 맞다.
-    alternatives_rejected:
-      - option: "처음부터 3~4인 조합과 추천 기능까지 함께 구현"
-        why_rejected: "현재 기간과 팀 리소스 안에서 end-to-end 품질을 보장하기 어렵고, 출시 마감이 흔들릴 가능성이 크다"
-      - option: "개별 encounter 저장만 먼저 구현하고 relation repository는 뒤로 미룬다"
-        why_rejected: "반복 대화 누적과 자기 이해라는 제품의 본질이 약해져 팀 설명과 차별점이 흐려질 수 있다"
-    outcome: "pending"
-    outcome_note: >
-      2026-04-11 회의 전 기준 working decision이다.
-      DB는 우선 Supabase free tier를 사용하고,
-      배포는 demo-infra의 Team-310 경로와 Lightsail 인스턴스 구조를 현재 기준으로 둔다.
-      팀 회의 후 세부 범위와 저장 전략은 다시 정리한다.
 
   - id: "D024"
     date: "2026-04-13"
@@ -215,3 +167,26 @@ decisions:
     outcome_note: >
       2026-04-15 기준 다음 팀빌딩의 전제는
       `우리가 지금 정확히 어떤 제품을 왜 만들고 있고, 어떤 자리를 왜 채우려 하는가`를 한 장으로 설명할 수 있게 되는 것이다.
+
+  - id: "D027"
+    date: "2026-04-18"
+    decision: "Hupository/Team 310의 1차 기획 확정본은 `초·중 생활기록부 기반 예비 고1 AI 대입컨설팅 서비스`로 둔다"
+    rationale: >
+      오늘 대화와 정리 과정에서,
+      기존 relation reporting이나 부모 선행형 Retro-Hupository 구조보다
+      사용자의 교육 도메인 신뢰 자산과 실제 고객 문제를 더 직접적으로 연결하는 제품이 필요하다는 판단이 선명해졌다.
+      예비 고1 학부모는 이미 초등 6년과 중학교 누적 기록을 가지고 있지만,
+      이를 입시 방향과 고교 진학 준비라는 관점에서 읽어주는 구조가 부족하다.
+      따라서 첫 제품은 `초·중 누적 데이터를 읽고, 부족한 정보를 AI 질문으로 보강한 뒤,
+      무료 초기 리포트와 전문 컨설턴트 연결까지 이어지는 AI 대입컨설팅 서비스`로 좁히는 편이 맞다.
+    alternatives_rejected:
+      - option: "RRS 기반 오프라인 관계 리포팅 플랫폼을 그대로 유지"
+        why_rejected: "현재 팀/창업자 신뢰 자산과 즉시 검증 가능한 고객 문제 사이의 거리가 더 컸다"
+      - option: "부모 자기기록 복기를 앞단에 두는 Retro-Hupository 구조를 첫 제품으로 밀기"
+        why_rejected: "흥미로운 진입 아이디어였지만, 1차 MVP의 문제정의와 수익 구조를 더 넓히는 효과가 있었다"
+      - option: "초6~중2 전체를 포괄하는 넓은 성장 데이터 플랫폼 설명을 유지"
+        why_rejected: "첫 wedge로는 고객과 가치 약속이 아직 넓었고, 예비 고1 전환기가 더 선명했다"
+    outcome: "pending"
+    outcome_note: >
+      2026-04-18 기준 현재 live decision이다.
+      다음 단계는 이 1차 기획 확정본을 멘토 피드백, MVP 계약, 초기 파일럿 설계 수준으로 더 구체화하는 것이다.

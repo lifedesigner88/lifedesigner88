@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-04-15"
+as_of: "2026-04-18"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -14,22 +14,23 @@ active_tracks:
     accepted_on: "2026-03-30"
     overall_rank: 303
     waitlist_rank: 3
-    team_status: "팀원 1명 이탈로 2인 체제로 전환, product / frontend / mentor outreach 공백 발생"
-    current_phase: "team_reorg + mentor_lock_in + mvp_contract_definition + role_based_recruiting"
-    product_direction: "Hupository를 내부 엔진으로 두는 RRS 기반 오프라인 관계 리포팅 플랫폼"
+    team_status: "팀원 1명 이탈로 2인 체제로 전환, frontend / PM / domain validation / consultant partnership 공백 발생"
+    current_phase: "product_pivot + first_business_plan_lock + mentor_validation + mvp_contract_definition"
+    product_direction: "초·중 생활기록부 기반 예비 고1 AI 대입컨설팅 서비스"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
     team_role_split:
       owner: "backend / infra + workspace / ci-cd"
       teammate_b: "ai worker / audio pipeline"
-      open_gap: "product / frontend / PM / mentor outreach 재배치 필요"
+      open_gap: "frontend / PM / domain validation / consultant partnership 재배치 필요"
     mvp_target_release: "2026-04-29T14:00:00+09:00"
     mvp_working_scope:
-      release_shape: "2인 encounter 중심 초기 MVP"
-      core_value: "같은 조합의 반복 대화를 relation repository와 personal repository에 함께 누적"
-      relation_unit: "2~4명 user 조합별 relation_key"
-      first_supported_group_size: 2
-      future_extension: "3~4인 group encounter와 신뢰 기반 오프라인 만남 추천"
+      release_shape: "예비 고1 전환기 AI 대입컨설팅 MVP"
+      core_value: "초·중 누적 데이터를 읽어 고교 입학 전 8~10개월의 입시 방향과 준비 로드맵을 제안"
+      primary_customer: "예비 고1 자녀를 둔 학부모"
+      data_input: "초등 6년 + 중학교 누적 생기부 업로드, AI 추가질문으로 결측 보강"
+      free_report_shape: "강점/약점, 예상 학교·학과, 과목·수행·외부활동 추천을 담은 초기 무료 리포트"
+      monetization_hypothesis: "전문 컨설턴트 연결 수수료 + 후속 컨설팅 연계"
       initial_stack: "React 19 / FastAPI / Python 3.11 / AI worker / Supabase free tier / Lightsail"
       deployment_reference: "demo-infra의 Team-310 경로를 기준으로 Lightsail 인스턴스에 배포"
     mentor_matching:
@@ -63,21 +64,16 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "service/BM/completion fit 멘토를 포함한 멘토 3인 구도 정리, 2인 기준 4/29 MVP 최소 계약 1장 확정, 필요한 팀원 역할을 정의한 뒤 재모집"
+    next_milestone: "1차 기획 확정본 기준으로 멘토 3인 구도 정리, 4/29 MVP 최소 계약 고정, 데이터 입력/리포트/컨설턴트 연결의 첫 파일럿 흐름 확정"
     notes: >
-      4/7 팀 브랜딩과 역할 분담을 닫았고, 4/8 Nx 모노레포와 Lightsail 배포로 초기 개발 틀을 만들었다.
-      4/9 첫 멘토 피드백 이후 큰 방향은 팀 합의가 됐고,
-      4/12 팀원 1명 이탈로 현재는 2인 체제로 전환됐다.
-      제품 컨셉, 프론트엔드, PM, 멘토 섭외 일부 공백이 생겼기 때문에,
-      멘토 미팅과 병행해 4/29 14:00에 배포할 초기 MVP 범위를 다시 최소화하고 역할을 재배치해야 한다.
-      동시에 4/14부터는 300명 규모 연수생/멘토/엑스퍼트/사무국 앞에 현재 상황과 팀 문화를 투명하게 공유하고,
-      이미 팀이 있는 연수생에게도 직접 제안을 병행하며 5/10까지 애자일 팀빌딩으로 fit을 검증할 계획이다.
-      4/13 사내 지식관리 배경 멘토와의 대화는 방향성을 넓히는 데는 도움이 됐지만,
-      창업집중형 팀의 담당멘토로서 직접적인 이점은 크지 않다고 봤다.
-      4/14에는 service planning / BM / complete-the-project 관점의 강한 fit을 보인 멘토 후보 1명을 담당멘토 1순위로 확정했다.
-      4/15 기준 초기 직접 제안은 모두 거절됐기 때문에,
-      다음 모집은 막연한 충원이 아니라 제품 방향과 필요한 역할을 먼저 선명히 고정한 뒤 다시 여는 편이 맞다.
-      핵심 구조는 특정 유저 조합이 relation_key를 이루고, 같은 조합의 대화를 relation repository와 각 개인의 personal repository에 함께 누적하는 모델이다.
+      4/12 팀원 1명 이탈 이후 2인 체제로 재정렬하는 과정에서,
+      기존 relation reporting 방향보다 사용자의 교육 도메인 신뢰 자산을 더 직접 활용할 수 있는 제품으로 좁히는 작업이 진행됐다.
+      4/18 기준 1차 기획 확정본은 `초·중 생활기록부 기반 예비 고1 AI 대입컨설팅 서비스`다.
+      핵심 흐름은 생기부 업로드, AI 추가질문 기반 결측 보강, 무료 초기 리포트 발행,
+      그리고 필요시 전문 컨설턴트 연결까지 이어지는 구조다.
+      다음 단계는 멘토 미팅과 병행해 4/29 14:00에 배포할 최소 MVP 범위를
+      `데이터 입력 -> 질문 보강 -> 초기 리포트 -> 상담 연결` 수준으로 다시 최소화하고,
+      frontend / PM / domain validation / consultant partnership 공백을 어떤 방식으로 메울지 정리하는 것이다.
       장기적으로는 2026년 소마 공식 일정에 맞춰 5월 기획심의, 8월 중간점검, 11월 최종점검, 12월 데모데이를
       투자 준비의 계단으로 사용해 수료 시점 전후 3억 규모 seed 투자 검토가 가능한 상태를 만드는 것이 현재 기준 연간 목표다.
 
@@ -98,13 +94,13 @@ active_tracks:
 
   ai_agent_dev:
     status: active
-    current_project: "team-fit"
-    current_mode: "maintenance + learning asset"
+    current_project: "school-record-rag"
+    current_mode: "prototype + learning asset"
     stack: "React 19 / FastAPI / LangGraph / OpenAI API / PostgreSQL / Redis"
-    next_milestone: "필요 시 독립 공유용 카피·링크 패키지 정리"
+    next_milestone: "생기부 RAG, 데이터 보강 질문, 초기 리포트 파이프라인 초안 정리"
     notes: >
-      team-fit은 독립 PR/학습 자산으로 유지한다.
-      추천 고도화보다 현재는 소마 제품 개발과 관계 리포팅 도메인 구체화를 우선한다.
+      현재는 학교 기록 기반 데이터 해석, 결측 보강 질문, 초기 리포트 생성 흐름을
+      독립 학습 자산이자 소마 제품 프로토타입 자산으로 정리한다.
 
   weekly_blog:
     status: active
@@ -147,7 +143,7 @@ active_tracks:
 constraints:
   financial_runway_months: null
   primary_constraint: "2026-11 말 SW마에스트로 수료 시점에 3억 규모 seed 투자를 받을 수 있는 팀/제품 진척을 만들어야 함"
-  team_capacity_note: "2026-04-15 기준 2인 체제로 product / frontend / PM / mentor outreach 공백을 안고 가며, 5/10까지는 역할기반 애자일 팀빌딩을 병행한다."
+  team_capacity_note: "2026-04-18 기준 2인 체제로 frontend / PM / domain validation / consultant partnership 공백을 안고 가며, 역할기반 팀 재정렬을 병행한다."
   simultaneous_focus_capacity: 2
   energy_level: null
   location: "Seoul"
@@ -157,8 +153,8 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — 11월 말 seed 투자 가능성을 키우는 경로가 최우선; 당장 4월은 멘토 3인 매칭과 MVP 계약 고정"
-  2: "ai_agent_dev — RRS 관계 리포팅 MVP 구조와 팀 설명 문장을 투자 가능 수준의 이야기로 정리"
+  1: "sw_maestro_17 — 예비 고1 AI 대입컨설팅 1차 기획 확정본을 멘토 검증과 MVP 계약 수준으로 고정"
+  2: "ai_agent_dev — 생기부 RAG, 데이터 보강 질문, 초기 리포트 흐름을 실제 동작 가능한 프로토타입으로 정리"
   3: "sejongclass — 장기적으로 중요하지만 당분간은 1순위 제약에서 잠시 내려둠"
   4: "weekly_blog — 세종클래스/휴포지토리 공개 리듬의 베이스 유지"
 
@@ -166,9 +162,9 @@ focus_priority:
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
-  - trigger: "신혜정 팀원 이탈 이후 2인 체제로 4/29 MVP를 유지할지, 역할 재배치와 팀 재구성을 먼저 할지"
-    if_yes: "2인 체제 기준 최소범위를 빠르게 고정하고 멘토 매칭도 그 현실에 맞게 다시 설계"
-    if_no: "새 팀원 탐색 또는 일정 재조정으로 4월 계획 자체를 다시 짜야 함"
+  - trigger: "예비 고1 AI 대입컨설팅 MVP에서 4/29까지 구현할 최소 범위를 어디까지 둘지"
+    if_yes: "데이터 입력, AI 질문 보강, 무료 초기 리포트, 상담 연결 흐름까지 최소 계약으로 고정"
+    if_no: "데모 범위를 더 줄이거나 파일럿 우선 구조로 다시 조정해야 함"
 
   - trigger: "SW마에스트로 담당 멘토 3인 선정 (2026-04~05)"
     if_yes: "2026-06~11 멘토링 리듬 확정, 팀의 방향 검증과 네트워크 활용 가속"
