@@ -30,7 +30,7 @@ active_tracks:
       primary_customer: "예비 고1 자녀를 둔 학부모"
       data_input: "초등 6년 + 중학교 누적 생기부 업로드, AI 추가질문으로 결측 보강"
       free_report_shape: "강점/약점, 예상 학교·학과, 과목·수행·외부활동 추천을 담은 초기 무료 리포트"
-      monetization_hypothesis: "전문 컨설턴트 연결 수수료 + 후속 컨설팅 연계"
+      monetization_hypothesis: "과목 선생님/전문 컨설턴트 연결 수수료 + 후속 컨설팅 연계"
       initial_stack: "React 19 / FastAPI / Python 3.11 / AI worker / Supabase free tier / Lightsail"
       deployment_reference: "demo-infra의 Team-310 경로를 기준으로 Lightsail 인스턴스에 배포"
     mentor_matching:
@@ -71,6 +71,13 @@ active_tracks:
       4/18 기준 1차 기획 확정본은 `초·중 생활기록부 기반 예비 고1 AI 대입컨설팅 서비스`다.
       핵심 흐름은 생기부 업로드, AI 추가질문 기반 결측 보강, 무료 초기 리포트 발행,
       그리고 필요시 전문 컨설턴트 연결까지 이어지는 구조다.
+      2026-04-18 교육업계 전 직장 네트워크와의 통화에서는
+      수학·물리 같은 과목 수업 선생님 추천 형태의 학생 연결 가능성은 확인됐지만,
+      대형 교육기업과의 직접 법인 제휴는 현재 팀 규모와 속도 기준으로는 너무 무겁고,
+      소마 기간 안에 실제로 성사시키기에는 사실상 어렵다는 판단이 나왔다.
+      추가로 대형 교육기업은 마케팅으로 고객 유입은 만들 수 있어도,
+      실제로 그 수요를 소화할 좋은 선생님 공급이 부족한 경우가 많고,
+      외부 추천 구조는 우수 선생님 유출 리스크로 읽힐 수 있어 협업 유인이 약하다는 신호도 확인됐다.
       다음 단계는 멘토 미팅과 병행해 4/29 14:00에 배포할 최소 MVP 범위를
       `데이터 입력 -> 질문 보강 -> 초기 리포트 -> 상담 연결` 수준으로 다시 최소화하고,
       frontend / PM / domain validation / consultant partnership 공백을 어떤 방식으로 메울지 정리하는 것이다.
