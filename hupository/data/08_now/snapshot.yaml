@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-04-19"
+as_of: "2026-04-22"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -15,7 +15,7 @@ active_tracks:
     overall_rank: 303
     waitlist_rank: 3
     team_status: "팀원 1명 이탈로 2인 체제로 전환, frontend / PM / domain validation / consultant partnership 공백 발생"
-    current_phase: "product_pivot + first_business_plan_lock + mentor_validation + mvp_contract_definition"
+    current_phase: "customer_discovery + first_pilot_preparation + mentor_validation + mvp_contract_definition"
     product_direction: "초·중 생활기록부 기반 예비 고1 AI 대입컨설팅 서비스"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
@@ -64,7 +64,7 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "1차 기획 확정본 기준으로 멘토 3인 구도 정리, 4/29 MVP 최소 계약 고정, 데이터 입력/리포트/컨설턴트 연결의 첫 파일럿 흐름 확정"
+    next_milestone: "멘토 3인 구도 정리, 4/29 MVP 최소 계약 고정, 구체 problem interview / pilot candidate 1~2건에서 first output과 상담 연결 흐름 검증"
     notes: >
       4/12 팀원 1명 이탈 이후 2인 체제로 재정렬하는 과정에서,
       기존 relation reporting 방향보다 사용자의 교육 도메인 신뢰 자산을 더 직접 활용할 수 있는 제품으로 좁히는 작업이 진행됐다.
@@ -83,6 +83,14 @@ active_tracks:
       이 신호는 곧바로 제품 범위를 넓히라는 뜻보다,
       부모가 실제로 원하는 것은 아이의 현재 상태와 가능성을 함께 해석해 현실적인 다음 선택을 돕는 구조라는 점,
       그리고 지금 단계에서는 기능 추가보다 고객이 원하는 첫 output과 후속 연결을 먼저 듣는 discovery가 더 중요하다는 점을 강화했다.
+      2026-04-20~2026-04-22에는 한 중3 학생 가족 사례가 구체 problem interview / pilot candidate 단계로 내려오며,
+      익명화된 생활기록부 샘플 발송, 사전 질문 리스트 준비, 방문 상담 일정 조율까지 진행됐다.
+      이는 고객조사가 추상적 네트워크 탐색에서 실제 first consultation 설계 단계로 이동하기 시작했다는 신호다.
+      또한 2026-04-21부터는 생활기록부 input 구조를 실제 데이터 엔지니어링 문제로 다루기 시작했고,
+      노션 권한 이슈 이후 일정 운영은 구글캘린더 중심으로 전환하며 Linear / LLM 자동화 실험을 병행하고 있다.
+      다만 운영 자동화는 4/29 MVP보다 앞세우지 않고 보조 축으로만 둔다.
+      최근 팀빌딩 제안 1건도 live branch로 열려 있지만, 아직 역할 fit과 합류 여부는 미정이므로
+      현재 팀은 계속 2인 체제를 기준으로 MVP와 역할 정의를 밀어간다.
       다음 단계는 멘토 미팅과 병행해 4/29 14:00에 배포할 최소 MVP 범위를
       `데이터 입력 -> 질문 보강 -> 초기 리포트 -> 상담 연결` 수준으로 다시 최소화하고,
       frontend / PM / domain validation / consultant partnership 공백을 어떤 방식으로 메울지 정리하는 것이다.
@@ -109,10 +117,12 @@ active_tracks:
     current_project: "school-record-rag"
     current_mode: "prototype + learning asset"
     stack: "React 19 / FastAPI / LangGraph / OpenAI API / PostgreSQL / Redis"
-    next_milestone: "생기부 RAG, 데이터 보강 질문, 초기 리포트 파이프라인 초안 정리"
+    next_milestone: "생활기록부 input 구조, 데이터 보강 질문, 초기 리포트 파이프라인의 실제 구현 계약 정리"
     notes: >
       현재는 학교 기록 기반 데이터 해석, 결측 보강 질문, 초기 리포트 생성 흐름을
       독립 학습 자산이자 소마 제품 프로토타입 자산으로 정리한다.
+      2026-04-21부터는 익명화된 생활기록부 샘플을 바탕으로
+      input 구조와 report 가능성을 실제 데이터 엔지니어링 문제로 다루기 시작했다.
 
   weekly_blog:
     status: active
@@ -140,7 +150,7 @@ active_tracks:
   eunpyeong_youth_network:
     status: active
     description: "은평청년네트워크 10기 정식 위원 — 일자리창업분과 (2026.01~12)"
-    next_event: "2026-04-16 정책교육 (정기회의 일정표 기준, 19:00~21:00 / 장소·시간 변동 가능)"
+    next_event: "2026-04-22~2026-04-23 지역 네트워크 회의 일정"
     notes: "지역 네트워크 확장 기회로 유지하되, 현재 1순위 축은 아니다."
 
   seoul_citizen_budget:
@@ -155,7 +165,7 @@ active_tracks:
 constraints:
   financial_runway_months: null
   primary_constraint: "2026-11 말 SW마에스트로 수료 시점에 3억 규모 seed 투자를 받을 수 있는 팀/제품 진척을 만들어야 함"
-  team_capacity_note: "2026-04-18 기준 2인 체제로 frontend / PM / domain validation / consultant partnership 공백을 안고 가며, 역할기반 팀 재정렬을 병행한다."
+  team_capacity_note: "2026-04-22 기준 2인 체제를 기본으로 frontend / PM / domain validation / consultant partnership 공백을 안고 가며, 구체 problem interview 준비와 live teambuilding branch를 병행한다."
   simultaneous_focus_capacity: 2
   energy_level: null
   location: "Seoul"
@@ -178,9 +188,17 @@ pending_decisions:
     if_yes: "데이터 입력, AI 질문 보강, 무료 초기 리포트, 상담 연결 흐름까지 최소 계약으로 고정"
     if_no: "데모 범위를 더 줄이거나 파일럿 우선 구조로 다시 조정해야 함"
 
+  - trigger: "구체 problem interview / pilot candidate 1~2건이 4월 안에 first output 검증으로 이어지는가"
+    if_yes: "부모가 원하는 질문, 리포트, 상담 연결의 실제 가치가 더 선명해지고 첫 파일럿 흐름을 구체화할 수 있음"
+    if_no: "현재 wedge는 유지하되 고객조사 질문과 첫 output 가설을 다시 다듬어야 함"
+
   - trigger: "SW마에스트로 담당 멘토 3인 선정 (2026-04~05)"
     if_yes: "2026-06~11 멘토링 리듬 확정, 팀의 방향 검증과 네트워크 활용 가속"
     if_no: "4월 안에 유력 멘토 접촉을 더 늘리고 팀 소개 자료/어필 전략을 재조정"
+
+  - trigger: "최근 팀빌딩 제안 1건이 실제 fit 검증 또는 합류 후보로 이어지는가"
+    if_yes: "product / frontend / PM 공백을 일부 완화하며 2인 체제의 부담을 줄일 수 있음"
+    if_no: "현재는 2인 체제를 유지하고 역할기반 팀빌딩 기준을 더 선명히 한 뒤 다시 탐색해야 함"
 
   - trigger: "2026-11 말까지 3억 규모 seed 투자 가능 수준의 팀/제품 진척 도달"
     if_yes: "SW마에스트로 이후 첫 투자 라운드와 제품/팀 확장 준비"
