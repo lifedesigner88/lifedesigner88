@@ -2,7 +2,7 @@
 # tree.yaml 기준 각 목표의 현재 진척과 근거를 기록합니다.
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 
-as_of: "2026-03-30"
+as_of: "2026-04-26"
 tracking_basis: "tree.yaml"
 
 goal_progress:
@@ -35,9 +35,11 @@ goal_progress:
   - id: "G-AI-01"
     title: "AI Agent 개발 역량 확보 (LangGraph · FastAPI)"
     status: in_progress
-    completion_pct: 30
+    completion_pct: 35
     notes: >
-      Hupository와 PersonaMirror를 통해 FastAPI, LangGraph, GPT-5.4 계열 활용 경험을 실전으로 축적 중이다.
+      Hupository와 PersonaMirror를 통해 FastAPI, LangGraph, GPT 계열 활용 경험을 실전으로 축적 중이다.
+      2026-04 하순에는 생활기록부 input 구조, 데이터 보강 질문, 초기 리포트 생성 흐름을
+      SW마에스트로 Team 310의 MVP 자산으로 연결하고 있다.
 
   - id: "G-AI-02"
     title: "Hupository AI Agent 완성 (일상 수집 → 자동 업데이트)"
@@ -71,7 +73,7 @@ goal_progress:
       남은 핵심 과제는 기능 추가보다 독립 공유용 카피·링크 패키지와 후속 반응 검증이다.
 
   - id: "G-AI-03"
-    title: "SW마에스트로 17기 합격 → AI 네트워크·역량 확보"
+    title: "SW마에스트로 17기 합격"
     status: done
     completion_pct: 100
     milestones:
@@ -89,8 +91,42 @@ goal_progress:
         note: "예비 3번에서 추가합격 문자 수신"
     notes: >
       2026-03-30 기준 예비 3번에서 추가합격 문자 수신으로 최종 합격이 확정됐다.
-      이제 AI 네트워크·팀빌딩 가속 옵션이 실제 경로가 되었고,
-      등록 및 팀빌딩 준비가 단기 운영 전략의 최우선 분기점이 되었다.
+      합격 자체는 완료됐고, 이후의 AI 네트워크·팀빌딩·제품 검증 실행은 G-AI-04에서 추적한다.
+
+  - id: "G-AI-04"
+    title: "SW마에스트로 Team 310 — 예비 고1 AI 대입컨설팅 MVP와 팀/멘토 검증"
+    status: in_progress
+    completion_pct: 20
+    milestones:
+      - step: "SW마에스트로 17기 합격 및 Team 310 진입"
+        status: completed
+        date: "2026-03-30"
+      - step: "팀원 이탈 이후 3인 체제 재정렬"
+        status: in_progress
+        date: "2026-04-22"
+        note: "신규 팀원 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩 단계로 전환했다."
+      - step: "첫 고객 대면 인터뷰 및 파일럿 참여 의향 확인"
+        status: completed
+        date: "2026-04-25"
+        note: "중3 학생과 보호자 앞에서 프로젝트를 피칭했고, 학생의 참여 의사와 중간고사 이후 컨설팅 시작 가능성을 확인했다."
+      - step: "예비 고1 AI 대입컨설팅 1차 MVP 범위 고정"
+        status: in_progress
+        target: "2026-04-29T14:00:00+09:00"
+      - step: "멘토 3인 매칭과 기획심의 준비"
+        status: in_progress
+        target: "2026-05"
+      - step: "중간점검 / 최종점검 / 데모데이"
+        status: planned
+        target: "2026-08 ~ 2026-12"
+    notes: >
+      현재 핵심은 `찐로(JJinro)`라는 데이터 기반 고교 진학 및 자생적 진로 성장 내비게이션을
+      고객조사, 초기 MVP, 멘토 검증, 팀 역할 안정화로 실제 실행하는 것이다.
+      2026-04-26 사업기획서는 생기부 분석, AI 인터뷰, 10단계 진로 플로우,
+      1회 무료 상담, 8개월 마스터플랜, 월 구독형 SaaS 전환 구조로 정리됐다.
+      2026-04-25 첫 대면 고객 인터뷰에서 파일럿 참여 의향이 확인되면서,
+      추상 고객조사에서 실제 첫 output과 상담 연결 흐름을 검증해야 하는 단계로 한 칸 이동했다.
+      이 목표는 G-AI-03의 합격 이후 경로이며, 2026-11 말 SW마에스트로 수료 시점에
+      3억 규모 seed 투자 검토가 가능한 팀·제품 상태를 만드는 현재 최상위 실행 축이다.
 
   - id: "G-LS-01"
     title: "Hupository 강의 시리즈 기획 (강의 소재화)"

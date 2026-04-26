@@ -5,7 +5,7 @@
 # tree.yaml : 목표 구조와 연결 관계 (what / why this)
 # progress.yaml : tree.yaml 기준 각 목표의 현재 진척과 근거 (how far)
 
-as_of: "2026-03"
+as_of: "2026-04-26"
 
 # ─────────────────────────────────────────
 # 상위 연결 (lifetime.yaml)
@@ -102,11 +102,25 @@ goals:
 
           - id: "G-AI-03"
             type: short_term
-            title: "SW마에스트로 17기 합격 → AI 네트워크·역량 확보"
+            title: "SW마에스트로 17기 합격"
             horizon: "1개월"
+            status: done
+            parent: "G-AI-BUILDER"
+            notes: >
+              2026-03-30 예비 3번에서 추가합격 문자 수신으로 최종 합격이 확정됐다.
+              합격 이후의 실제 네트워크·팀·제품 역량 확보는 G-AI-04로 이어서 관리한다.
+
+          - id: "G-AI-04"
+            type: short_term
+            title: "SW마에스트로 Team 310 — 예비 고1 AI 대입컨설팅 MVP와 팀/멘토 검증"
+            horizon: "2026-04 ~ 2026-11"
             status: in_progress
             parent: "G-AI-BUILDER"
-            notes: "소마는 장기 목표를 가속할 수 있는 네트워크 옵션이며, 결과에 따라 단기 운영 전략이 분기된다."
+            notes: >
+              SW마에스트로 합격 이후의 실제 실행 목표다.
+              Team 310의 3인 체제, 4/29 초기 MVP, 멘토 3인 매칭, 고객조사/파일럿,
+              5월 기획심의, 8월 중간점검, 11월 최종점검까지를 통해
+              AI 빌더 역량과 투자 가능한 팀/제품 상태를 함께 만든다.
 
       - id: "G-LIFEDESIGN-SVC"
         type: mid_term
@@ -148,13 +162,13 @@ goals:
 # ─────────────────────────────────────────
 # snapshot.yaml 의 focus_priority 와 연동
 focus_now:
-  - id: "G-AI-03"        # SW마에스트로 17기 — 결과 대기 (3/25)
+  - id: "G-AI-04"        # SW마에스트로 Team 310 — MVP / 고객검증 / 멘토링
     priority: 1
-  - id: "G-SEJONG-01"    # 세종클래스 주차별 업로드 리듬
+  - id: "G-AI-01"        # AI Agent / school-record RAG 구현 역량
     priority: 2
   - id: "G-LS-01"        # Hupository 사용법 콘텐츠
     priority: 3
-  - id: "G-PM-01"        # team-fit 공유 패키지
+  - id: "G-SEJONG-01"    # 세종클래스 최소 유지 리듬
     priority: 4
 
 # ─────────────────────────────────────────
