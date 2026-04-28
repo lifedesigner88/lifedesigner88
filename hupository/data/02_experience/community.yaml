@@ -104,13 +104,17 @@ activities:
     start: "2026-04"   # 활동 시작 예정
     end: "2026-09"
     type: civic
-    status: applied
+    status: active
     applied_on: "2026-03-20"
-    result: null       # 결과 나오면 업데이트 (마감 3/27)
+    result: "accepted_as_planning_member"
     visibility: public
     summary: >
       은평구 주관 청년 축제 기획·운영 참여. 주제·콘셉트 선정부터 당일 운영까지 전 과정 직접 참여.
-      9월 개최 목표.
+      2026-09-19 14:00~18:00 개최 목표.
+    event:
+      date: "2026-09-19"
+      time: "14:00~18:00"
+      role_note: "기획단원으로 참여. 2026-04-23 단장에 지원했지만 선출되지는 않았고, 기획 참여자로 적극 의견을 내기로 했다."
     organization_info:
       recruitment_deadline: "2026-03-27"
       headcount: "10여 명"
