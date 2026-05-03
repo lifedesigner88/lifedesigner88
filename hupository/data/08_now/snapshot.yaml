@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-01"
+as_of: "2026-05-02"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -14,9 +14,9 @@ active_tracks:
     accepted_on: "2026-03-30"
     overall_rank: 303
     waitlist_rank: 3
-    team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환"
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_validation + mvp_contract_definition"
-    product_direction: "찐로(JJinro) — 데이터 기반 고교 진학 및 자생적 진로 성장 내비게이션"
+    team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환했고, 2026-05-01 멘토링 이후 CEO가 충분히 듣되 특정 시점에는 방향을 결정하는 운영 원칙을 세우기 시작함"
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_validation + mvp_contract_definition + founder_decision_rhythm"
+    product_direction: "미리(MIRI) — AI 학생부종합전형 프로젝트 매니저 / 수행평가·교과 탐구 플래너"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
     team_role_split:
@@ -24,18 +24,20 @@ active_tracks:
       teammate_b: "ai worker / audio pipeline"
       new_teammate: "backend/auth/authorization/infra + PM/customer validation support 가능성이 있는 실사용자 서비스 운영 경험자. 세부 ownership은 onboarding 중"
       open_gap: "frontend / domain validation / consultant partnership / final PM ownership 역할을 3인 체제 안에서 재배치 필요"
+    leadership_current_signal: "2026-05-01 멘토링에서 팀원과 멘토 의견을 계속 수집하며 무한 합의로 가면 액션플랜이 늦어진다는 점을 자각했다. 현재 운영 원칙은 팀원 의견을 충분히 듣되 기업철학과 시점이 정해지면 CEO가 결정 이유와 다음 행동을 선언하는 쪽으로 전환하는 것이다. 최근 팀 내부에서도 휴포지토리 비전에 대한 지지 신호가 생겨 창업자 자신감을 회복하는 중이다."
     mvp_target_release: "2026-04-29T14:00:00+09:00"
     mvp_working_scope:
-      release_shape: "찐로 초기 MVP"
+      release_shape: "미리(MIRI) 5월 무료 베타 MVP"
       project_context_id: "swm-team310-review"
-      core_value: "초·중 누적 데이터와 AI 인터뷰를 바탕으로 고교 입학 전 8~10개월의 진학 방향, 선택 과목, 세특/활동 로드맵을 제안"
+      core_value: "학생부·활동 기록을 근거로 수행평가와 교과 탐구를 학생이 직접 설계하도록 돕고, 체크리스트·다음 행동·추천 근거를 제공"
       primary_customer: "예비 고1 자녀를 둔 학부모"
-      current_model_summary: "AI 진로 내비게이션 + 대학생 멘토 매칭 + 세종클래스 콘텐츠 허브"
-      mvp_flow: "생기부 PDF 업로드 -> AI 인터뷰 -> 3종 리포트 초안 -> 1회 무료 상담 연결"
-      monetization_hypothesis: "첫 1회 무료 상담 -> 8개월 AI 마스터플랜 구독 -> 대학생 멘토 회당 결제형 매칭"
-      jjinro_flow: "수명 -> 웰빙 -> 미션 -> 비전 -> 진로 -> 직업 -> 계열 -> 학과 -> 과목 -> 세특"
+      current_model_summary: "무료 베타 AI 리포트 + 수행평가 탐구 플래너 + 탐구 질문 만들기 + 지식 확장형 꼬리 질문 로드맵"
+      mvp_flow: "학생부/활동 기록 입력 -> AI 리포트/전략 제시 -> 수행평가·탐구 TODO와 질문 생성 -> 베타 피드백 수집"
+      monetization_hypothesis: "무료 베타로 리포트 품질과 사용자 반응 검증 -> 3만 원대 1회성 전략 리포트 또는 월 3만 원대 AI 코치 구독 검증"
+      repo_signal: "2026-05-02 team310-research origin/main e8514b9 기준 최종 보고서, 5월 MVP 출시전략, 5/30 기획심의 TODO, VC 멘토링 안건이 정리됐다."
+      guardrails: "완성 문단 생성, 합격 가능성 단정, 세특 완성/명문대 보장 표현은 금지하고, 추천 근거와 학생 입력을 필수로 둔다."
       first_pilot_signal: "2026-04-25 첫 대면 고객 인터뷰에서 중3 학생과 보호자가 프로젝트 설명을 듣고 참여 의사를 밝혔으며, 무료 컨설팅 파일럿 이후 후속 컨설팅/플랫폼 이용 가설을 검증할 수 있는 후보가 생겼다."
-      next_review_target: "2026-05-28~2026-05-29 기획심의 준비. 기존 official_schedule_anchor의 5/28~5/30 일정은 재확인 필요"
+      next_review_target: "2026-05-28~2026-05-29 기획심의 준비. team310-research TODO에는 5월 30일 기획심의 자료 준비로 적혀 있어 공식 날짜 재확인 필요"
     mentor_matching:
       target_mentors: 3
       candidate_pool_estimate: 130
@@ -48,7 +50,7 @@ active_tracks:
       selection_window: "2026-04 ~ 2026-05"
       desired_lock_in: "2026-04"
       primary_mentor_status: "담당멘토 3명 중 2명 확정, 1자리 미정"
-      current_signal: "2026-04-24 담당멘토 1명과 19:00~22:00 멘토링을 진행했고, 신규 팀원 소개, 6자 대면 인터뷰 설계 조언, 밸류 프로포지션 디자인 실습까지 이어졌다. 2026-04-26에는 다른 멘토와 약 2시간 멘토링을 진행한 뒤 담당멘토로 확정해 총 2자리를 확보했고, 기존 후보 2명은 팀을 선택하지 않았으나 역제안 멘토 후보 2명과 추가 미팅 후 남은 1자리를 결정할 가능성이 생겼다."
+      current_signal: "2026-04-24 담당멘토 1명과 19:00~22:00 멘토링을 진행했고, 신규 팀원 소개, 6자 대면 인터뷰 설계 조언, 밸류 프로포지션 디자인 실습까지 이어졌다. 2026-04-26에는 다른 멘토와 약 2시간 멘토링을 진행한 뒤 담당멘토로 확정해 총 2자리를 확보했고, 기존 후보 2명은 팀을 선택하지 않았으나 역제안 멘토 후보 2명과 추가 미팅 후 남은 1자리를 결정할 가능성이 생겼다. 2026-05-01에는 다른 멘토와 식사 및 14:00~16:00 멘토링을 진행하며 CEO가 방향을 결정해야 팀의 실행이 빨라진다는 운영 조언을 얻었다."
     xpert_support:
       assignment_model: "연수생 1명당 엑스퍼트 1명 배정"
       required_cadence: "월 1회 약 1시간 필수 멘토링"
@@ -76,12 +78,12 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "남은 멘토 1자리 후보 미팅과 3인 구도 최종 정리, 4/29 MVP 최소 계약 고정, 2026-04-25 첫 pilot candidate의 참여 의사를 중간고사 이후 first output과 상담 연결 흐름으로 전환"
+    next_milestone: "5월 MVP 전공/분야 1~2개 선정, 다나 학생용 4주 베타 커리큘럼과 무료 베타 리포트 범위 정의, 베타 테스터 10명 확보 계획, Linear 백로그 정리, 2026-05-05 VC 멘토링 준비, 5/28~5/30 기획심의 날짜 재확인"
     notes: >
       상세 프로젝트 맥락은 private project layer 의 `swm-team310-review`에서 관리한다.
       08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 3인 체제 온보딩,
-      첫 고객 파일럿 후보, 담당멘토 2명 확정, 4/29 MVP 최소 계약,
-      5/28~5/29 기획심의 준비를 중심으로 움직인다.
+      첫 고객 파일럿 후보, 담당멘토 2명 확정, 5월 무료 베타 MVP,
+      5/1 멘토링 이후의 CEO 결정 리듬, 5/28~5/30 기획심의 준비를 중심으로 움직인다.
 
   swm_ai_training_team31:
     status: active
@@ -96,6 +98,9 @@ active_tracks:
     fourth_offline_meeting: "2026-05-08T14:00:00+09:00"
     fourth_coach_online_meeting: "2026-05-10T19:30:00+09:00"
     planning_doc_due: "2026-05-02T23:59:00+09:00"
+    planning_doc_status: "submitted"
+    planning_doc_final_source: "../SomaMeet/기획서/구글독스_1차피드백_반영_통합본.md"
+    planning_doc_submission_evidence: "사용자 제출 완료 보고 + SomaMeet origin/main `384634d` docs: mark final planning submission"
     demo_code_due: "2026-05-10T23:59:00+09:00"
     fifth_offline_meeting: "2026-05-13T13:00:00+09:00"
     fifth_offline_meeting_end: "2026-05-13T15:00:00+09:00"
@@ -103,9 +108,9 @@ active_tracks:
     final_submission_due: "2026-05-14"
     final_presentation_start: "2026-05-15T13:30:00+09:00"
     final_presentation_end: "2026-05-15T15:30:00+09:00"
-    selected_topic: "개인정보 보호가 되는 공유캘린더"
-    current_signal: "2026-04-29 14:00~15:00 첫 오프라인 회의에서 4개 아이디어를 투표·논의한 뒤, 개인 일정 세부 내용은 숨기고 가능한 시간대만 공유해 회의/멘토링/상담 일정을 빠르게 조율하는 공유캘린더 서비스를 최종 주제로 합의했다. 2026-04-30 기준 방향은 많은 기능보다 실제 소마 사람들이 안정적으로 쓸 수 있는 단일 일정 조율 흐름에 집중하는 것이다. 2026-05-01 기준 `somatime/전체일정.md`에는 5/3, 5/5, 5/10, 5/13 코치 온라인 미팅과 5/6, 5/8, 5/13 추가 오프라인 회의가 잡혀 있다. 2026-05-01 10:00~11:00 두 번째 오프라인 회의에서는 사용자 시나리오, 핵심 기능, AI/Agent 역할, 기술 스택, 역할 분담, 5/2 제출본 작성 담당을 기획서 제출 전 고정해야 한다."
-    notes: "기획서는 로컬 환경에서 실행 가능한 Agentic Workflow 데모 프로젝트를 전제로 한다. 최종 데모데이는 등수 경쟁보다 제품과 피칭을 보여주는 성격이므로 사용성·안정성 중심으로 간다. 세부 아이디어, 투표 결과, 팀원별 프로필, 코치 미팅 세부 메모는 private project layer에 둔다."
+    selected_topic: "SomaMeet(소마밋) — 개인정보 보호 일정 조율 Agentic Workflow"
+    current_signal: "2026-05-02 사용자가 프로젝트 기획서 제출 완료를 보고했고, SomaMeet origin/main `384634d` 기준 README와 `기획서/구글독스_1차피드백_반영_통합본.md`가 2026-05-02 23:59 제출용 최종 기준 문서로 지정됐다. 기존 `기획서/통합본.md`와 `기획서/제출본.md`는 삭제되어 더 이상 현재 기준이 아니다. 제출본 MVP는 회의 조건 입력 UI, 닉네임/초대 링크, Google Calendar free/busy, `.ics`, 직접 busy/free 입력, 15/30분 단위 공통 시간 계산, 오프라인 30분 버퍼, 타임테이블, 후보 추천, 사용자 검증 페이지, 안내 메시지 초안/복사, AWS Lightsail 배포와 기본 보안을 포함한다. 다음 초점은 2026-05-03 19:00 코치 미팅에서 구현 역할·데이터 모델·데모 범위를 고정하고 2026-05-10 23:59 데모 코드 제출까지 로컬 실행 가능한 Agentic Workflow를 만드는 것이다."
+    notes: "기획서는 로컬 환경에서 실행 가능한 Agentic Workflow 데모 프로젝트를 전제로 한다. 최종 데모데이는 등수 경쟁보다 제품과 피칭을 보여주는 성격이므로 사용성·안정성 중심으로 간다. 세부 아이디어, 투표 결과, 팀원별 프로필, 코치 미팅 세부 메모, 팀원별 개인 기획서는 private project layer에 둔다."
 
   soma_on:
     status: active
@@ -128,7 +133,7 @@ active_tracks:
       - "공식 아카이브"
     current_signal: "2026-04-30 공덕 연수센터에서 사무국 협조 아래 약 3시간 동안 첫 촬영을 완료했고, 15:30부터 약 50분 동안 공식 유튜브 콘텐츠 프로젝트 제안 미팅을 진행했다. 사무국은 이 프로젝트를 연수생 자발적 활동으로 인정하고, 공식 아카이브이자 교류 플랫폼으로 확장할 1년 운영 계획과 실비 기반 예산안을 요청했다. 첫 영상 공개 목표는 2026-05-07 14:00이다."
     notes: >
-      소마온은 Team 310의 찐로 MVP와 별개로, SW마에스트로 내부 네트워크와 공식 채널 콘텐츠를 강화하는 보조 트랙이다.
+      소마온은 Team 310의 MIRI MVP와 별개로, SW마에스트로 내부 네트워크와 공식 채널 콘텐츠를 강화하는 보조 트랙이다.
       첫 촬영 완료와 사무국의 운영계획/예산안 요청으로 단발 콘텐츠가 아니라 지속 운영 가능한 공식 교류 플랫폼 후보가 됐다.
       타인의 실명, 장비 세부 예산, 촬영 현장 라포 등 private 맥락은 private project layer 의 `soma-on`에서 관리한다.
 
@@ -219,19 +224,19 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — Team 310 찐로 5/28~5/29 기획심의 준비와 4/29 MVP 최소 계약"
-  2: "swm_ai_training_team31 — 5/2 기획서, 5/10 데모 코드, 5/14 최종 제출, 5/15 13:30~15:30 최종 발표 준비"
+  1: "sw_maestro_17 — Team 310 MIRI 5월 무료 베타 MVP와 5/28~5/30 기획심의 준비"
+  2: "swm_ai_training_team31 — 5/2 기획서 제출 완료 후 5/3 코치 미팅, 5/10 데모 코드, 5/14 최종 제출, 5/15 13:30~15:30 최종 발표 준비"
   3: "soma_on — 5/7 첫 영상 공개 편집과 사무국 제출용 1년 운영 계획/예산안 정리"
   4: "eunpyeong_youth_festival_2026 / eunpyeong_youth_network — 지역 청년 축제·정책 활동은 소마 우선순위 뒤에서 유지"
-  5: "sejongclass / weekly_blog — 찐로 콘텐츠 허브와 공개 리듬의 보조 축으로 유지"
+  5: "sejongclass / weekly_blog — MIRI 콘텐츠 허브와 공개 리듬의 보조 축으로 유지"
 
 # ─────────────────────────────────────────
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
-  - trigger: "찐로(JJinro) MVP에서 4/29까지 구현할 최소 범위를 어디까지 둘지"
-    if_yes: "생기부 분석, AI 인터뷰, 진로 내비게이션 초안, 무료 상담 연결 흐름까지 최소 계약으로 고정"
-    if_no: "데모 범위를 더 줄이거나 파일럿 우선 구조로 다시 조정해야 함"
+  - trigger: "MIRI 5월 MVP를 수행평가/탐구 플래너 중심으로 좁히고 무료 베타 범위를 고정할 수 있는가"
+    if_yes: "전공/분야 1~2개, 다나 학생 4주 베타 커리큘럼, 베타 테스터 10명 확보 계획, 추천 근거/체크리스트 UX를 중심으로 기획심의 전 실행 가능"
+    if_no: "미래 생기부 미리보기, AI 리포트, 멘토 매칭, 데이터 아카이빙이 다시 섞여 MVP가 커지고 기획심의 메시지가 흐려질 위험"
 
   - trigger: "2026-04-25 첫 pilot candidate의 참여 의사를 중간고사 이후 실제 first output / 상담 흐름으로 전환할 수 있는가"
     if_yes: "첫 고객 파일럿을 바탕으로 부모와 학생이 원하는 질문, 리포트, 상담 연결의 실제 가치를 검증하고 5월 기획심의 스토리의 근거로 사용할 수 있음"
