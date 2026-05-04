@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-02"
+as_of: "2026-05-04"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -14,8 +14,8 @@ active_tracks:
     accepted_on: "2026-03-30"
     overall_rank: 303
     waitlist_rank: 3
-    team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환했고, 2026-05-01 멘토링 이후 CEO가 충분히 듣되 특정 시점에는 방향을 결정하는 운영 원칙을 세우기 시작함"
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_validation + mvp_contract_definition + founder_decision_rhythm"
+    team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환했고, 2026-05-01 멘토링 이후 CEO가 충분히 듣되 특정 시점에는 방향을 결정하는 운영 원칙을 세우기 시작했으며, 2026-05-02 담당멘토 3인 확정으로 멘토 매칭 branch가 닫힘"
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_matching_closed + segmentation_research + mvp_contract_definition + founder_decision_rhythm"
     product_direction: "미리(MIRI) — AI 학생부종합전형 프로젝트 매니저 / 수행평가·교과 탐구 플래너"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
@@ -42,20 +42,20 @@ active_tracks:
       target_mentors: 3
       candidate_pool_estimate: 130
       target_meetings: 20
-      meetings_completed: 6
+      meetings_completed: 8
       meetings_scheduled: 0
-      confirmed_mentors: 2
-      open_slots: 1
-      reverse_proposal_meetings_pending: 2
+      confirmed_mentors: 3
+      open_slots: 0
+      reverse_proposal_meetings_pending: 0
       selection_window: "2026-04 ~ 2026-05"
-      desired_lock_in: "2026-04"
-      primary_mentor_status: "담당멘토 3명 중 2명 확정, 1자리 미정"
-      current_signal: "2026-04-24 담당멘토 1명과 19:00~22:00 멘토링을 진행했고, 신규 팀원 소개, 6자 대면 인터뷰 설계 조언, 밸류 프로포지션 디자인 실습까지 이어졌다. 2026-04-26에는 다른 멘토와 약 2시간 멘토링을 진행한 뒤 담당멘토로 확정해 총 2자리를 확보했고, 기존 후보 2명은 팀을 선택하지 않았으나 역제안 멘토 후보 2명과 추가 미팅 후 남은 1자리를 결정할 가능성이 생겼다. 2026-05-01에는 다른 멘토와 식사 및 14:00~16:00 멘토링을 진행하며 CEO가 방향을 결정해야 팀의 실행이 빨라진다는 운영 조언을 얻었다."
+      desired_lock_in: "2026-05-02"
+      primary_mentor_status: "담당멘토 3명 최종 확정"
+      current_signal: "2026-04-24 첫 담당멘토와 19:00~22:00 멘토링을 진행했고, 신규 팀원 소개, 6자 대면 인터뷰 설계 조언, 밸류 프로포지션 디자인 실습까지 이어졌다. 2026-04-26에는 두 번째 담당멘토를 확정해 총 2자리를 확보했다. 2026-05-01에는 또 다른 멘토링에서 CEO가 방향을 결정해야 팀 실행이 빨라진다는 운영 조언을 얻었다. 2026-05-02에는 남은 1자리가 확정되어 담당멘토 3인 조합이 닫혔고, 이제 초점은 5월 기획심의, 고객 세그먼트 검증, MVP 범위 확정으로 이동했다."
     xpert_support:
       assignment_model: "연수생 1명당 엑스퍼트 1명 배정"
       required_cadence: "월 1회 약 1시간 필수 멘토링"
-      current_status: "창업·BM·팀 운영·피봇·KPI·AI 제품 운영 경험이 있는 엑스퍼트 지원 축이 생겼고, 2026-04-26 오전 11시 첫 엑스퍼트 미팅을 진행했다."
-      support_fit: "팀 매칭/네트워킹, 인증 몰입, 기획/BM, 발표평가, 창업 현실, 문제점 분석, 리스크 감지, 구조화 관점에서 활용 가능"
+      current_status: "창업·BM·팀 운영·피봇·KPI·AI 제품 운영 경험이 있는 엑스퍼트 지원 축이 생겼고, 2026-04-26 오전 11시 첫 엑스퍼트 미팅을 진행했다. 2026-05-02에는 다른 엑스퍼트 회의에서 고객 세그먼트와 그레이존을 먼저 밝힌 뒤 하나를 선택해 인터뷰, MVP, 히어로 페이지로 이어가야 한다는 검증 원칙을 확인했다."
+      support_fit: "팀 매칭/네트워킹, 인증 몰입, 기획/BM, 발표평가, 창업 현실, 문제점 분석, 리스크 감지, 고객 세그먼트 정의, 객관 자료조사, 구조화 관점에서 활용 가능"
     one_year_milestones:
       - period: "2026-04"
         focus: "멘토 3인 매칭, 4/29 초기 MVP 범위 고정, 초기 팀 운영 리듬과 제품 설명 문장 정리"
@@ -78,12 +78,13 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "5월 MVP 전공/분야 1~2개 선정, 다나 학생용 4주 베타 커리큘럼과 무료 베타 리포트 범위 정의, 베타 테스터 10명 확보 계획, Linear 백로그 정리, 2026-05-05 VC 멘토링 준비, 5/28~5/30 기획심의 날짜 재확인"
+    next_milestone: "중3·고1·고2 × 학생·학부모·선생님 9개 세그먼트 조사와 첫 고객군 선택, 5월 MVP 전공/분야 1~2개 선정, 다나 학생용 4주 베타 커리큘럼과 무료 베타 리포트 범위 정의, 베타 테스터 10명 확보 계획, Linear 백로그 정리, 5/28~5/30 기획심의 날짜 재확인"
     notes: >
       상세 프로젝트 맥락은 private project layer 의 `swm-team310-review`에서 관리한다.
       08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 3인 체제 온보딩,
-      첫 고객 파일럿 후보, 담당멘토 2명 확정, 5월 무료 베타 MVP,
-      5/1 멘토링 이후의 CEO 결정 리듬, 5/28~5/30 기획심의 준비를 중심으로 움직인다.
+      첫 고객 파일럿 후보, 담당멘토 3인 확정, 5월 무료 베타 MVP,
+      5/1 멘토링 이후의 CEO 결정 리듬, 5/2 엑스퍼트 회의 이후의 세그먼트/자료조사 기반 검증 리듬,
+      5/28~5/30 기획심의 준비를 중심으로 움직인다.
 
   swm_ai_training_team31:
     status: active
@@ -241,10 +242,6 @@ pending_decisions:
   - trigger: "2026-04-25 첫 pilot candidate의 참여 의사를 중간고사 이후 실제 first output / 상담 흐름으로 전환할 수 있는가"
     if_yes: "첫 고객 파일럿을 바탕으로 부모와 학생이 원하는 질문, 리포트, 상담 연결의 실제 가치를 검증하고 5월 기획심의 스토리의 근거로 사용할 수 있음"
     if_no: "관계 기반 호감과 실제 고객 문제를 구분해 고객조사 질문, 무료 파일럿 범위, 첫 output 가설을 다시 다듬어야 함"
-
-  - trigger: "SW마에스트로 담당 멘토 3인 선정: 2026-04-26 기준 2명 확정, 1자리 미정"
-    if_yes: "2026-06~11 멘토링 리듬 확정, 팀의 방향 검증과 네트워크 활용 가속"
-    if_no: "역제안 멘토 후보 2명과의 미팅 후에도 fit이 약하면 남은 1자리 기준을 다시 세우고 팀 소개 자료/어필 전략을 재조정"
 
   - trigger: "2026-04-22 합류 의사를 확정한 신규 팀원이 실제 역할 배치와 온보딩으로 안정화되는가"
     if_yes: "3인 체제 기준으로 product / frontend / PM 공백을 일부 완화하고 4/29 MVP 실행 부담을 나눌 수 있음"
