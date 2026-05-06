@@ -140,15 +140,17 @@ conventions:
     standard: "ISO 8601 with local offset"
     rule: "시간은 YYYY-MM-DDTHH:MM:SS+09:00 같이 로컬 오프셋 포함 형식을 권장한다."
 
-  journal_time_fields:
+  journal_optional_time_fields:
     standard:
       - "record_started_at"
       - "consultation_started_at"
       - "timezone"
       - "time_reference_note"
     rule: >
-      daily 와 session 기록에는 가능하면 기록 시작 시각과 상담 시작 시각을 함께 남긴다.
-      기록 시작 시각이 근사치라면 time_reference_note 에 그 사실을 남긴다.
+      daily 와 session 기록의 기본 기준은 날짜, 요일, ISO 주차다.
+      AI는 기본적으로 기록 시작 시각이나 상담 시작 시각을 묻지 않는다.
+      사용자가 시간을 먼저 제공했거나 사건 순서 해석에 꼭 필요할 때만
+      위 필드를 선택적으로 남긴다.
 
   journal_daily_filename:
     standard: "YYYY-MM-DD(요일).md"

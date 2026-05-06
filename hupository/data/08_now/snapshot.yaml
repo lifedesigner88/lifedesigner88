@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-04"
+as_of: "2026-05-05"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -15,7 +15,7 @@ active_tracks:
     overall_rank: 303
     waitlist_rank: 3
     team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환했고, 2026-05-01 멘토링 이후 CEO가 충분히 듣되 특정 시점에는 방향을 결정하는 운영 원칙을 세우기 시작했으며, 2026-05-02 담당멘토 3인 확정으로 멘토 매칭 branch가 닫힘"
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_matching_closed + segmentation_research + mvp_contract_definition + founder_decision_rhythm"
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_matching_closed + segmentation_research + mvp_contract_definition + founder_decision_rhythm + vc_pitch_preparation"
     product_direction: "미리(MIRI) — AI 학생부종합전형 프로젝트 매니저 / 수행평가·교과 탐구 플래너"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
@@ -37,6 +37,9 @@ active_tracks:
       repo_signal: "2026-05-02 team310-research origin/main e8514b9 기준 최종 보고서, 5월 MVP 출시전략, 5/30 기획심의 TODO, VC 멘토링 안건이 정리됐다."
       guardrails: "완성 문단 생성, 합격 가능성 단정, 세특 완성/명문대 보장 표현은 금지하고, 추천 근거와 학생 입력을 필수로 둔다."
       first_pilot_signal: "2026-04-25 첫 대면 고객 인터뷰에서 중3 학생과 보호자가 프로젝트 설명을 듣고 참여 의사를 밝혔으며, 무료 컨설팅 파일럿 이후 후속 컨설팅/플랫폼 이용 가설을 검증할 수 있는 후보가 생겼다."
+      validation_principle: "2026-05-04 팀 회의와 외부 멘토 피드백 이후, 휴포짓을 고정 솔루션으로 전제하지 않고 이미 확보된 중3 파일럿 후보의 실제 문제와 첫 output을 기준으로 고객개발형 MVP를 확장한다."
+      vc_signal: "2026-05-05 VC 멘토링에서 휴포짓 구조와 입시시장이 VC 관점에서도 검토해볼 만한 시장이라는 긍정 신호를 얻었고, 2026-05-18 담당멘토와 함께 피칭 연습 자리를 갖기로 했다."
+      market_research_method: "경쟁업체 IR 북을 먼저 분석해 시장 규모, 고객 문제, 투자자 설득 언어를 뽑고, 일반 AI 시장조사는 보조적으로 사용한다."
       next_review_target: "2026-05-28~2026-05-29 기획심의 준비. team310-research TODO에는 5월 30일 기획심의 자료 준비로 적혀 있어 공식 날짜 재확인 필요"
     mentor_matching:
       target_mentors: 3
@@ -78,12 +81,13 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "중3·고1·고2 × 학생·학부모·선생님 9개 세그먼트 조사와 첫 고객군 선택, 5월 MVP 전공/분야 1~2개 선정, 다나 학생용 4주 베타 커리큘럼과 무료 베타 리포트 범위 정의, 베타 테스터 10명 확보 계획, Linear 백로그 정리, 5/28~5/30 기획심의 날짜 재확인"
+    next_milestone: "중3 다나 고객개발 기준 첫 output과 BM 질문 정리, 경쟁업체 IR 북 기반 시장조사, 5월 MVP 전공/분야 1~2개 선정, 다나 학생용 4주 베타 커리큘럼과 무료 베타 리포트 범위 정의, 베타 테스터 10명 확보 계획, Linear 백로그 정리, 2026-05-18 피칭 연습, 5/28~5/30 기획심의 날짜 재확인"
     notes: >
       상세 프로젝트 맥락은 private project layer 의 `swm-team310-review`에서 관리한다.
       08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 3인 체제 온보딩,
       첫 고객 파일럿 후보, 담당멘토 3인 확정, 5월 무료 베타 MVP,
       5/1 멘토링 이후의 CEO 결정 리듬, 5/2 엑스퍼트 회의 이후의 세그먼트/자료조사 기반 검증 리듬,
+      5/4~5/5 이후의 중3 파일럿 고객개발 및 VC 피칭 준비,
       5/28~5/30 기획심의 준비를 중심으로 움직인다.
 
   swm_ai_training_team31:
@@ -102,6 +106,7 @@ active_tracks:
     planning_doc_status: "submitted"
     planning_doc_final_source: "../SomaMeet/기획서/구글독스_1차피드백_반영_통합본.md"
     planning_doc_submission_evidence: "사용자 제출 완료 보고 + SomaMeet origin/main `384634d` docs: mark final planning submission"
+    planning_doc_recognition: "2026-05-05 우수기획서로 선정되어 2026-05-07 19:00 대표 10분 발표가 잡혔다."
     demo_code_due: "2026-05-10T23:59:00+09:00"
     fifth_offline_meeting: "2026-05-13T13:00:00+09:00"
     fifth_offline_meeting_end: "2026-05-13T15:00:00+09:00"
@@ -110,7 +115,7 @@ active_tracks:
     final_presentation_start: "2026-05-15T13:30:00+09:00"
     final_presentation_end: "2026-05-15T15:30:00+09:00"
     selected_topic: "SomaMeet(소마밋) — 개인정보 보호 일정 조율 Agentic Workflow"
-    current_signal: "2026-05-02 사용자가 프로젝트 기획서 제출 완료를 보고했고, SomaMeet origin/main `384634d` 기준 README와 `기획서/구글독스_1차피드백_반영_통합본.md`가 2026-05-02 23:59 제출용 최종 기준 문서로 지정됐다. 기존 `기획서/통합본.md`와 `기획서/제출본.md`는 삭제되어 더 이상 현재 기준이 아니다. 제출본 MVP는 회의 조건 입력 UI, 닉네임/초대 링크, Google Calendar free/busy, `.ics`, 직접 busy/free 입력, 15/30분 단위 공통 시간 계산, 오프라인 30분 버퍼, 타임테이블, 후보 추천, 사용자 검증 페이지, 안내 메시지 초안/복사, AWS Lightsail 배포와 기본 보안을 포함한다. 다음 초점은 2026-05-03 19:00 코치 미팅에서 구현 역할·데이터 모델·데모 범위를 고정하고 2026-05-10 23:59 데모 코드 제출까지 로컬 실행 가능한 Agentic Workflow를 만드는 것이다."
+    current_signal: "2026-05-02 사용자가 프로젝트 기획서 제출 완료를 보고했고, SomaMeet origin/main `384634d` 기준 README와 `기획서/구글독스_1차피드백_반영_통합본.md`가 2026-05-02 23:59 제출용 최종 기준 문서로 지정됐다. 기존 `기획서/통합본.md`와 `기획서/제출본.md`는 삭제되어 더 이상 현재 기준이 아니다. 제출본 MVP는 회의 조건 입력 UI, 닉네임/초대 링크, Google Calendar free/busy, `.ics`, 직접 busy/free 입력, 15/30분 단위 공통 시간 계산, 오프라인 30분 버퍼, 타임테이블, 후보 추천, 사용자 검증 페이지, 안내 메시지 초안/복사, AWS Lightsail 배포와 기본 보안을 포함한다. 2026-05-05 온라인 코칭에서는 팀원별 구현물과 배포 여부를 확인했고, 31조 기획서가 우수기획서로 선정되어 2026-05-07 19:00 대표 발표가 잡혔다. 다음 초점은 2026-05-06 오프라인 회의에서 최종 방향과 역할을 정하고, 2026-05-10 23:59 데모 코드 제출까지 로컬 실행 가능한 Agentic Workflow를 만드는 것이다."
     notes: "기획서는 로컬 환경에서 실행 가능한 Agentic Workflow 데모 프로젝트를 전제로 한다. 최종 데모데이는 등수 경쟁보다 제품과 피칭을 보여주는 성격이므로 사용성·안정성 중심으로 간다. 세부 아이디어, 투표 결과, 팀원별 프로필, 코치 미팅 세부 메모, 팀원별 개인 기획서는 private project layer에 둔다."
 
   soma_on:
@@ -118,7 +123,7 @@ active_tracks:
     started_on: "2026-04-28"
     description: "소마온 — 연수생의 시선으로 SW마에스트로의 사람, 팀, 프로젝트를 기록하고 서울·부산 및 전후 기수의 교류를 촉진하는 공식 유튜브 자율 운영단"
     project_context_id: "soma-on"
-    current_role: "첫 회차 촬영·편집 담당 + 사무국 제출용 1년 운영 계획/예산안 정리"
+    current_role: "방송팀 멤버 + 첫 회차 촬영·편집 담당 + 사무국 제출용 1년 운영 계획/예산안 정리"
     stakeholder_fit: "2026-04-28 사무국 홍보 담당자와 오프라인으로 만나 프로젝트 목적과 이해관계가 맞는 신호를 확인했고, 2026-04-30 서울·부산 운영 담당자와의 촬영 협조/미팅을 통해 공식 협력 신뢰가 강화됐다."
     first_filming_rehearsal: "2026-04-30T12:00:00+09:00"
     first_filming_completed: "2026-04-30T14:00:00+09:00"
@@ -127,12 +132,14 @@ active_tracks:
     secretariat_proposal_meeting_duration: "약 50분"
     first_video_expected: "2026-05-07T14:00:00+09:00"
     secretariat_request: "연수생 자발적 활동으로 인정하고, 1년 운영 계획과 실비 기반 예산안을 제한 없이 구성해 제출해 달라고 요청"
+    operating_structure: "2026-05-05 기준 소마인 네트워킹 기획단 콘셉트 아래 방송팀과 기획팀으로 나뉘어 운영된다."
+    budget_plan_due: "2026-05-07"
     content_axes:
       - "소마퀴즈"
       - "소마 생활 숏폼"
       - "서울-부산 커넥트"
       - "공식 아카이브"
-    current_signal: "2026-04-30 공덕 연수센터에서 사무국 협조 아래 약 3시간 동안 첫 촬영을 완료했고, 15:30부터 약 50분 동안 공식 유튜브 콘텐츠 프로젝트 제안 미팅을 진행했다. 사무국은 이 프로젝트를 연수생 자발적 활동으로 인정하고, 공식 아카이브이자 교류 플랫폼으로 확장할 1년 운영 계획과 실비 기반 예산안을 요청했다. 첫 영상 공개 목표는 2026-05-07 14:00이다."
+    current_signal: "2026-04-30 공덕 연수센터에서 사무국 협조 아래 약 3시간 동안 첫 촬영을 완료했고, 15:30부터 약 50분 동안 공식 유튜브 콘텐츠 프로젝트 제안 미팅을 진행했다. 사무국은 이 프로젝트를 연수생 자발적 활동으로 인정하고, 공식 아카이브이자 교류 플랫폼으로 확장할 1년 운영 계획과 실비 기반 예산안을 요청했다. 2026-05-05 회의에서는 소마인 네트워킹 기획단 콘셉트와 방송팀/기획팀 구조가 잡혔고, 2026-05-07까지 팀별 예산안 작성을 위한 회의가 진행될 예정이다. 첫 영상 공개 목표는 2026-05-07 14:00이다."
     notes: >
       소마온은 Team 310의 MIRI MVP와 별개로, SW마에스트로 내부 네트워크와 공식 채널 콘텐츠를 강화하는 보조 트랙이다.
       첫 촬영 완료와 사무국의 운영계획/예산안 요청으로 단발 콘텐츠가 아니라 지속 운영 가능한 공식 교류 플랫폼 후보가 됐다.
