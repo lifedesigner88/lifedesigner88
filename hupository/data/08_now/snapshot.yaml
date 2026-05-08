@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-07"
+as_of: "2026-05-08"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -15,8 +15,8 @@ active_tracks:
     overall_rank: 303
     waitlist_rank: 3
     team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환했고, 2026-05-01 멘토링 이후 CEO가 충분히 듣되 특정 시점에는 방향을 결정하는 운영 원칙을 세우기 시작했으며, 2026-05-02 담당멘토 3인 확정으로 멘토 매칭 branch가 닫힘"
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_matching_closed + segmentation_research + mvp_contract_definition + founder_decision_rhythm + vc_pitch_preparation"
-    product_direction: "미리(MIRI) — AI 학생부종합전형 프로젝트 매니저 / 수행평가·교과 탐구 플래너"
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_matching_closed + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + vc_pitch_preparation"
+    product_direction: "휴포짓의 입시 vertical 미리(MIRI) — AI 학생부종합전형 프로젝트 매니저 / 수행평가·교과 탐구 플래너"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
     team_role_split:
@@ -24,7 +24,7 @@ active_tracks:
       teammate_b: "ai worker / audio pipeline"
       new_teammate: "backend/auth/authorization/infra + PM/customer validation support 가능성이 있는 실사용자 서비스 운영 경험자. 세부 ownership은 onboarding 중"
       open_gap: "frontend / domain validation / consultant partnership / final PM ownership 역할을 3인 체제 안에서 재배치 필요"
-    leadership_current_signal: "2026-05-01 멘토링에서 팀원과 멘토 의견을 계속 수집하며 무한 합의로 가면 액션플랜이 늦어진다는 점을 자각했다. 현재 운영 원칙은 팀원 의견을 충분히 듣되 기업철학과 시점이 정해지면 CEO가 결정 이유와 다음 행동을 선언하는 쪽으로 전환하는 것이다. 최근 팀 내부에서도 휴포지토리 비전에 대한 지지 신호가 생겨 창업자 자신감을 회복하는 중이다."
+    leadership_current_signal: "2026-05-01 멘토링에서 팀원과 멘토 의견을 계속 수집하며 무한 합의로 가면 액션플랜이 늦어진다는 점을 자각했다. 현재 운영 원칙은 팀원 의견을 충분히 듣되 기업철학과 시점이 정해지면 CEO가 결정 이유와 다음 행동을 선언하는 쪽으로 전환하는 것이다. 2026-05-08에는 지난 5일간 팀원 의견을 존중하는 과정에서 창업 정체성까지 검증 대상으로 열어버렸다는 점을 회고하고, 휴포짓은 상위 철학, 미리는 입시 vertical, 찐로는 취업 vertical로 재고정했다. Team 310은 소마 1년 동안 MIRI로 휴포짓의 첫 사업화 가능성을 검증하는 프로젝트 팀으로 둔다. 합의되지 않은 기능과 shadow work는 제품 범위에 자동 편입하지 않고 고객 가치·KPI·팀 리소스 보호·기획심의 증거 기여도를 기준으로 PR/범위 판단을 한다."
     mvp_target_release: "2026-04-29T14:00:00+09:00"
     mvp_working_scope:
       release_shape: "미리(MIRI) 5월 무료 베타 MVP"
@@ -37,11 +37,11 @@ active_tracks:
       repo_signal: "2026-05-07 기준 삼일공 외부 정본이 `team310-research`에서 `team310` 운영 허브로 전환됐다. team310 origin/main `8e12d5f` 기준 최신 초점은 중3·예비고1 학부모 인터뷰 모집, Tally 폼, 랜딩페이지·팀/멘토 소개 페이지, 페인포인트 검증, 5/18 피칭 연습이다."
       guardrails: "완성 문단 생성, 합격 가능성 단정, 세특 완성/명문대 보장 표현은 금지하고, 추천 근거와 학생 입력을 필수로 둔다."
       first_pilot_signal: "2026-04-25 첫 대면 고객 인터뷰에서 중3 학생과 보호자가 프로젝트 설명을 듣고 참여 의사를 밝혔으며, 무료 컨설팅 파일럿 이후 후속 컨설팅/플랫폼 이용 가설을 검증할 수 있는 후보가 생겼다."
-      validation_principle: "2026-05-04 팀 회의와 외부 멘토 피드백 이후, 휴포짓을 고정 솔루션으로 전제하지 않고 이미 확보된 중3 파일럿 후보의 실제 문제와 첫 output을 기준으로 고객개발형 MVP를 확장한다."
+      validation_principle: "MIRI의 고객, 첫 output, 가격, 기술 구현 범위는 고객개발로 검증하되, 휴포짓을 상위 철학으로 두고 미리를 입시 vertical로 검증한다는 창업 정체성은 매 회의마다 다시 열지 않는다."
       vc_signal: "2026-05-05 VC 멘토링에서 휴포짓 구조와 입시시장이 VC 관점에서도 검토해볼 만한 시장이라는 긍정 신호를 얻었고, 2026-05-18 담당멘토와 함께 피칭 연습 자리를 갖기로 했다."
       market_research_method: "경쟁업체 IR 북을 먼저 분석해 시장 규모, 고객 문제, 투자자 설득 언어를 뽑고, 일반 AI 시장조사는 보조적으로 사용한다."
-      next_review_target: "2026-05-28~2026-05-30 기획심의 준비. team310 운영 허브에는 5월 30일 목표일과 5월 29~30 표기가 섞여 있어 공식 날짜 재확인 필요"
-      immediate_owner_work: "중3·예비고1 학부모 인터뷰 모집 랜딩페이지, 팀/멘토 소개 페이지, Tally 폼 전환 데이터, 2026-05-18 멘토 피칭 연습 준비"
+      next_review_target: "2026-05-28~2026-05-30 기획심의 준비. 전략은 휴포짓 기반 개인 기록 의사결정 AI를 큰 기획으로 두되, 소마 1년 실행 산출물은 MIRI 하나로 고정하는 것이다. team310 운영 허브에는 5월 30일 목표일과 5월 29~30 표기가 섞여 있어 공식 날짜 재확인 필요"
+      immediate_owner_work: "2026-05-09 10:00 조재홍 멘토 미팅에서 `휴포짓 큰 기획 + MIRI 1년 산출물` 전략과 팀원 반대 의견 처리 범위, 5/28 최소 증거 기준을 확인한다. 이후 중3·예비고1 학부모 인터뷰 모집 랜딩페이지, 팀/멘토 소개 페이지, Tally 폼 전환 데이터, 2026-05-18 멘토 피칭 연습 준비로 이어간다."
     mentor_matching:
       target_mentors: 3
       candidate_pool_estimate: 130
@@ -82,7 +82,7 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "중3 다나 고객개발 기준 첫 output과 BM 질문 정리, 경쟁업체 IR 북 기반 시장조사, 5월 MVP 전공/분야 1~2개 선정, 다나 학생용 4주 베타 커리큘럼과 무료 베타 리포트 범위 정의, 베타 테스터 10명 확보 계획, Linear 백로그 정리, 2026-05-18 피칭 연습, 5/28~5/30 기획심의 날짜 재확인"
+    next_milestone: "2026-05-09 조재홍 멘토 미팅에서 휴포짓 큰 기획 + MIRI 1년 산출물 전략 확인, 중3 엄마 대상 랜딩페이지 기반 인터뷰 신청 10명/완료 5명 목표, P1/P4/P5 페인 검증, 지불의향 질문 최소 3건, 최소 입력 기반 AI 리포트 v0와 수행평가/탐구 플래너 v0, 2026-05-18 피칭 연습, 5/28~5/30 기획심의 날짜 재확인"
     notes: >
       상세 프로젝트 맥락은 private project layer 의 `swm-team310-review`에서 관리한다.
       08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 3인 체제 온보딩,
@@ -243,6 +243,14 @@ focus_priority:
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
+  - trigger: "Team 310 팀원들이 휴포짓 상위 철학과 MIRI 입시 vertical 검증 방향에 소마 1년 동안 commit할 수 있는가"
+    if_yes: "창업자는 휴포짓 철학을 유지하면서 MIRI의 고객·기능·BM·기술 범위를 리드하고, 팀원 의견은 리스크/검증/품질 역할로 반영한다"
+    if_no: "팀원이 악감정 없이 다른 선택을 할 수 있음을 열어두고, 남은 팀 기준으로 MIRI 검증 범위와 역할을 재조정한다"
+
+  - trigger: "2026-05-09 조재홍 멘토 미팅에서 `휴포짓 큰 기획 + MIRI 1년 산출물` 전략이 기획심의에 적합하다고 확인되는가"
+    if_yes: "팀원들과 commit 대화를 진행하고, 중3 엄마 랜딩페이지 기반 인터뷰 수집과 MIRI output 제작으로 바로 역산한다"
+    if_no: "휴포짓 상위 철학은 유지하되, 기획심의 문장과 1년 산출물 범위를 멘토 피드백에 맞춰 조정한다"
+
   - trigger: "MIRI 5월 MVP를 수행평가/탐구 플래너 중심으로 좁히고 무료 베타 범위를 고정할 수 있는가"
     if_yes: "전공/분야 1~2개, 다나 학생 4주 베타 커리큘럼, 베타 테스터 10명 확보 계획, 추천 근거/체크리스트 UX를 중심으로 기획심의 전 실행 가능"
     if_no: "미래 생기부 미리보기, AI 리포트, 멘토 매칭, 데이터 아카이빙이 다시 섞여 MVP가 커지고 기획심의 메시지가 흐려질 위험"
