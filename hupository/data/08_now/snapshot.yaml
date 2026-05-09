@@ -93,7 +93,7 @@ active_tracks:
 
   swm_ai_training_team31:
     status: active
-    description: "SW마에스트로 AI 기술교육 31조 최종 제출·발표 준비"
+    description: "업스테이지가 기획한 SW마에스트로 AI 기술교육 31조 최종 제출·발표 준비"
     project_context_id: "swm-ai-training-team31"
     first_coach_online_meeting: "2026-04-28T19:00:00+09:00"
     first_offline_meeting: "2026-04-29T14:00:00+09:00"
@@ -115,9 +115,11 @@ active_tracks:
     final_submission_due: "2026-05-14"
     final_presentation_start: "2026-05-15T13:30:00+09:00"
     final_presentation_end: "2026-05-15T15:30:00+09:00"
+    lecture_80_percent_due: "2026-05-17"
+    lecture_replay_available_until: "2026-06-19"
     selected_topic: "SomaMeet(소마밋) — 개인정보 보호 일정 조율 Agentic Workflow"
     current_signal: "2026-05-02 사용자가 프로젝트 기획서 제출 완료를 보고했고, SomaMeet origin/main `384634d` 기준 README와 `기획서/구글독스_1차피드백_반영_통합본.md`가 2026-05-02 23:59 제출용 최종 기준 문서로 지정됐다. 기존 `기획서/통합본.md`와 `기획서/제출본.md`는 삭제되어 더 이상 현재 기준이 아니다. 2026-05-05 온라인 코칭에서는 팀원별 구현물과 배포 여부를 확인했고, 31조 기획서가 우수기획서로 선정되어 2026-05-07 19:00 대표 발표가 잡혔다. 2026-05-06 3차 오프라인 회의 문서와 SomaMeet origin/main `da83125` 기준으로는 5개 개인 구현 레포를 모두 섞기보다 하나의 통합 베이스를 정하고, 각 레포의 강점만 이슈 단위로 흡수해 5/8 최종 제출본 후보와 5/10 데모 코드 제출로 가는 방향이다."
-    notes: "기획서는 로컬 환경에서 실행 가능한 Agentic Workflow 데모 프로젝트를 전제로 한다. 최종 데모데이는 등수 경쟁보다 제품과 피칭을 보여주는 성격이므로 사용성·안정성 중심으로 간다. 세부 아이디어, 투표 결과, 팀원별 프로필, 코치 미팅 세부 메모, 팀원별 개인 기획서는 private project layer에 둔다."
+    notes: "기획서는 로컬 환경에서 실행 가능한 Agentic Workflow 데모 프로젝트를 전제로 한다. 최종 데모데이는 등수 경쟁보다 제품과 피칭을 보여주는 성격이므로 사용성·안정성 중심으로 간다. 2026-05-08 사용자 제공 기준으로 이 트랙은 업스테이지가 기획한 AI 기술교육 프로그램 맥락 안에서 해석한다. 강의 수강은 2026-05-17까지 80% 조건 충족을 우선하고, 2026-06-19 다시보기 종료 전 Team 310/MIRI에 필요한 Agent Workflow, Evaluation, Safety, AgentOps를 선별 재청취한다. 교육 운영자 실명, 조직도 추정, 회사 배경 리서치는 private project layer에 둔다. 세부 아이디어, 투표 결과, 팀원별 프로필, 코치 미팅 세부 메모, 팀원별 개인 기획서도 private project layer에 둔다."
 
   soma_on:
     status: active
