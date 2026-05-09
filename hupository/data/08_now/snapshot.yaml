@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-08"
+as_of: "2026-05-09"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -14,17 +14,17 @@ active_tracks:
     accepted_on: "2026-03-30"
     overall_rank: 303
     waitlist_rank: 3
-    team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했으나, 2026-04-22 신규 팀원 1명의 합류 의사가 행동 신호로 확정되어 3인 체제 온보딩/역할 재배치와 첫 고객 파일럿 검증 단계로 전환했고, 2026-05-01 멘토링 이후 CEO가 충분히 듣되 특정 시점에는 방향을 결정하는 운영 원칙을 세우기 시작했으며, 2026-05-02 담당멘토 3인 확정으로 멘토 매칭 branch가 닫힘"
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_matching_closed + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + vc_pitch_preparation"
+    team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했고, 2026-04-22 신규 팀원 합류로 3인 체제 온보딩/역할 재배치 단계까지 갔으나, 2026-05-09 핵심 팀원 2명이 역량·체력·속도 부담을 이유로 하차 의사를 밝혀 3인 체제가 종료됐다. 멘토 3인에게 상황을 공유한 뒤 담당멘토 1명도 하차했고, 2명은 계속 함께하기로 했다. 현재는 창업자 단독 리드 + 담당멘토 2인 지원 + 새 팀원 탐색 또는 범위 축소를 동시에 검토해야 하는 재구성 국면이다."
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_support_reduced_to_two + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + team_rebuild_or_scope_down + vc_pitch_preparation"
     product_direction: "휴포짓의 입시 vertical 미리(MIRI) — AI 학생부종합전형 프로젝트 매니저 / 수행평가·교과 탐구 플래너"
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "backend / infra"
     team_role_split:
-      owner: "backend / infra + workspace / ci-cd"
-      teammate_b: "ai worker / audio pipeline"
-      new_teammate: "backend/auth/authorization/infra + PM/customer validation support 가능성이 있는 실사용자 서비스 운영 경험자. 세부 ownership은 onboarding 중"
-      open_gap: "frontend / domain validation / consultant partnership / final PM ownership 역할을 3인 체제 안에서 재배치 필요"
-    leadership_current_signal: "2026-05-01 멘토링에서 팀원과 멘토 의견을 계속 수집하며 무한 합의로 가면 액션플랜이 늦어진다는 점을 자각했다. 현재 운영 원칙은 팀원 의견을 충분히 듣되 기업철학과 시점이 정해지면 CEO가 결정 이유와 다음 행동을 선언하는 쪽으로 전환하는 것이다. 2026-05-08에는 지난 5일간 팀원 의견을 존중하는 과정에서 창업 정체성까지 검증 대상으로 열어버렸다는 점을 회고하고, 휴포짓은 상위 철학, 미리는 입시 vertical, 찐로는 취업 vertical로 재고정했다. Team 310은 소마 1년 동안 MIRI로 휴포짓의 첫 사업화 가능성을 검증하는 프로젝트 팀으로 둔다. 합의되지 않은 기능과 shadow work는 제품 범위에 자동 편입하지 않고 고객 가치·KPI·팀 리소스 보호·기획심의 증거 기여도를 기준으로 PR/범위 판단을 한다."
+      owner: "founder / CEO / product direction / backend-infra / customer discovery / pitch"
+      former_ai_data_owner: "2026-05-09 하차 의사 표명"
+      former_backend_pm_owner: "2026-05-09 하차 의사 표명"
+      open_gap: "AI/data/report structure, backend/auth/infra, PM/customer validation support, frontend, domain validation, consultant partnership, final PM ownership을 새 팀원·멘토·외주·범위 축소 중 어디로 처리할지 재결정 필요"
+    leadership_current_signal: "2026-05-01 멘토링에서 팀원과 멘토 의견을 계속 수집하며 무한 합의로 가면 액션플랜이 늦어진다는 점을 자각했다. 2026-05-08에는 휴포짓은 상위 철학, 미리는 입시 vertical, 찐로는 취업 vertical로 재고정했다. 2026-05-09 팀원 2명 하차 메시지는 창업자의 방향이 곧바로 틀렸다는 증거라기보다, 현재 팀이 감당할 수 있는 속도·체력·역할 밀도와 창업자의 추진 속도 사이의 capacity mismatch로 우선 해석한다. 멘토 3인 공유 후 1명이 하차하고 2명이 계속 함께하기로 하면서, 지금 필요한 리더십은 즉시 설득/자책보다 감정 수습, 감사와 인수인계, 남은 멘토 2인과의 기획심의 범위 재산정, 단독/재구성 실행안으로 이어지는 것이다."
     mvp_target_release: "2026-04-29T14:00:00+09:00"
     mvp_working_scope:
       release_shape: "미리(MIRI) 5월 무료 베타 MVP"
@@ -38,23 +38,23 @@ active_tracks:
       guardrails: "완성 문단 생성, 합격 가능성 단정, 세특 완성/명문대 보장 표현은 금지하고, 추천 근거와 학생 입력을 필수로 둔다."
       first_pilot_signal: "2026-04-25 첫 대면 고객 인터뷰에서 중3 학생과 보호자가 프로젝트 설명을 듣고 참여 의사를 밝혔으며, 무료 컨설팅 파일럿 이후 후속 컨설팅/플랫폼 이용 가설을 검증할 수 있는 후보가 생겼다."
       validation_principle: "MIRI의 고객, 첫 output, 가격, 기술 구현 범위는 고객개발로 검증하되, 휴포짓을 상위 철학으로 두고 미리를 입시 vertical로 검증한다는 창업 정체성은 매 회의마다 다시 열지 않는다."
-      vc_signal: "2026-05-05 VC 멘토링에서 휴포짓 구조와 입시시장이 VC 관점에서도 검토해볼 만한 시장이라는 긍정 신호를 얻었고, 2026-05-18 담당멘토와 함께 피칭 연습 자리를 갖기로 했다."
+      vc_signal: "2026-05-05 VC 멘토링에서 휴포짓 구조와 입시시장이 VC 관점에서도 검토해볼 만한 시장이라는 긍정 신호를 얻었고, 2026-05-18 남은 담당멘토와 함께 피칭 연습 자리를 갖기로 했다."
       market_research_method: "경쟁업체 IR 북을 먼저 분석해 시장 규모, 고객 문제, 투자자 설득 언어를 뽑고, 일반 AI 시장조사는 보조적으로 사용한다."
       next_review_target: "2026-05-28~2026-05-30 기획심의 준비. 전략은 휴포짓 기반 개인 기록 의사결정 AI를 큰 기획으로 두되, 소마 1년 실행 산출물은 MIRI 하나로 고정하는 것이다. team310 운영 허브에는 5월 30일 목표일과 5월 29~30 표기가 섞여 있어 공식 날짜 재확인 필요"
-      immediate_owner_work: "2026-05-09 10:00 조재홍 멘토 미팅에서 `휴포짓 큰 기획 + MIRI 1년 산출물` 전략과 팀원 반대 의견 처리 범위, 5/28 최소 증거 기준을 확인한다. 이후 중3·예비고1 학부모 인터뷰 모집 랜딩페이지, 팀/멘토 소개 페이지, Tally 폼 전환 데이터, 2026-05-18 멘토 피칭 연습 준비로 이어간다."
+      immediate_owner_work: "2026-05-09 팀원 2명 및 담당멘토 1명 하차 이후 48시간 안에 감사와 수습 메시지, 최소 인수인계 범위, 남은 담당멘토 2인과의 기획심의 solo-feasible 범위 재산정, 중3·예비고1 학부모 인터뷰 모집과 최소 AI 리포트/탐구 플래너 v0 유지 여부를 결정한다."
     mentor_matching:
       target_mentors: 3
       candidate_pool_estimate: 130
       target_meetings: 20
       meetings_completed: 8
       meetings_scheduled: 0
-      confirmed_mentors: 3
-      open_slots: 0
+      confirmed_mentors: 2
+      open_slots: 1
       reverse_proposal_meetings_pending: 0
       selection_window: "2026-04 ~ 2026-05"
       desired_lock_in: "2026-05-02"
-      primary_mentor_status: "담당멘토 3명 최종 확정"
-      current_signal: "2026-04-24 첫 담당멘토와 19:00~22:00 멘토링을 진행했고, 신규 팀원 소개, 6자 대면 인터뷰 설계 조언, 밸류 프로포지션 디자인 실습까지 이어졌다. 2026-04-26에는 두 번째 담당멘토를 확정해 총 2자리를 확보했다. 2026-05-01에는 또 다른 멘토링에서 CEO가 방향을 결정해야 팀 실행이 빨라진다는 운영 조언을 얻었다. 2026-05-02에는 남은 1자리가 확정되어 담당멘토 3인 조합이 닫혔고, 이제 초점은 5월 기획심의, 고객 세그먼트 검증, MVP 범위 확정으로 이동했다."
+      primary_mentor_status: "담당멘토 2명 유지, 1명 하차"
+      current_signal: "2026-04-24 첫 담당멘토와 19:00~22:00 멘토링을 진행했고, 신규 팀원 소개, 6자 대면 인터뷰 설계 조언, 밸류 프로포지션 디자인 실습까지 이어졌다. 2026-04-26에는 두 번째 담당멘토를 확정해 총 2자리를 확보했다. 2026-05-01에는 또 다른 멘토링에서 CEO가 방향을 결정해야 팀 실행이 빨라진다는 운영 조언을 얻었다. 2026-05-02에는 남은 1자리가 확정되어 담당멘토 3인 조합이 닫혔으나, 2026-05-09 팀원 2명 하차 공유 이후 담당멘토 1명이 하차하고 2명이 계속 함께하기로 했다. 이제 초점은 2인 멘토 지원 구조 안에서 5월 기획심의, 고객 세그먼트 검증, MVP 범위 재산정으로 이동했다."
     xpert_support:
       assignment_model: "연수생 1명당 엑스퍼트 1명 배정"
       required_cadence: "월 1회 약 1시간 필수 멘토링"
@@ -82,14 +82,14 @@ active_tracks:
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "2026-05-09 조재홍 멘토 미팅에서 휴포짓 큰 기획 + MIRI 1년 산출물 전략 확인, 중3 엄마 대상 랜딩페이지 기반 인터뷰 신청 10명/완료 5명 목표, P1/P4/P5 페인 검증, 지불의향 질문 최소 3건, 최소 입력 기반 AI 리포트 v0와 수행평가/탐구 플래너 v0, 2026-05-18 피칭 연습, 5/28~5/30 기획심의 날짜 재확인"
+    next_milestone: "2026-05-09~2026-05-11 팀원 2명 및 담당멘토 1명 하차 수습, 인수인계, 남은 담당멘토 2인과 5/28~5/30 기획심의 solo-feasible 범위 재산정, 중3 엄마 대상 랜딩페이지 기반 인터뷰와 최소 입력 기반 AI 리포트 v0·수행평가/탐구 플래너 v0 중 유지 가능한 증거 선택, 2026-05-18 피칭 연습 여부 재확인"
     notes: >
       상세 프로젝트 맥락은 private project layer 의 `swm-team310-review`에서 관리한다.
-      08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 3인 체제 온보딩,
-      첫 고객 파일럿 후보, 담당멘토 3인 확정, 5월 무료 베타 MVP,
+      08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 2026-05-09 핵심 팀원 2명 하차로
+      3인 체제가 종료된 뒤 담당멘토 1명도 하차해 재구성/범위 축소 국면에 들어갔고, 첫 고객 파일럿 후보, 담당멘토 2인 유지, 5월 무료 베타 MVP,
       5/1 멘토링 이후의 CEO 결정 리듬, 5/2 엑스퍼트 회의 이후의 세그먼트/자료조사 기반 검증 리듬,
       5/4~5/5 이후의 중3 파일럿 고객개발 및 VC 피칭 준비,
-      5/28~5/30 기획심의 준비를 중심으로 움직인다.
+      5/28~5/30 기획심의 준비를 축소/재설계해야 하는 상태다.
 
   swm_ai_training_team31:
     status: active
@@ -196,7 +196,7 @@ active_tracks:
     first_meeting_completed: "2026-03-27T15:00:00+09:00"
     current_mode: "당분간 진행하지 않음"
     reopen_condition: "소마 우선 과제가 한 단계 정리된 뒤에만 재검토"
-    notes: "현재는 SW마에스트로 팀 프로젝트, 멘토 3인 매칭, MVP 구체화에 집중한다."
+    notes: "현재는 SW마에스트로 팀 프로젝트 수습, 남은 멘토링 구조 활용, MVP/기획심의 범위 재산정에 집중한다."
 
   eunpyeong_youth_network:
     status: active
@@ -225,9 +225,9 @@ active_tracks:
 constraints:
   financial_runway_months: null
   primary_constraint: "2026-11 말 SW마에스트로 수료 시점에 3억 규모 seed 투자를 받을 수 있는 팀/제품 진척을 만들어야 함"
-  team_capacity_note: "2026-04-26 기준 신규 팀원 1명의 합류 이후 3인 체제 온보딩이 진행 중이며, 해당 팀원은 실사용자 서비스 운영, backend/auth/infra, PM/customer validation support 경험을 갖춘 것으로 정리됐다. 첫 외부 피칭·담당멘토 멘토링·첫 고객 대면 인터뷰를 통해 서비스 설명, 고객 니즈 이해, 인터뷰 준비를 함께 맞추기 시작했다. 다만 frontend / domain validation / consultant partnership / final PM ownership 역할 경계는 아직 재배치가 필요하다."
-  simultaneous_focus_capacity: 2
-  energy_level: null
+  team_capacity_note: "2026-05-09 기준 핵심 팀원 2명이 하차 의사를 밝혀 기존 3인 실행 가정이 깨졌고, 담당멘토 1명도 하차해 멘토 지원 구조가 2인으로 축소됐다. 당분간 Team 310은 창업자 단독 리드, 남은 멘토/엑스퍼트 지원, 새 팀원 탐색, 범위 축소 중 현실적인 조합을 다시 정해야 한다."
+  simultaneous_focus_capacity: 1
+  energy_level: "acute_shock_after_team_exit"
   location: "Seoul"
   work_mode: "team_lead + solo_builder"
 
@@ -235,7 +235,7 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — Team 310 MIRI 5월 무료 베타 MVP와 5/28~5/30 기획심의 준비"
+  1: "sw_maestro_17 — Team 310 팀원 2명 및 담당멘토 1명 하차 수습, MIRI 5월 무료 베타 MVP/5월 기획심의 범위 재산정"
   2: "swm_ai_training_team31 — 5/8 최종 제출본 후보, 5/10 데모 코드, 5/14 최종 제출, 5/15 13:30~15:30 최종 발표 준비"
   3: "soma_on — 개인 중심 `동물농장 + 1분 스피치` 주 1회 콘텐츠와 장비/실비/편집 프로그램 예산안 정리"
   4: "eunpyeong_youth_festival_2026 / eunpyeong_youth_network — 지역 청년 축제·정책 활동은 소마 우선순위 뒤에서 유지"
@@ -245,13 +245,18 @@ focus_priority:
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
-  - trigger: "Team 310 팀원들이 휴포짓 상위 철학과 MIRI 입시 vertical 검증 방향에 소마 1년 동안 commit할 수 있는가"
-    if_yes: "창업자는 휴포짓 철학을 유지하면서 MIRI의 고객·기능·BM·기술 범위를 리드하고, 팀원 의견은 리스크/검증/품질 역할로 반영한다"
-    if_no: "팀원이 악감정 없이 다른 선택을 할 수 있음을 열어두고, 남은 팀 기준으로 MIRI 검증 범위와 역할을 재조정한다"
+  - trigger: "Team 310 팀원 2명 하차 이후 5월 기획심의를 단독/재구성/범위 축소 중 어떤 형태로 갈 것인가"
+    if_solo_or_small_team: "고객 인터뷰, 랜딩/Tally, 샘플 리포트 v0, 수행평가/탐구 플래너 v0, 휴포짓 데이터 루프 설명처럼 창업자 단독으로도 만들 수 있는 증거에 집중한다"
+    if_rebuild: "멘토와 사무국에 상황을 공유하고, AI/data/frontend/PM 중 한 가지 핵심 공백만 메울 수 있는 팀원 또는 협력자를 빠르게 탐색한다"
+    if_pause_or_pivot: "소마 일정과 개인 회복을 우선해 기획심의 목표를 재협상하고, MIRI 검증 범위를 보수적으로 낮춘다"
 
-  - trigger: "2026-05-09 조재홍 멘토 미팅에서 `휴포짓 큰 기획 + MIRI 1년 산출물` 전략이 기획심의에 적합하다고 확인되는가"
-    if_yes: "팀원들과 commit 대화를 진행하고, 중3 엄마 랜딩페이지 기반 인터뷰 수집과 MIRI output 제작으로 바로 역산한다"
-    if_no: "휴포짓 상위 철학은 유지하되, 기획심의 문장과 1년 산출물 범위를 멘토 피드백에 맞춰 조정한다"
+  - trigger: "담당멘토 1명 하차 이후 남은 2인 멘토 지원 구조로 5월 기획심의와 5/18 피칭 연습을 유지할 수 있는가"
+    if_yes: "남은 멘토 2인의 역할을 제품/BM/피칭과 리더십/실행 리듬으로 나누고, AI workflow/레포 기반 작업 방식 공백은 별도 도구/외부지원으로 보완한다"
+    if_no: "멘토 추가 확보보다 먼저 기획심의 메시지와 실행 범위를 더 줄여 창업자 단독으로 방어 가능한 증거에 집중한다"
+
+  - trigger: "2026-05-09 담당멘토 미팅에서 `휴포짓 큰 기획 + MIRI 1년 산출물` 전략이 기획심의에 적합하다고 확인되는가"
+    if_yes: "팀원 2명 하차 이후에도 단독/재구성 기준으로 중3 엄마 랜딩페이지 기반 인터뷰 수집과 MIRI output 제작을 역산한다"
+    if_no: "휴포짓 상위 철학은 유지하되, 기획심의 문장과 1년 산출물 범위를 멘토 피드백 및 팀 재구성 현실에 맞춰 조정한다"
 
   - trigger: "MIRI 5월 MVP를 수행평가/탐구 플래너 중심으로 좁히고 무료 베타 범위를 고정할 수 있는가"
     if_yes: "전공/분야 1~2개, 다나 학생 4주 베타 커리큘럼, 베타 테스터 10명 확보 계획, 추천 근거/체크리스트 UX를 중심으로 기획심의 전 실행 가능"
@@ -261,9 +266,9 @@ pending_decisions:
     if_yes: "첫 고객 파일럿을 바탕으로 부모와 학생이 원하는 질문, 리포트, 상담 연결의 실제 가치를 검증하고 5월 기획심의 스토리의 근거로 사용할 수 있음"
     if_no: "관계 기반 호감과 실제 고객 문제를 구분해 고객조사 질문, 무료 파일럿 범위, 첫 output 가설을 다시 다듬어야 함"
 
-  - trigger: "2026-04-22 합류 의사를 확정한 신규 팀원이 실제 역할 배치와 온보딩으로 안정화되는가"
-    if_yes: "3인 체제 기준으로 product / frontend / PM 공백을 일부 완화하고 4/29 MVP 실행 부담을 나눌 수 있음"
-    if_no: "합류 의사는 유지하되 역할 경계, 기존 팀 인수인계, 이번 주 MVP 책임 범위를 다시 좁혀야 함"
+  - trigger: "하차한 팀원들과 감정적으로 안전한 마무리와 최소 인수인계를 할 수 있는가"
+    if_yes: "감사와 존중을 유지하면서 repo, 계정, 문서, 진행 중 작업, 외부 커뮤니케이션 공백을 최소화한다"
+    if_no: "설득이나 원인 논쟁보다 프로젝트 자산 보존, 접근 권한 정리, 멘토/운영진 공유를 우선한다"
 
   - trigger: "2026-11 말까지 3억 규모 seed 투자 가능 수준의 팀/제품 진척 도달"
     if_yes: "SW마에스트로 이후 첫 투자 라운드와 제품/팀 확장 준비"
