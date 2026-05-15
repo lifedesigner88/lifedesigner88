@@ -18,7 +18,7 @@ private_runtime_note: >
   이 공개 mirror 에서는 data 구조와 공개 가능한 상태만 설명한다.
 
 private_companion_note: >
-  private repository 에는 session_context, raw journal, monthly review 같은 companion layer 가 있지만
+  private repository 에는 session_context, raw journal, monthly review, LLM wiki 같은 companion layer 가 있지만
   이는 public schema 의 일부가 아니며 운영 계약은 private repo 루트의 AGENTS.md 와 /ai 에서 관리한다.
 
 layers:
