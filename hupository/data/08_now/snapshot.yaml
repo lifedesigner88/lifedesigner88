@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-14"
+as_of: "2026-05-18"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -15,7 +15,7 @@ active_tracks:
     overall_rank: 303
     waitlist_rank: 3
     team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했고, 2026-04-22 신규 팀원 합류로 3인 체제 온보딩/역할 재배치 단계까지 갔으나, 2026-05-09 핵심 팀원 2명이 역량·체력·속도 부담을 이유로 하차 의사를 밝혀 3인 체제가 종료됐다. 멘토 3인에게 상황을 공유한 뒤 담당멘토 1명도 하차했고, 2명은 계속 함께하기로 했다. 2026-05-10 새 팀원 1명이 합류했고, 이 팀원은 단기 구현 전력보다 데이터 구조화·문제 모델링·평가 지표 축으로 작게 온보딩하는 것이 적합하다. 같은 날 하차한 전 팀원 2명이 별도 팀을 구성한 것으로 공유되어, 인수인계와 자산 경계를 더 명확히 해야 한다. 이후 AI/데이터 제품화 역량을 가진 신규 담당멘토 1명이 합류해 멘토 지원 구조는 3인으로 복구됐다. 2026-05-13 사무국 확인으로 추가 예비합격은 없고 Team 310은 2인팀으로 고정됐다. 현재는 창업자 리드 + 제한적 새 팀원 보조 + 담당멘토 3인 지원 + 범위 축소 + 공식 기획심의 양식 기반 evidence 제작 국면이다."
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_support_restored_to_three + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + two_person_team_finalized + new_teammate_onboarding + scope_down + huposit_data_loop_repositioning + service_structure_fixed + customer_web_flow_scoped + technical_architecture_v0 + vc_pitch_preparation"
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_support_restored_to_three + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + two_person_team_finalized + new_teammate_onboarding + scope_down + huposit_data_loop_repositioning + service_structure_fixed + customer_web_flow_scoped + technical_architecture_v0 + market_positioning_slogan_refinement + vc_pitch_preparation"
     product_direction: "휴포짓 — Human + Repository 기반 개인 맥락 AI 코칭 서비스. 장기 구조는 Huposit -> Hupository -> Networking 이며, 2026년 첫 검증과 매출은 Huposit 축의 맥락 정리와 반복 업무 해결에서 만든다."
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "founder / CEO / product direction / customer discovery / backend-infra / pitch"
@@ -31,6 +31,8 @@ active_tracks:
       project_context_id: "swm-team310-review"
       core_value: "개인의 고민, 목표, 제약, 감정, 선택지, 업무 자료를 AI가 읽을 수 있는 구조로 정리하고, 출처 있는 산출물과 다음 행동, 유사 맥락 연결 가능성을 보여준다."
       fixed_definition: "휴포짓은 개인의 고민, 목표, 제약, 감정, 선택지 등 흩어진 맥락 데이터를 AI가 구조화하고 분석하여 현재 상태 해석과 다음 행동 제안을 제공하며, 장기적으로는 비슷한 고민과 성장 과정을 가진 사람들이 서로를 발견하고 연결될 수 있도록 돕는 개인 맥락 기반 AI 코칭 서비스다."
+      positioning_slogan: "흐릿한 내 마음, 선명한 행동으로"
+      positioning_summary: "처음부터 명확하지 않은 고민과 목표를 개인 맥락으로 구조화해 사용자가 선명한 다음 행동으로 옮길 수 있게 돕는 서비스로 설명한다."
       ict_classification: "인공지능 > 신뢰·산업 AI. 1차 소분류는 활용·지원 AI, 보조 소분류는 신뢰·공정 AI"
       primary_customer: "아직 고정하지 않음. `모두의 고민`은 약자/막막한 사람 중심, `모두의 목표`는 멘토·엑스퍼트·연수생 같은 초기 검증군 중심으로 비교한다."
       service_structure: "Huposit -> Hupository -> Networking. 2026년 첫 검증과 매출은 Huposit 축의 맥락 정리와 반복 업무 해결에서 만든다."
@@ -43,10 +45,11 @@ active_tracks:
       first_pilot_signal: "2026-04-25 첫 대면 고객 인터뷰에서 중3 학생과 보호자가 프로젝트 설명을 듣고 참여 의사를 밝혔으며, 무료 컨설팅 파일럿 이후 후속 컨설팅/플랫폼 이용 가설을 검증할 수 있는 후보가 생겼다."
       latest_customer_discovery_signal: "2026-05-11 프리랜서 강사/1인 대표 유형의 첫 고객 인터뷰에서 강의 일정 조율, 요구사항 반영, 강의안 커스터마이징, 자료 아카이빙을 AI 개인비서/컨설팅으로 해결하고 싶다는 강한 니즈와 유료 컨설팅·베타 참여 의향이 확인됐다. 2026-05-13 두 번째 고객 인터뷰에서는 IR 담당자/프리랜서 지식노동자가 시장·섹터 리서치 자동화, IR PPT 템플릿 기반 생성, 투자자 반복 Q&A agentic 응대에 강한 니즈를 보였다. 2026-05-14 첫 고객 후속 온보딩에서는 비개발 고객에게 GitHub/VS Code 직접 사용은 장벽이 크지만, 자기 자료가 AI가 읽는 맥락으로 바뀌는 경험은 강하다는 신호가 확인됐다. 두 사람은 private 레이어에서 베타테스터 고객으로 다루며, 공개 레이어에서는 실명과 직접 식별 맥락을 제외하고 `맥락과 반복 산출물이 많은 전문 지식노동자` 고객군 후보 신호로만 보관한다."
       validation_principle: "휴포짓 상위 철학과 사람 연결 비전은 유지하되, 5월~6월에는 특정 분야 이름이나 전면 네트워킹보다 Huposit 축의 맥락 정리, 반복 업무, 출처 있는 산출물, 사람 승인 흐름을 먼저 검증한다."
+      latest_positioning_signal: "2026-05-17 타 팀원 엑스퍼트 미팅에서 마켓 포지셔닝 관점의 피드백을 받았고, 팀 내부에서 목표가 대화를 통해 선명해지는 장면을 근거로 `흐릿한 내 마음, 선명한 행동으로` 슬로건을 잡았다. 목표 설정의 뇌과학적 중요성, 기업 목표관리 방법론, 경쟁사 리서치를 기획심의 근거로 보강 중이다."
       vc_signal: "2026-05-05 VC 멘토링에서 휴포짓 구조와 입시시장이 VC 관점에서도 검토해볼 만한 시장이라는 긍정 신호를 얻었고, 2026-05-18 남은 담당멘토와 함께 피칭 연습 자리를 갖기로 했다."
       market_research_method: "경쟁업체 IR 북을 먼저 분석해 시장 규모, 고객 문제, 투자자 설득 언어를 뽑고, 일반 AI 시장조사는 보조적으로 사용한다."
-      next_review_target: "2026-05-28~2026-05-30 기획심의 준비. 2026-05-13 기획심의 공지사항과 공식 양식이 올라왔고, 2026-05-14에는 고객용 웹 흐름과 기술 구조 v0가 잡혔다. 전략은 공식 양식 안에서 휴포짓 기반 개인 맥락 구조화 루프를 큰 기획으로 두고, 5월 evidence는 베타 고객 2건, 비개발 고객 온보딩 장벽, 웹서비스형 6월 첫 제품 범위, 구조화 리포트와 출처 표시/승인 흐름으로 만든다. team310 운영 허브에는 5월 30일 목표일과 5월 29~30 표기가 섞여 있어 공식 날짜 재확인 필요"
-      immediate_owner_work: "공식 양식 기반 기획서 초안 정렬, 2인팀 역할 분담 문장화, 담당멘토 3인과의 기획심의 small-team 범위 재산정, 새 팀원의 첫 1주 데이터/평가 역할 계약, 고객용 웹 입력/맥락 확인/출처 표시 리포트/사람 승인 흐름의 6월 구현 범위를 결정한다."
+      next_review_target: "2026-05-25 09:00 프로젝트 기획서 PDF 제출, 2026-05-29~2026-05-30 09:40~17:00 기획심의 발표 준비. 2026-05-13 기획심의 공지사항과 공식 양식이 올라왔고, 2026-05-14에는 고객용 웹 흐름과 기술 구조 v0가 잡혔다. 2026-05-17에는 `흐릿한 내 마음, 선명한 행동으로` 슬로건과 마켓 포지셔닝 보강 방향이 생겼다. 전략은 공식 양식 안에서 휴포짓 기반 개인 맥락 구조화 루프를 큰 기획으로 두고, 5월 evidence는 베타 고객 2건, 비개발 고객 온보딩 장벽, 웹서비스형 6월 첫 제품 범위, 구조화 리포트와 출처 표시/승인 흐름, 목표/고민이 선명한 행동으로 바뀌는 내부·외부 사례로 만든다. 발표는 제출 PDF만 사용하며 별도 PPT와 전자기기는 사용할 수 없고 종이 대본은 가능하다. 2026-05-28 13:00부터 7층 출입 제한이 시작된다."
+      immediate_owner_work: "공식 양식 기반 11페이지 PDF 기획서 초안 정렬, `흐릿한 내 마음, 선명한 행동으로` 슬로건과 `휴포짓한다` 동사형 정의 압축, 2인팀 역할 분담 문장화, 담당멘토 3인과의 기획심의 small-team 범위 재산정, 새 팀원의 첫 1주 데이터/평가 역할 계약, 고객용 웹 입력/맥락 확인/출처 표시 리포트/사람 승인 흐름의 6월 구현 범위를 결정한다."
     mentor_matching:
       target_mentors: 3
       candidate_pool_estimate: 130
@@ -80,21 +83,24 @@ active_tracks:
         focus: "우수팀 선발 시 글로벌 AI·SW 역량 강화 교육 연계, 후속 투자 미팅·제품/팀 확장 준비"
     official_schedule_anchor:
       pre_program: "2026-04-06 ~ 2026-05-31"
-      project_review: "2026-05-28 ~ 2026-05-30"
+      project_plan_submission_due: "2026-05-25T09:00:00+09:00"
+      project_review: "2026-05-29 ~ 2026-05-30"
+      project_review_daily_time: "09:40 ~ 17:00"
+      project_review_access_restriction: "2026-05-28T13:00:00+09:00 ~ 2026-06-01T13:00:00+09:00"
       main_program: "2026-06-01 ~ 2026-11-19"
       mid_check: "2026-08-20 ~ 2026-08-22"
       final_check_round_1: "2026-11-12 ~ 2026-11-14"
       final_check_round_2: "2026-11-20 ~ 2026-11-21"
       demo_day_and_graduation: "2026-12"
       global_program_if_selected: "2027-01 ~ 2027-02"
-    next_milestone: "2026-05-14~2026-05-18 2인팀 체제 확정 이후 공식 기획심의 양식 기반 초안 정렬, 인수인계/자산 경계 확인, 새 팀원 온보딩/역할 계약, 담당멘토 3인과 5/28~5/30 기획심의 small-team 범위 재산정, 베타 고객 2건·비개발 고객 온보딩 장벽·고객용 웹 흐름·구조화 리포트·출처 표시/사람 승인 흐름을 5월 evidence로 만들기, 2026-05-18 피칭 연습 여부 재확인"
+    next_milestone: "2026-05-18~2026-05-25 09:00 공식 기획심의 양식 기반 11페이지 PDF 제출본 정렬, 인수인계/자산 경계 확인, 새 팀원 온보딩/역할 계약, 담당멘토 3인과 5/29~5/30 기획심의 small-team 발표 범위 재산정, 베타 고객 2건·비개발 고객 온보딩 장벽·고객용 웹 흐름·구조화 리포트·출처 표시/사람 승인 흐름을 5월 evidence로 압축하기"
     notes: >
       상세 프로젝트 맥락은 private project layer 의 `swm-team310-review`에서 관리한다.
       08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 2026-05-09 핵심 팀원 2명 하차로
       3인 체제가 종료된 뒤 담당멘토 1명도 하차해 재구성/범위 축소 국면에 들어갔고, 2026-05-10 새 팀원이 합류해 데이터 구조화/문제 모델링 축으로 제한 온보딩해야 한다. 이후 신규 담당멘토 1명이 합류해 담당멘토 3인 구조가 복구됐고, 2026-05-13 Team 310은 2인팀으로 고정됐다. 첫 고객 파일럿 후보, 담당멘토 3인 지원, 5월 무료 베타 MVP,
       5/1 멘토링 이후의 CEO 결정 리듬, 5/2 엑스퍼트 회의 이후의 세그먼트/자료조사 기반 검증 리듬,
       5/4~5/5 이후의 중3 파일럿 고객개발 및 VC 피칭 준비,
-      5/28~5/30 기획심의 준비를 축소/재설계해야 하는 상태다.
+      5/25 PDF 제출과 5/29~5/30 기획심의 발표 준비를 축소/재설계해야 하는 상태다.
 
   swm_ai_training_team31:
     status: active
@@ -240,7 +246,7 @@ constraints:
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — Team 310 2인팀 고정 이후 공식 기획심의 양식 기반 초안 정렬, 새 팀원 온보딩/역할 계약, 담당멘토 3인 역할 분담, 모두의 고민/목표 기반 휴포짓 고객발굴 evidence 만들기"
+  1: "sw_maestro_17 — Team 310 2인팀 고정 이후 2026-05-25 09:00 제출용 11페이지 PDF 기획서 정렬, `흐릿한 내 마음, 선명한 행동으로` 포지셔닝 압축, 새 팀원 온보딩/역할 계약, 담당멘토 3인 역할 분담, 모두의 고민/목표 기반 휴포짓 고객발굴 evidence 만들기"
   2: "swm_ai_training_team31 — 5/15 13:30~15:30 최종 발표, 자연어 입력/UI 업그레이드 데모 안정화, 5/17 강의 80% 수강 조건"
   3: "soma_on — 개인 중심 `동물농장 + 1분 스피치` 주 1회 콘텐츠와 장비/실비/편집 프로그램 예산안 정리"
   4: "eunpyeong_youth_festival_2026 / eunpyeong_youth_network — 지역 청년 축제·정책 활동은 소마 우선순위 뒤에서 유지"
