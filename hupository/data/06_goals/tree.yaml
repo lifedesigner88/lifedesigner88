@@ -5,7 +5,7 @@
 # tree.yaml : 목표 구조와 연결 관계 (what / why this)
 # progress.yaml : tree.yaml 기준 각 목표의 현재 진척과 근거 (how far)
 
-as_of: "2026-05-14"
+as_of: "2026-05-18"
 
 # ─────────────────────────────────────────
 # 상위 연결 (lifetime.yaml)
@@ -27,13 +27,51 @@ goals:
 
   - id: "G-LIFE"
     type: long_term
-    title: "라이프디자이너 — 사람들이 삶과 성장을 스스로 설계할 수 있게 돕는 구조 만들기"
+    title: "Hupository — 삶의 객관 기록과 지식 상속을 위한 생애 데이터 구조 만들기"
     horizon: "5년+"
     status: active
     notes: >
-      핵심 문제의식은 사람의 가능성 부족보다 삶과 성장의 구조 부족에 있다.
-      교육과 기술을 통해 막막함을 실행 가능한 시스템으로 바꾸는 것이 장기 비전이다.
+      최상위 사명은 박세종의 삶을 객관적으로 기록하여 후대와 인공지능이 읽을 수 있는 생애 데이터로 남기는 것이다.
+      이 기록을 기반으로 인류가 쌓아 올린 지식, 특히 인생을 아름답게 살아가는 방법을
+      다음 세대와 사람들에게 차별 없이 상속하는 구조를 만든다.
+      기존의 라이프디자인, 교육×기술, 커뮤니티, 휴포짓 창업은 이 사명을 현실에서 구현하는 하위 경로다.
     children:
+
+      - id: "G-LIFE-RECORD"
+        type: mid_term
+        title: "박세종 생애 기록 데이터 저장소 고도화"
+        horizon: "평생"
+        status: active
+        parent: "G-LIFE"
+        notes: >
+          daily, weekly, now, goals, decisions, wiki, project, people layer를 통해
+          삶의 사실, 판단, 감정, 관계, 프로젝트, 배움을 구조화한다.
+          이 목표는 Hupository 전체 구조의 최상위 저장 이유다.
+        children:
+          - id: "G-LIFE-RECORD-01"
+            type: short_term
+            title: "Hupository 구조를 평생 사명 기준으로 재정렬"
+            horizon: "2026-05"
+            status: in_progress
+            parent: "G-LIFE-RECORD"
+
+      - id: "G-KNOWLEDGE-INHERIT"
+        type: mid_term
+        title: "인류 지식의 차별 없는 상속 구조 만들기"
+        horizon: "5년+"
+        status: active
+        parent: "G-LIFE"
+        notes: >
+          인류가 수천 년 동안 쌓아 올린 지식 중 무엇이 가치 있는지 탐구하고,
+          다음 세대와 사람들에게 차별 없이 전달할 수 있는 교육×기술 구조를 만든다.
+          현재 가장 큰 지식 후보는 인생을 아름답게 살아가는 방법이다.
+        children:
+          - id: "G-KNOWLEDGE-01"
+            type: short_term
+            title: "인생을 아름답게 살아가는 방법을 휴포짓/세종클래스/콘텐츠로 구조화"
+            horizon: "2026-2027"
+            status: in_progress
+            parent: "G-KNOWLEDGE-INHERIT"
 
       - id: "G-EDU-TECH"
         type: mid_term
@@ -113,7 +151,7 @@ goals:
           - id: "G-AI-04"
             type: short_term
             title: "SW마에스트로 Team 310 — 휴포짓 개인 맥락 AI 코칭 서비스와 기획심의 검증"
-            horizon: "2026-04 ~ 2026-11"
+            horizon: "2026-04 - 2026-11"
             status: in_progress
             parent: "G-AI-BUILDER"
             notes: >
@@ -138,10 +176,10 @@ goals:
         parent: "G-LIFE"
         independence: "소마 합격/불합격과 무관하게 진행. 소마는 가속 옵션 중 하나."
         notes: >
-          Hupository: Git + YAML + AI로 삶과 성장을 설계하는 시스템. 강의 소재이자 서비스 원형.
+          Hupository: Git + YAML + AI로 삶을 기록하고 성장 맥락을 구조화하는 시스템. 강의 소재이자 서비스 원형.
           PersonaMirror: 개인 페르소나 도구. Hupository 데이터로 최종 비전 데모.
-          이 둘이 합쳐지면 G-LIFE(라이프디자이너) 사명의 실제 구현체.
-          강의 방향: 기술(Git·YAML·AI Agent)로 삶과 성장을 설계하는 법 — 시장에 없는 카테고리.
+          이 둘이 합쳐지면 G-LIFE의 삶의 기록, 지식 상속, 라이프디자인 사명을 실제 구현하는 경로가 된다.
+          강의 방향: 기술(Git·YAML·AI Agent)로 삶을 기록하고 성장 구조를 설계하는 법.
         children:
           - id: "G-LS-01"
             type: short_term
@@ -157,6 +195,30 @@ goals:
             parent: "G-LIFEDESIGN-SVC"
             notes: "G-PM-01 MVP 완료 후 이어지는 단계"
 
+      - id: "G-ORG-300"
+        type: long_term
+        title: "2027년부터 10년 안에 300명이 일하는 휴포짓 일자리 생태계 만들기"
+        horizon: "2027-2037"
+        status: active
+        parent: "G-LIFE"
+        notes: >
+          휴포짓을 단순 소프트웨어 제품이 아니라,
+          개인의 목표·고민·일·학습 맥락을 AI가 읽을 수 있는 구조로 바꾸고
+          다음 행동을 돕는 사람들의 일자리 생태계로 확장한다.
+          300명은 전원 본사 정규직만을 뜻하지 않고, 제품·AI·데이터·보안·고객성공·교육운영·맥락 코치·파트너 컨설턴트가 함께 만드는
+          고용과 협업 구조로 해석한다.
+        children:
+          - id: "G-ORG-300-SOMA"
+            type: short_term
+            title: "SW마에스트로 1년을 300명 일자리 목표의 첫 검증 루프로 설계"
+            horizon: "2026-05 - 2026-12"
+            status: in_progress
+            parent: "G-ORG-300"
+            notes: >
+              2026년 소마 기간에는 300명 조직을 직접 만들려고 하지 않는다.
+              대신 휴포짓의 핵심 루프, 반복 고객군, 유료화 가능성, 사람+AI 운영 playbook,
+              첫 역할 정의를 검증해 2027년부터 시작할 10년 조직 성장의 출발선을 만든다.
+
       - id: "G-COMMUNITY"
         type: mid_term
         title: "커뮤니티+플랫폼 — 사람을 모으고 연결하는 구조 만들기"
@@ -170,14 +232,16 @@ goals:
 # ─────────────────────────────────────────
 # snapshot.yaml 의 focus_priority 와 연동
 focus_now:
-  - id: "G-AI-04"        # SW마에스트로 Team 310 — MVP / 고객검증 / 멘토링
+  - id: "G-ORG-300-SOMA" # SW마에스트로 1년을 2027-2037 목표의 첫 검증 루프로 설계
     priority: 1
-  - id: "G-AI-01"        # AI Agent / school-record RAG 구현 역량
+  - id: "G-AI-04"        # SW마에스트로 Team 310 — MVP / 고객검증 / 멘토링
     priority: 2
-  - id: "G-LS-01"        # Hupository 사용법 콘텐츠
+  - id: "G-AI-01"        # AI Agent / school-record RAG 구현 역량
     priority: 3
-  - id: "G-SEJONG-01"    # 세종클래스 최소 유지 리듬
+  - id: "G-LS-01"        # Hupository 사용법 콘텐츠
     priority: 4
+  - id: "G-SEJONG-01"    # 세종클래스 최소 유지 리듬
+    priority: 5
 
 # ─────────────────────────────────────────
 # 보류 / 중단 목표
