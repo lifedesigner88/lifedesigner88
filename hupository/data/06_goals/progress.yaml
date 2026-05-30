@@ -2,7 +2,7 @@
 # tree.yaml 기준 각 목표의 현재 진척과 근거를 기록합니다.
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 
-as_of: "2026-05-19"
+as_of: "2026-05-30"
 tracking_basis: "tree.yaml"
 
 goal_progress:
@@ -68,11 +68,19 @@ goal_progress:
   - id: "G-AI-01"
     title: "AI Agent 개발 역량 확보 (LangGraph · FastAPI)"
     status: in_progress
-    completion_pct: 35
+    completion_pct: 40
+    milestones:
+      - step: "SomaMeet 개인정보 보호 일정 조율 Agentic Workflow 프로젝트 완료"
+        status: completed
+        date: "2026-05-15"
+        note: "SW마에스트로 AI 기술교육 31조에서 기획서 제출, 데모 코드 제출, 최종 발표까지 완료했다. 완료 프로젝트 기록은 data/02_experience/projects/somameet.yaml에 보존한다."
     notes: >
       Hupository와 PersonaMirror를 통해 FastAPI, LangGraph, GPT 계열 활용 경험을 실전으로 축적 중이다.
       2026-04 하순에는 생활기록부 input 구조, 데이터 보강 질문, 초기 리포트 생성 흐름을
       SW마에스트로 Team 310의 MVP 자산으로 연결하고 있다.
+      2026-05에는 SomaMeet을 통해 privacy-safe LLM payload, deterministic scheduling engine,
+      FastAPI/React 기반 Agentic Workflow, fallback 설계와 테스트 중심 통합 경험을 얻었고,
+      이후 학습은 휴포짓 제품 개발에 필요한 범위로 흡수한다.
 
   - id: "G-AI-02"
     title: "Hupository AI Agent 완성 (일상 수집 → 자동 업데이트)"

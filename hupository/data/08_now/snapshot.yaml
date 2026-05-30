@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-05-29"
+as_of: "2026-05-30"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -131,36 +131,6 @@ active_tracks:
       5/4 - 5/5 이후의 중3 파일럿 고객개발 및 VC 피칭 준비,
       5/25 PDF 제출과 5/29 기획심의 발표를 마쳤고, 이제 6월 첫 제품 개발과 결과/피드백 반영으로 전환해야 하는 상태다.
 
-  swm_ai_training_team31:
-    status: active
-    description: "업스테이지가 기획한 SW마에스트로 AI 기술교육 31조 최종 제출·발표 준비"
-    project_context_id: "swm-ai-training-team31"
-    first_coach_online_meeting: "2026-04-28T19:00:00+09:00"
-    first_offline_meeting: "2026-04-29T14:00:00+09:00"
-    second_offline_meeting: "2026-05-01T10:00:00+09:00"
-    second_coach_online_meeting: "2026-05-03T19:00:00+09:00"
-    third_coach_online_meeting: "2026-05-05T19:00:00+09:00"
-    third_offline_meeting: "2026-05-06T14:00:00+09:00"
-    fourth_offline_meeting: "2026-05-08T14:00:00+09:00"
-    fourth_coach_online_meeting: "2026-05-10T19:30:00+09:00"
-    planning_doc_due: "2026-05-02T23:59:00+09:00"
-    planning_doc_status: "submitted"
-    planning_doc_final_source: "historical SomaMeet commit 384634d: 기획서/구글독스_1차피드백_반영_통합본.md"
-    planning_doc_submission_evidence: "사용자 제출 완료 보고 + SomaMeet origin/main `384634d` docs: mark final planning submission. 2026-05-15 링크 점검 기준 current `../SomaMeet` tree에는 해당 기획서 파일이 없으므로 역사적 제출 근거로만 다룬다."
-    planning_doc_recognition: "2026-05-05 우수기획서로 선정되어 2026-05-07 19:00 대표 10분 발표가 잡혔다."
-    demo_code_due: "2026-05-10T23:59:00+09:00"
-    fifth_offline_meeting: "2026-05-13T13:00:00+09:00"
-    fifth_offline_meeting_end: "2026-05-13T15:00:00+09:00"
-    fifth_coach_online_meeting: "2026-05-13T19:30:00+09:00"
-    final_submission_due: "2026-05-14"
-    final_presentation_start: "2026-05-15T13:30:00+09:00"
-    final_presentation_end: "2026-05-15T15:30:00+09:00"
-    lecture_80_percent_due: "2026-05-17"
-    lecture_replay_available_until: "2026-06-19"
-    selected_topic: "SomaMeet(소마밋) — 개인정보 보호 일정 조율 Agentic Workflow"
-    current_signal: "2026-05-02 사용자가 프로젝트 기획서 제출 완료를 보고했고, SomaMeet origin/main `384634d` 기준 README와 `기획서/구글독스_1차피드백_반영_통합본.md`가 2026-05-02 23:59 제출용 최종 기준 문서로 지정됐다. 기존 `기획서/통합본.md`와 `기획서/제출본.md`는 삭제되어 더 이상 현재 기준이 아니다. 2026-05-05 온라인 코칭에서는 팀원별 구현물과 배포 여부를 확인했고, 31조 기획서가 우수기획서로 선정되어 2026-05-07 19:00 대표 발표가 잡혔다. 2026-05-13 5차 오프라인 회의에서는 발표, Claude 기반 개발, 서포트가 진행됐고, 19:30 코칭 전후로 자연어 입력과 UI 업그레이드를 추가 추진했다. 2026-05-15 최종 발표 이후에는 Team 310 기획심의가 우선이며, 2026-05-25 09:00 기획서 제출 후 밀린 업스테이지 AI 기술교육 강의 약 20시간을 따라잡는 것이 남은 후속 과제다."
-    notes: "기획서는 로컬 환경에서 실행 가능한 Agentic Workflow 데모 프로젝트를 전제로 한다. 최종 데모데이는 제품과 피칭을 보여주는 성격이므로 사용성·안정성 중심으로 간다. 2026-05-08 사용자 제공 기준으로 이 트랙은 업스테이지가 기획한 AI 기술교육 프로그램 맥락 안에서 해석한다. 2026-05-25 Team 310 기획서 제출 후에는 2026-06-19 다시보기 종료 전까지 밀린 강의 약 20시간을 따라잡고, Team 310/휴포짓 고객발굴에 필요한 Agent Workflow, Evaluation, Safety, AgentOps를 선별 재청취한다. 교육 운영자 실명, 조직도 추정, 회사 배경 리서치는 private project layer에 둔다. 세부 아이디어, 투표 결과, 팀원별 프로필, 코치 미팅 세부 메모, 팀원별 개인 기획서도 private project layer에 둔다."
-
   soma_on:
     status: active
     started_on: "2026-04-28"
@@ -276,10 +246,9 @@ constraints:
 # ─────────────────────────────────────────
 focus_priority:
   1: "sw_maestro_17 — 2027-2037 창업가 성장 인프라와 300명 일자리 목표를 위한 2026년 학습 트랙으로 다룬다. Team 310 2인팀 고정 이후 2026-05-25 PDF 제출과 2026-05-29 기획심의 발표를 마쳤고, 이제 공식 결과/피드백 확인, 6월 첫 제품 개발 범위 안정화, 2026-06-01 - 2026-06-03 창업 집중형 프로그램 신청 판단, 베타 고객 3건과 개인/소규모 사업자 AX 컨설팅 BM을 실제 제품 evidence로 연결하는 일이 우선이다."
-  2: "swm_ai_training_team31 — 5/25 Team 310 기획서 제출 후 밀린 업스테이지 AI 기술교육 강의 약 20시간을 6/19 다시보기 종료 전까지 따라잡고, Agent Workflow/Evaluation/Safety/AgentOps를 휴포짓에 필요한 만큼 선별 재청취"
-  3: "soma_on — 첫 영상 공개와 서울-부산 운영진 확장 신호를 바탕으로 공식 채널/네트워크 운영 구조를 정리하되, 2026-06-23 전까지는 Team 310 제품 개발 시간을 침식하지 않는 범위로 제한"
-  4: "eunpyeong_youth_festival_2026 / eunpyeong_youth_network — 지역 청년 축제·정책 활동은 소마 우선순위 뒤에서 유지"
-  5: "sejongclass / weekly_blog — 휴포짓/모두의 고민·목표 고객발굴을 돕는 공개 리듬의 보조 축으로 유지"
+  2: "soma_on — 첫 영상 공개와 서울-부산 운영진 확장 신호를 바탕으로 공식 채널/네트워크 운영 구조를 정리하되, 2026-06-23 전까지는 Team 310 제품 개발 시간을 침식하지 않는 범위로 제한"
+  3: "eunpyeong_youth_festival_2026 / eunpyeong_youth_network — 지역 청년 축제·정책 활동은 소마 우선순위 뒤에서 유지"
+  4: "sejongclass / weekly_blog — 휴포짓/모두의 고민·목표 고객발굴을 돕는 공개 리듬의 보조 축으로 유지"
 
 # ─────────────────────────────────────────
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
@@ -310,10 +279,6 @@ pending_decisions:
   - trigger: "2026-11 말까지 3억 규모 seed 투자 가능 수준의 팀/제품 진척 도달"
     if_yes: "SW마에스트로 이후 첫 투자 라운드와 제품/팀 확장 준비"
     if_no: "제품 wedge, 사용자 검증, 팀 설명, 투자 서사 중 어디가 약한지 다시 진단"
-
-  - trigger: "2026-05-15 13:30-15:30 AI 기술교육 31조 최종 발표"
-    if_ready: "최종 발표 산출물과 발표 리허설을 마치고 Team 310 기획심의 준비와 충돌 없이 마무리"
-    if_not_ready: "발표 주제, 데모 범위, 역할 분담을 빠르게 고정해야 함"
 
   - trigger: "Soma:ON 첫 영상 공개 이후 1년 운영 계획/예산안 및 서울-부산 운영 구조 제출"
     if_ready: "첫 영상 초기 반응, 서울 운영진 8명, 부산 운영진 모집 계획, 서울-부산 월 1회 회의 구조, 월별 콘텐츠 리듬과 실비 지원 구조를 사무국에 제안"

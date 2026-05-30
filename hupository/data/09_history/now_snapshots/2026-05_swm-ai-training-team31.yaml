@@ -1,0 +1,38 @@
+id: "swm-ai-training-team31"
+archived_on: "2026-05-30"
+status: "completed"
+visibility: "public"
+
+summary: >
+  SW마에스트로 AI 기술교육 31조 프로젝트는 `SomaMeet(소마밋)` 개인정보 보호 일정 조율
+  Agentic Workflow를 기획서 제출, 데모 코드 제출, 최종 발표까지 완료한 뒤 종료됐다.
+  현재 진행 중인 active track에서는 내리고, 이후에는 AI Agent 개발 역량과 휴포짓 제품 개발에
+  흡수할 학습 이력으로 참조한다.
+
+public_project_record: "../../02_experience/projects/somameet.yaml"
+remote:
+  repo: "https://github.com/soma17th-ai31/SomaMeet"
+  checked_commit: "809e32b8219a71eec3bb796c13c7208959324826"
+  checked_on: "2026-05-30"
+  local_clone_status: "local ../SomaMeet clone was not present; checked via temporary shallow clone"
+
+completed_milestones:
+  - date: "2026-04-29"
+    event: "프로젝트 주제를 개인정보 보호 일정 조율 서비스로 확정"
+  - date: "2026-05-02"
+    event: "프로젝트 기획서 제출"
+  - date: "2026-05-10"
+    event: "데모 코드 제출"
+  - date: "2026-05-14"
+    event: "최종 산출물 제출"
+  - date: "2026-05-15"
+    event: "최종 발표/데모데이 완료"
+
+lasting_lessons:
+  - "LLM은 일정 후보를 지어내지 않고, deterministic scheduling engine 결과를 설명하는 보조자로 둔다."
+  - "개인정보 보호는 원본 캘린더 복제가 아니라 availability block만 사용하는 데이터 설계에서 시작한다."
+  - "짧은 해커톤형 프로젝트에서는 모든 구현물을 병합하기보다 기준 구현 하나를 선택하고 필요한 아이디어만 흡수한다."
+  - "이 경험은 휴포짓의 출처 표시, 사람 승인, AI fallback, privacy-safe payload 설계에 재사용할 수 있다."
+
+promotion_note: >
+  이 스냅샷은 과거 완료 프로젝트 보관용이다. 현재 판단을 직접 움직이는 세부 팀원/회의 맥락은 private archive와 people layer에 둔다.
