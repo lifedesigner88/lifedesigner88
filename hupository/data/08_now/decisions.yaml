@@ -2,7 +2,7 @@
 # AI가 현시점 맥락을 빠르게 파악하고 다음 행동을 논의할 때 읽는 live decision 레이어.
 # 결과가 끝났거나 다른 결정에 의해 대체된 항목은 ../09_history/decisions/ 로 이동한다.
 
-as_of: "2026-05-22"
+as_of: "2026-06-08"
 archive_ref:
   decisions: "../09_history/decisions/2026-04.yaml"
 selection_rule:
@@ -10,6 +10,31 @@ selection_rule:
   move_to_history: "결과가 종료됐거나, 현재 전략을 더는 직접 바꾸지 않는 결정은 09_history로 옮긴다."
 
 decisions:
+
+  - id: "D053"
+    date: "2026-06-08"
+    decision: "휴포짓은 사람과 일이 이미 가진 구조를 AI와 함께 드러내되, 판정·통제가 아니라 자기이해·자기결정·환경설계를 돕는 서비스로 둔다"
+    rationale: >
+      2026-06-08 대화에서 소프트웨어 아키텍처 논의가 사람과 세계의 구조,
+      `네 자신을 알라`의 AI 시대 해석, AI가 인간의 제한된 인지능력을 보조해
+      암묵 구조를 더 잘 드러낼 가능성, 구조 이해의 윤리적 위험,
+      스트레스와 물리적 환경설계로 확장되었다.
+      이 흐름은 박세종의 장기 문제의식인 `삶과 성장을 설계할 구조의 부족`과 직접 연결된다.
+      동시에 사람의 목표, 관계, 상태, 판단 기준을 구조화하는 힘은 조작·낙인·통제에도 쓰일 수 있으므로,
+      휴포짓은 구조를 단정하거나 사람을 점수화하는 시스템이 아니라
+      사용자가 구조 후보를 보고 수정하고 승인하는 자기결정 보조 시스템이어야 한다.
+    alternatives_rejected:
+      - option: "휴포짓을 사람을 판정하거나 점수화하는 시스템으로 발전시킨다"
+        why_rejected: "구조 이해의 힘이 낙인, 조작, 통제, 사회적 신용 점수화로 이어질 수 있어 장기 신뢰와 존엄을 해친다"
+      - option: "AI가 사용자의 구조를 단정하고 자동으로 개입하게 한다"
+        why_rejected: "AI는 구조 후보를 제안할 수 있지만 진짜 구조를 완전히 안다고 볼 수 없고, 사용자의 수정권과 승인권이 필요하다"
+      - option: "자기이해를 개인 내면의 문제로만 다루고 환경설계와 분리한다"
+        why_rejected: "사람의 행동은 공간, 일정, 관계, 도구, 회복 구조의 영향을 받으므로 자기 구조화는 환경 구조화로 이어져야 한다"
+    outcome: "active"
+    outcome_note: >
+      상세 정리는 `private/wiki/syntheses/2026-06-08_huposit-structure-philosophy.md`와
+      `../team-huposit/01_strategy/2026-06-08_huposit-structure-philosophy.md`에 둔다.
+      제품 정본은 team-huposit에 두고, Hupository에는 박세종 개인 사명과 판단 경계로 압축 보존한다.
 
   - id: "D052"
     date: "2026-05-21"
