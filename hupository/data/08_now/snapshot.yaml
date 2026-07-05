@@ -2,7 +2,7 @@
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 # 과거 스냅샷은 data/09_history/now_snapshots/ 로 보관합니다.
 
-as_of: "2026-06-04"
+as_of: "2026-07-06"
 
 # ─────────────────────────────────────────
 # 진행 중인 트랙
@@ -25,8 +25,8 @@ active_tracks:
     status: active
     started_on: "2026-06-02"
     description: "화상영어 기반 영어 말하기, 기술 문서/강의 접근성, Huposit/Hupository 영어 pitch 역량을 키우는 개인 학습 트랙"
-    current_signal: "2026-06-02 링글 체험 수업을 시작했고, 2026-06-04 기준 체험 수업 2회와 정규수업 24회를 등록했다. 수업의 핵심 활용처는 Huposit/Hupository를 영어로 짧게 설명하고, SW마에스트로 글로벌 프로그램 가능성 및 영어 기술 자료 활용력을 높이는 것이다."
-    routine_constraint: "정규수업 24회는 좋은 강제 루틴이지만, Team 310 제품개발 시간을 침식하지 않도록 주 1회 학습 리듬으로 관리해야 한다."
+    current_signal: "2026-06-02 링글 체험 수업을 시작했고, 2026-06-04 기준 체험 수업 2회와 정규수업 24회를 등록했다. 2026-06-30 기준 기존 튜터가 한 달간 해외 봉사활동으로 수업을 이어가기 어려워져, Huposit/Hupository 영어 pitch 루틴을 유지할 새 튜터를 찾아야 하는 상태다."
+    routine_constraint: "정규수업 24회는 좋은 강제 루틴이지만, Team 310 제품개발 시간을 침식하지 않도록 주 1회 학습 리듬으로 관리한다. 튜터 전환기에는 루틴이 끊기지 않게 새 선생님 매칭을 우선 확인한다."
     current_practice_focus:
       - "Huposit/Hupository 60초 영어 pitch"
       - "human repository / personal context data / customer focus / freelancers 표현"
@@ -38,7 +38,7 @@ active_tracks:
     overall_rank: 303
     waitlist_rank: 3
     team_status: "팀원 1명 이탈 후 2인 체제로 재정렬했고, 2026-04-22 신규 팀원 합류로 3인 체제 온보딩/역할 재배치 단계까지 갔으나, 2026-05-09 핵심 팀원 2명이 역량·체력·속도 부담을 이유로 하차 의사를 밝혀 3인 체제가 종료됐다. 멘토 3인에게 상황을 공유한 뒤 담당멘토 1명도 하차했고, 2명은 계속 함께하기로 했다. 2026-05-10 새 팀원 1명이 합류했고, 이 팀원은 단기 구현 전력보다 데이터 구조화·문제 모델링·평가 지표 축으로 작게 온보딩하는 것이 적합하다. 같은 날 하차한 전 팀원 2명이 별도 팀을 구성한 것으로 공유되어, 인수인계와 자산 경계를 더 명확히 해야 한다. 이후 AI/데이터 제품화 역량을 가진 신규 담당멘토 1명이 합류해 멘토 지원 구조는 3인으로 복구됐다. 2026-05-13 사무국 확인으로 추가 예비합격은 없고 Team 310은 2인팀으로 고정됐다. 현재는 창업자 리드 + 제한적 새 팀원 보조 + 담당멘토 3인 지원 + 범위 축소 + 공식 기획심의 양식 기반 evidence 제작 국면이다."
-    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_support_restored_to_three + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + two_person_team_finalized + new_teammate_onboarding + scope_down + huposit_data_loop_repositioning + service_structure_fixed + customer_web_flow_scoped + technical_architecture_v0 + market_positioning_slogan_refinement + ax_consulting_bm_signal + planning_review_submitted + planning_review_presented + product_development + cicd_pipeline_connected"
+    current_phase: "customer_discovery + first_pilot_validation + product_model_definition + mentor_support_restored_to_three + segmentation_research + mvp_contract_definition + founder_decision_rhythm + founder_identity_refixed + two_person_team_finalized + new_teammate_onboarding + scope_down + huposit_data_loop_repositioning + service_structure_fixed + customer_web_flow_scoped + technical_architecture_v0 + market_positioning_slogan_refinement + ax_consulting_bm_signal + planning_review_submitted + planning_review_presented + product_development + cicd_pipeline_connected + auth_session_foundation + five_month_demo_day_planning + teammate_frontend_onboarding"
     product_direction: "휴포짓 — Human + Repository 기반 개인 맥락 AI 코칭 서비스. 장기 구조는 Huposit -> Hupository -> Networking 이며, 2026년 첫 검증과 매출은 Huposit 축의 맥락 정리와 반복 업무 해결에서 만든다."
     long_run_target: "2026-12 데모데이/수료 시점 전후로 3억 규모 seed 투자를 검토받을 수 있는 팀·제품 상태 도달"
     current_role: "founder / CEO / product direction / customer discovery / backend-infra / pitch"
@@ -47,6 +47,12 @@ active_tracks:
       former_ai_data_owner: "2026-05-09 하차 의사 표명"
       former_backend_pm_owner: "2026-05-09 하차 의사 표명"
       open_gap: "AI/data/report structure, backend/auth/infra, PM/customer validation support, frontend, domain validation, consultant partnership, final PM ownership을 멘토·외주·범위 축소 중 어디로 처리할지 재결정 필요. 2026-05-13 기준 팀은 2인으로 고정됐고 새 팀원은 데이터 구조화/문제 모델링 일부를 보조할 수 있으나 backend/auth/infra와 PM 공백을 즉시 메우지는 못한다. 신규 담당멘토 합류로 AI/data 제품화 판단은 보강됐지만, 실제 구현 owner와 PM owner는 여전히 범위 축소 기준으로 설계해야 한다."
+    current_team_operating_signal: >
+      2026-07-01부터 2인팀 운영은 오전 9시 데일리 스크럼, 09:00-17:00 개발 공부/기여,
+      17:00 이후 개인 알고리즘 대회 연습을 허용하는 리듬으로 조정했다.
+      새 팀원은 2026-07-04부터 프론트엔드 공부를 시작했고, 창업자가 React 특강과 작은 티켓 설계를 통해
+      실제 제품 기여로 연결해야 하는 온보딩 단계다. 2026-07-05 장기 플랜 대화에서는 2027년까지 또는 그 이상
+      꾸준히 소통 가능한 팀원 후보 신호가 생겼으나, public 레이어에서는 익명화된 팀 운영 신호로만 둔다.
     leadership_current_signal: "2026-05-01 멘토링에서 팀원과 멘토 의견을 계속 수집하며 무한 합의로 가면 액션플랜이 늦어진다는 점을 자각했다. 2026-05-08에는 휴포짓 상위 철학과 특정 분야 산출물 전략을 함께 밀려고 했으나, 2026-05-09 팀원 2명 하차 이후 해당 방식은 현재 팀 구성과 5월 일정에 비해 무겁다고 판단했다. 멘토 3인 공유 후 1명이 하차하고 2명이 계속 함께하기로 했다. 2026-05-10에는 휴포짓의 기술 경쟁력을 개인 데이터 구조화와 인사이트 도출 루프로 다시 잡고, 새 팀원을 연민이 아니라 역할 논리로 온보딩해야 한다는 판단이 생겼다. 같은 날 5월 전략은 특정 분야 이름을 앞세우지 않고 고객발굴과 구조화 리포트 evidence를 만드는 방식으로 낮췄다. 2026-05-11에는 휴포짓을 Human + Repository 기반 개인 맥락 AI 코칭 서비스로 고정하고, 5월 입구 이름은 약자/문제 강도 중심의 `모두의 고민`과 소마 내부 검증군/성장 언어 중심의 `모두의 목표`를 비교하기로 했다. 이후 AI/데이터 제품화 역량을 가진 신규 담당멘토 1명이 합류해 3인 멘토 지원 구조가 복구됐다. 하차한 전 팀원 2명이 별도 팀을 구성한 사실은 감정적 해석보다 인수인계와 팀 자산 경계로 번역해 다룬다. 2026-05-13에는 여러 조언을 모두 합쳐 자기 색을 지우기보다, 사람과의 연결을 돕는 개인 맥락 구조화 서비스라는 북극성 주위에 조언을 붙여야 한다는 판단이 선명해졌다. 2026-05-14에는 사람 연결 비전을 제품 원칙으로 고정하되, 첫 제품과 6월 구현 범위는 웹 기반 맥락 정리, 출처 표시 리포트, 사람 승인 흐름으로 좁혔다."
     mvp_target_release: "2026-04-29T14:00:00+09:00"
     mvp_working_scope:
@@ -59,9 +65,18 @@ active_tracks:
       ict_classification: "인공지능 > 신뢰·산업 AI. 1차 소분류는 활용·지원 AI, 보조 소분류는 신뢰·공정 AI"
       primary_customer: "아직 최종 고정하지 않음. 2026-05-18 기준 가장 강한 후보는 맥락과 반복 산출물이 많은 전문 지식노동자, 1인 프리랜서, 소규모 사업자/조직의 AX 수요다. `모두의 고민`은 약자/막막한 사람 중심, `모두의 목표`는 멘토·엑스퍼트·연수생 같은 초기 검증군 중심으로 비교하되, 기획심의 BM 언어는 개인 맞춤형 AX 컨설팅과 반복 업무 구조화 쪽으로 보강한다."
       service_structure: "Huposit -> Hupository -> Networking. 2026년 첫 검증과 매출은 Huposit 축의 맥락 정리와 반복 업무 해결에서 만든다."
-      current_model_summary: "고민/목표 구조화 신청 폼 + 베타 고객 3건 + 구조화 리포트 샘플 + 웹서비스형 6월 첫 제품 범위 + 태그/평가 지표 v0 + 개인 맞춤형 AX 컨설팅 BM 가설 + 휴포짓앱 CI/CD 파이프라인 연결"
+      current_model_summary: "고민/목표 구조화 신청 폼 + 베타 고객 3건 + 구조화 리포트 샘플 + 웹서비스형 첫 제품 범위 + 태그/평가 지표 v0 + 개인 맞춤형 AX 컨설팅 BM 가설 + 휴포짓앱 CI/CD 파이프라인 연결 + 인증/로그인/세션 기반 제품 골격"
+      july_build_signal: >
+        2026-07-01 - 2026-07-05 사이 HUP-14 email/password 로그인과 access token 확인,
+        HUP-15 상단 네비게이션 로그인 다이얼로그, HUP-16 refresh token 로그인 세션 발급 backend가 구현됐다.
+        다음 기술 초점은 refresh token/session lifecycle을 프론트 흐름과 실제 사용자 경험으로 이어 붙이는 것이다.
+      demo_day_planning_signal: >
+        2026-07-05 기준 2026-12-04 데모데이까지 약 5개월 남은 시점으로 보고,
+        MVP 기능 개발 순서와 개발 일정을 역산하기 시작했다. 다음 단계는 5개월 로드맵을
+        Linear 티켓, 주차별 산출물, 고객 검증 루프로 쪼개는 것이다.
       mvp_flow: "자료/고민/목표 입력 -> 맥락 확인 -> 간단한 검색과 출처 표시 -> AI 리포트 생성 -> 사람 승인 -> 피드백 기록 -> 유사 고민/목표 매칭 의향 확인"
       june_technical_scope: "완전한 RAG 대신 Markdown/DB 기반 검색, 자료 출처 표시, AI 리포트 생성, 답변 가능/확인 필요/응답 금지 상태 초안, 사람 승인 흐름을 먼저 구현한다."
+      july_technical_scope: "인증/세션 기반 제품 골격을 먼저 안정화한 뒤, 입력-맥락 확인-출처 표시 리포트-사람 승인 흐름으로 다시 연결한다."
       monetization_hypothesis: "무료/저가 구조화 리포트로 문제 강도와 반복 고객군을 확인한 뒤, 1인 프리랜서·소규모 사업자를 위한 1회 AX 세팅 컨설팅, 4주 동행형 AX 컨설팅, 월간 AI 업무비서/업무 맥락 관리 중 유료 전환 가능성을 검증"
       repo_signal: "2026-05-07 기준 삼일공 외부 정본이 `team310-research`에서 `team310` 운영 허브로 전환됐다. team310 origin/main `8e12d5f` 기준 최신 초점은 중3·예비고1 학부모 인터뷰 모집, Tally 폼, 랜딩페이지·팀/멘토 소개 페이지, 페인포인트 검증, 5/18 피칭 연습이다."
       guardrails: "완성 문단 생성, 합격 가능성 단정, 세특 완성/명문대 보장 표현은 금지하고, 추천 근거와 학생 입력을 필수로 둔다."
@@ -71,8 +86,8 @@ active_tracks:
       latest_positioning_signal: "2026-05-17 타 팀원 엑스퍼트 미팅에서 마켓 포지셔닝 관점의 피드백을 받았고, 팀 내부에서 목표가 대화를 통해 선명해지는 장면을 근거로 `흐릿한 내 마음, 선명한 행동으로` 슬로건을 잡았다. 목표 설정의 뇌과학적 중요성, 기업 목표관리 방법론, 경쟁사 리서치를 기획심의 근거로 보강 중이다."
       vc_signal: "2026-05-05 VC 멘토링에서 휴포짓 구조와 입시시장이 VC 관점에서도 검토해볼 만한 시장이라는 긍정 신호를 얻었고, 2026-05-18 남은 담당멘토와 함께 피칭 연습 자리를 갖기로 했다."
       market_research_method: "경쟁업체 IR 북을 먼저 분석해 시장 규모, 고객 문제, 투자자 설득 언어를 뽑고, 일반 AI 시장조사는 보조적으로 사용한다."
-      next_review_target: "2026-05-22에는 2인팀이 기획서 방향성 요약본을 완성하고 AI를 활용해 추가 내용과 이미지 초안을 만들었다. 2026-05-23에는 담당멘토 3인 피드백을 받았고, 2026-05-24에는 공덕 사무실 정전으로 각자 집에서 온라인/서면 피드백과 최종 반영을 진행했다. 2026-05-25 09:00 프로젝트 기획서 PDF를 제출했고, 2026-05-29 Team 310 기획심의 발표를 잘 마쳤다. 공식 결과와 세부 피드백은 별도 확인이 필요하며, 다음 초점은 6월 첫 제품 개발과 창업 집중형 프로그램 신청 판단이다."
-      immediate_owner_work: "기획심의 발표 이후에는 공식 결과/피드백을 확인하고, 6월 첫 제품 개발 범위를 고객용 웹 입력, 맥락 확인, 출처 표시 리포트, 사람 승인 흐름 중심으로 안정화한다. 2026-06-01 - 2026-06-03 창업 집중형 프로그램 신청 여부와 준비 범위를 판단하고, 2인팀 capacity 안에서 휴포짓 제품 개발이 Soma:ON/세종클래스 리듬에 밀리지 않도록 시간 경계를 유지한다."
+      next_review_target: "2026-07-05 기준 다음 검토 대상은 2026-12-04 데모데이까지의 5개월 MVP 개발 순서, HUP-16 이후 session lifecycle, 새 팀원의 프론트엔드 온보딩/작은 티켓 기여, 그리고 수익모델 구체화다."
+      immediate_owner_work: "창업자는 인증/세션 기반 제품 골격을 마무리하고, 5개월 로드맵을 Linear 티켓과 주간 산출물로 쪼개며, 새 팀원이 프론트엔드 학습에서 실제 제품 기여로 넘어갈 수 있도록 작은 티켓과 설명 자료를 준비한다."
     mentor_matching:
       target_mentors: 3
       candidate_pool_estimate: 130
@@ -114,7 +129,7 @@ active_tracks:
       mid_check: "2026-08-20 - 2026-08-22"
       final_check_round_1: "2026-11-12 - 2026-11-14"
       final_check_round_2: "2026-11-20 - 2026-11-21"
-      demo_day_and_graduation: "2026-12"
+      demo_day_and_graduation: "2026-12-04 데모데이 기준으로 5개월 역산 계획 수립 중. 수료식/후속 행사는 2026-12 범위로 별도 확인"
       global_program_if_selected: "2027-01 - 2027-02"
       regional_schedule_alignment:
         source: "user input on 2026-05-20"
@@ -133,14 +148,15 @@ active_tracks:
           final_check_round_2: "2026-12-25 - 2026-12-26"
           demo_day_and_graduation: "2027-01"
         confirmation_note: "공식 일정으로 단정하지 않고, Soma:ON 서울-부산 운영 리듬과 교차 콘텐츠 planning heuristic으로만 사용한다."
-    next_milestone: "2026-05-29 Team 310 기획심의 발표를 잘 마쳤다. 이제 공식 결과/피드백 확인, 6월 첫 제품 개발 범위 안정화, 2026-06-01 - 2026-06-03 창업 집중형 프로그램 신청 판단, 베타 고객 3건·개인/소규모 사업자 AX 컨설팅 BM·비개발 고객 온보딩 장벽·고객용 웹 흐름·구조화 리포트·출처 표시/사람 승인 흐름을 실제 제품 개발 evidence로 연결하기"
+    next_milestone: "2026-07-05 기준 HUP-14/HUP-15/HUP-16으로 email/password 로그인, 상단 네비게이션 로그인 다이얼로그, refresh token 로그인 세션 발급 backend까지 구현했다. 다음 마일스톤은 HUP-16 session lifecycle과 프론트 연동, 2026-12-04 데모데이까지의 5개월 MVP 개발 일정/ticket 분해, 새 팀원의 프론트엔드 온보딩을 실제 작은 기여로 연결하는 것이다."
     notes: >
       상세 프로젝트 맥락은 team-huposit 의 `index.md`, `00_control/registry.yaml`, `00_control/decisions.md`, `docs/logs/README.md`, `06_research/source-map.md`와 목적별 현재 문서에서 관리한다.
       08_now 에서는 현재도 유효한 상태만 유지한다. 현재 Team 310은 2026-05-09 핵심 팀원 2명 하차로
       3인 체제가 종료된 뒤 담당멘토 1명도 하차해 재구성/범위 축소 국면에 들어갔고, 2026-05-10 새 팀원이 합류해 데이터 구조화/문제 모델링 축으로 제한 온보딩해야 한다. 이후 신규 담당멘토 1명이 합류해 담당멘토 3인 구조가 복구됐고, 2026-05-13 Team 310은 2인팀으로 고정됐다. 첫 고객 파일럿 후보, 담당멘토 3인 지원, 5월 무료 베타 MVP,
       5/1 멘토링 이후의 CEO 결정 리듬, 5/2 엑스퍼트 회의 이후의 세그먼트/자료조사 기반 검증 리듬,
       5/4 - 5/5 이후의 중3 파일럿 고객개발 및 VC 피칭 준비,
-      5/25 PDF 제출과 5/29 기획심의 발표를 마쳤고, 이제 6월 첫 제품 개발과 결과/피드백 반영으로 전환해야 하는 상태다.
+      5/25 PDF 제출과 5/29 기획심의 발표를 마쳤고, 7월 초에는 실제 인증/세션 제품 골격과
+      2026-12-04 데모데이 역산 로드맵으로 전환한 상태다.
 
   soma_on:
     status: active
@@ -163,7 +179,7 @@ active_tracks:
       - "소마 생활 숏폼"
       - "서울-부산 커넥트"
       - "공식 아카이브"
-    current_signal: "2026-04-30 공덕 연수센터에서 사무국 협조 아래 약 3시간 동안 첫 촬영을 완료했고, 15:30부터 약 50분 동안 공식 유튜브 콘텐츠 프로젝트 제안 미팅을 진행했다. 사무국은 이 프로젝트를 연수생 자발적 활동으로 인정하고, 공식 아카이브이자 교류 플랫폼으로 확장할 1년 운영 계획과 실비 기반 예산안을 요청했다. 2026-05-05 회의에서는 소마인 네트워킹 기획단 콘셉트와 방송팀/기획팀 구조가 잡혔다. 2026-05-06 회의에서는 팀 단위 소개 중심에서 개인 중심 `동물농장 + 1분 스피치`, 최대 3분, 주 1회 콘텐츠 방향으로 재정의됐다. 2026-05-18 회식 전후로 서울 운영진 8명이 확정됐다. 2026-05-19에는 첫 영상이 공개되어 약 24시간 기준 조회수 300회 정도의 초기 반응을 얻었고, 부산 지원자 회의를 통해 부산 운영진 후보와 서울-부산 월 1회 회의 구상이 생겼다. 2026-05-21 17:00에는 사무국 2인, 서울 운영진 2인, 부산 운영진 1인이 회의를 진행했고, 2026-05-22 브리핑 기준 부산 Soma:ON 운영이 시작됐다. 2026-05-26 서울-부산 통합회의 기준 운영진은 서울 8명과 부산 9명을 합쳐 총 17명 규모로 확장됐고, MT·소마자·홍보·촬영·부산 운영 과제를 정렬했다. 2026-06-04 17:00 회의에서 운영진은 서울 11명, 부산 9명, 총 20명으로 확정됐고, 예산 기획서 재정렬과 예산 신청, MT 운영, 소마자·릴스·홈페이지 실행으로 초점이 넘어갔다. 2026-05-31 14:00-18:00에는 부산 연수생들이 자비로 서울에 와서 연수생·멘토·엑스퍼트를 만나는 네트워킹 행사를 추진하며, 공덕 7층 공간 대여는 긍정적으로 보인다. 활동비와 교통비는 당장 어렵지만 장비 자산 구입, 기존 편집 라이선스 공유, 회의비 영수증 보관은 검토 가능한 경로로 정리됐다. 2026-06-23 전까지 Soma:ON은 신뢰 자산과 네트워크로 유지하되 Team 310 제품 개발 시간을 침식하지 않도록 제한한다."
+    current_signal: "2026-04-30 공덕 연수센터에서 사무국 협조 아래 첫 촬영과 공식 유튜브 콘텐츠 프로젝트 제안 미팅을 진행했다. 2026-05월에는 서울·부산 운영진 모집과 첫 영상 공개, 서울-부산 운영 구조가 생겼고, 2026-06-04 기준 운영진은 서울 11명, 부산 9명, 총 20명으로 확정됐다. 2026-06-28 가평 MT에서는 서울·부산 소마온 운영진과 약 75명의 참가자가 모였고, 예상보다 활발하게 교류해 레크리에이션을 일부만 진행해도 안전하게 마무리됐다. 2026-06-29에는 다음 7월 행사 참여 의향이 여러 연수생에게서 나와 후속 행사 수요 신호가 생겼다. 다만 7월 현재 Soma:ON과 영상편집/행사 운영은 Team 310 제품 개발 시간을 침식하지 않도록 보조 트랙으로 제한해야 한다."
     notes: >
       소마온은 Team 310의 모두의 고민/목표 고객발굴과 별개로, SW마에스트로 내부 네트워크와 공식 채널 콘텐츠를 강화하는 보조 트랙이다.
       첫 촬영 완료와 사무국의 운영계획/예산안 요청으로 단발 콘텐츠가 아니라 지속 운영 가능한 공식 교류 플랫폼 후보가 됐다.
@@ -246,59 +262,54 @@ active_tracks:
 constraints:
   financial_runway_months: null
   primary_constraint: "2026년은 2027-2037 10년 목표를 위한 학습 기간이며, 2026-11 말 SW마에스트로 수료 시점에는 2027년 launch와 3억 규모 seed 투자 검토가 가능한 팀/제품 진척을 만들어야 함"
-  team_capacity_note: "2026-05-09 기준 핵심 팀원 2명이 하차 의사를 밝혀 기존 3인 실행 가정이 깨졌고, 담당멘토 1명도 하차해 멘토 지원 구조가 일시적으로 2인으로 축소됐다. 2026-05-10 기준 새 팀원은 데이터 구조화/문제 모델링 축에서 보조 가능성이 있으나 즉시 full-stack 실행 공백을 메우지는 못한다. 이후 AI/데이터 제품화 담당멘토 1명이 새로 합류해 멘토 지원 구조는 3인으로 복구됐다. 2026-05-13 기준 Team 310은 2인팀으로 고정됐다. 2026-05-29 기획심의 발표까지 마쳤으므로, 6월 첫 제품 개발은 창업자 리드, 제한적 새 팀원 보조, 담당멘토/엑스퍼트 지원, 범위 축소를 전제로 진행해야 한다."
+  team_capacity_note: "2026-05-13 기준 Team 310은 2인팀으로 고정됐고, 2026-07-01부터 새 팀원은 오전 9시 데일리 스크럼과 09:00-17:00 개발 공부/기여, 17:00 이후 개인 알고리즘 대회 연습 리듬으로 온보딩 중이다. 2026-07-04부터 프론트엔드 공부를 시작했으나 아직 즉시 full-stack 실행 공백을 메우는 단계는 아니므로, 창업자 리드 + 작은 티켓 + 멘토 지원 + 범위 축소를 전제로 진행해야 한다."
+  development_capacity_note: "2026-06-30 새 MacBook이 도착했고 2026-07-01부터 개발 환경 세팅을 시작했다. 장비 투자는 Huposit/Appposit 개발 생산성과 AI 작업 capacity로 전환해야 한다."
   simultaneous_focus_capacity: 1
-  energy_level: "acute_shock_after_team_exit"
+  energy_level: "intensive_product_build_with_recovery_management"
   location: "Seoul"
-  work_mode: "team_lead + solo_builder"
+  work_mode: "team_lead + primary_builder + teammate_onboarding"
 
 # ─────────────────────────────────────────
 # 현재 집중 우선순위 (1 = 가장 중요)
 # ─────────────────────────────────────────
 focus_priority:
-  1: "sw_maestro_17 — 2027-2037 창업가 성장 인프라와 300명 일자리 목표를 위한 2026년 학습 트랙으로 다룬다. Team 310 2인팀 고정 이후 2026-05-25 PDF 제출과 2026-05-29 기획심의 발표를 마쳤고, 이제 공식 결과/피드백 확인, 6월 첫 제품 개발 범위 안정화, 2026-06-01 - 2026-06-03 창업 집중형 프로그램 신청 판단, 베타 고객 3건과 개인/소규모 사업자 AX 컨설팅 BM을 실제 제품 evidence로 연결하는 일이 우선이다."
-  2: "soma_on — 첫 영상 공개와 서울-부산 운영진 확장 신호를 바탕으로 공식 채널/네트워크 운영 구조를 정리하되, 2026-06-23 전까지는 Team 310 제품 개발 시간을 침식하지 않는 범위로 제한"
+  1: "sw_maestro_17 — 2026-12-04 데모데이까지 약 5개월 남은 시점에서 Huposit MVP 기능 개발 순서와 주차별 티켓을 역산한다. 최우선은 HUP-16 이후 refresh token/session lifecycle과 프론트 연동, 인증 기반 사용자 흐름 안정화, 새 팀원의 프론트엔드 온보딩을 실제 작은 제품 기여로 연결하는 일이다."
+  2: "soma_on — 2026-06-28 MT와 7월 행사 수요 신호를 바탕으로 공식 채널/네트워크 운영을 유지하되, 영상편집·행사 운영은 Team 310 제품 개발 시간을 침식하지 않는 범위로 제한"
   3: "eunpyeong_youth_festival_2026 / eunpyeong_youth_network — 지역 청년 축제·정책 활동은 소마 우선순위 뒤에서 유지"
-  4: "english_learning / sejongclass / weekly_blog — 영어 학습은 Huposit 영어 pitch와 글로벌 기회 대비를 위한 주 1회 보조 루틴으로 유지하고, 세종클래스/블로그는 휴포짓 고객발굴을 돕는 공개 리듬의 보조 축으로 유지"
+  4: "english_learning / sejongclass / weekly_blog — 영어 학습은 Huposit 영어 pitch와 글로벌 기회 대비를 위한 주 1회 보조 루틴으로 유지하되, 2026-06-30 튜터 전환 공백을 메운다. 세종클래스/블로그는 휴포짓 고객발굴과 장기 교육 콘텐츠 정체성을 돕는 보조 축으로 유지"
 
 # ─────────────────────────────────────────
 # 대기 중인 외부 이벤트 (결과에 따라 전략 분기)
 # ─────────────────────────────────────────
 pending_decisions:
-  - trigger: "기획심의 결과/피드백을 6월 첫 제품 개발에 어떻게 반영할 것인가"
-    if_positive: "5월 제출본의 메시지를 6월 개발 로드맵과 창업 집중형 신청 서사로 이어 붙인다"
-    if_mixed: "심사 피드백을 제품 범위, 고객군, BM, 팀 실행 신뢰 중 어느 축의 수정 신호인지 분리한다"
-    if_negative: "기획심의 결과를 자존감 문제가 아니라 6월 실험 설계의 제약 조건으로 번역하고, 첫 제품 wedge를 더 좁힌다"
+  - trigger: "2026-12-04 데모데이까지 5개월 MVP 개발 순서를 어떻게 실제 실행 계획으로 쪼갤 것인가"
+    if_clear: "MVP 기능 순서, 주차별 산출물, Linear 티켓, 고객 검증 루프를 연결해 매주 확인한다"
+    if_unclear: "인증/세션, 입력/맥락 확인, 출처 표시 리포트, 사람 승인 중 이번 주에 끝낼 하나를 먼저 고른다"
 
-  - trigger: "2026-06-01 - 2026-06-03 창업 집중형 프로그램에 신청할 것인가"
-    if_yes: "기획심의 제출본, 베타 고객 3건, 6월 제품 범위, 2인팀+멘토 지원 구조를 신청 서사로 압축한다"
-    if_no: "창업 집중형 없이도 6월 제품 개발과 고객검증 루프를 유지할 수 있는 최소 리듬을 둔다"
+  - trigger: "HUP-16 refresh token backend 이후 session lifecycle과 프론트 사용자 흐름을 어디까지 붙일 것인가"
+    if_ready: "refresh token 발급, 저장, 만료, 재발급, 로그아웃, 프론트 상태 유지 흐름을 작은 티켓으로 나눈다"
+    if_blocked: "access token 로그인 확인 흐름까지만 안정화하고, refresh/session은 backend와 frontend 경계를 다시 정의한다"
 
-  - trigger: "6월 첫 제품의 첫 고객/업무 wedge를 무엇으로 잡을 것인가"
-    if 강연운영: "첫 고객 자료와 반복 산출물 흐름이 가장 구체적이면 강연 운영 업무비서로 좁힌다"
-    if IR운영: "IR 담당자/창업자 반복 Q&A와 리서치 자동화가 더 강하면 IR Operating Hupository로 좁힌다"
-    if AX컨설팅: "소규모 조직 업무 AX 신호가 더 강하면 컨설팅+웹 제품 결합으로 시작한다"
+  - trigger: "새 팀원의 데일리 스크럼/프론트엔드 학습 리듬이 실제 제품 기여로 이어질 수 있는가"
+    if_yes: "09:00 데일리 스크럼, 09:00-17:00 개발 공부/기여, 17:00 이후 개인 연습 리듬을 유지하며 작은 frontend 티켓을 맡긴다"
+    if_no: "학습 주제와 티켓을 더 잘게 쪼개고, 즉시 구현 기대보다 onboarding과 pair learning으로 본다"
 
-  - trigger: "2026-04-25 첫 pilot candidate의 참여 의사를 중간고사 이후 실제 first output / 상담 흐름으로 전환할 수 있는가"
-    if_yes: "첫 고객 파일럿을 바탕으로 부모와 학생이 원하는 질문, 리포트, 상담 연결의 실제 가치를 검증하고 5월 기획심의 스토리의 근거로 사용할 수 있음"
-    if_no: "관계 기반 호감과 실제 고객 문제를 구분해 고객조사 질문, 무료 파일럿 범위, 첫 output 가설을 다시 다듬어야 함"
+  - trigger: "홍순엽 VC 멘토 피드백 이후 수익모델을 얼마나 구체화할 것인가"
+    if_clear: "고객군, 가격, 지불 주체, 1회 세팅/4주 동행/monthly product의 연결 구조를 한 장으로 정리한다"
+    if_unclear: "BM 문장보다 실제 반복 산출물과 고객이 돈을 낼 순간을 먼저 찾는다"
 
-  - trigger: "하차한 팀원들과 감정적으로 안전한 마무리와 최소 인수인계를 할 수 있는가"
-    if_yes: "감사와 존중을 유지하면서 repo, 계정, 문서, 진행 중 작업, 외부 커뮤니케이션 공백을 최소화한다"
-    if_no: "설득이나 원인 논쟁보다 프로젝트 자산 보존, 접근 권한 정리, 멘토/운영진 공유를 우선한다"
+  - trigger: "Soma:ON MT 이후 7월 행사 수요를 어떻게 제품 개발 리듬과 충돌하지 않게 다룰 것인가"
+    if_lightweight: "행사 수요와 영상편집은 보조 트랙으로 유지하고, Team 310 제품 개발 블록을 먼저 고정한다"
+    if_overloaded: "Soma:ON 역할을 촬영/편집/기획 중 하나로 줄이고, 운영진에게 분산한다"
 
-  - trigger: "2026-11 말까지 3억 규모 seed 투자 가능 수준의 팀/제품 진척 도달"
-    if_yes: "SW마에스트로 이후 첫 투자 라운드와 제품/팀 확장 준비"
-    if_no: "제품 wedge, 사용자 검증, 팀 설명, 투자 서사 중 어디가 약한지 다시 진단"
-
-  - trigger: "Soma:ON 첫 영상 공개 이후 1년 운영 계획/예산안 및 서울-부산 운영 구조 제출"
-    if_ready: "첫 영상 초기 반응, 서울 운영진 8명, 부산 운영진 모집 계획, 서울-부산 월 1회 회의 구조, 월별 콘텐츠 리듬과 실비 지원 구조를 사무국에 제안"
-    if_not_ready: "부산 총괄 선출, 공개 정보 수준, 장비/운영비 산정 기준, Team 310 기획심의와의 에너지 경계를 먼저 좁혀야 함"
+  - trigger: "영어 학습 튜터 전환 공백을 어떻게 메울 것인가"
+    if_found: "새 튜터와 Huposit/Hupository 60초 pitch, 글로벌 프로그램 대비 표현을 이어간다"
+    if_not_found: "한 주 안에 후보를 찾고, 그동안 기존 수업 자료와 혼자 말하기로 루틴을 유지한다"
 
   - trigger: "2026-09-19 14:00-18:00 은평청년축제 기획"
     if_clear_role: "축제 기획단원으로 구체 역할을 맡아 지역 커뮤니티 기획 경험을 축적"
     if_unclear_role: "소마 핵심 일정과 충돌하지 않는 범위에서 회의 참여와 아이디어 제안 중심으로 유지"
 
   - trigger: "서울시 시민참여예산위원 결과"
-    if_accepted: "지역 커뮤니티 활동 확장 — 소마와 병행 가능한 수준 유지"
+    if_accepted: "지역 커뮤니티 활동 확장. 소마와 병행 가능한 수준 유지"
     if_rejected: "은평청년네트워크 집중 유지"
