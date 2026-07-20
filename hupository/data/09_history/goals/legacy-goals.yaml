@@ -1,4 +1,4 @@
-# 레거시 목표 목록 — data/06_goals/goals.yaml
+# 레거시 목표 목록 — data/09_history/goals/legacy-goals.yaml
 # 이 파일은 과거 목표 구조를 보존하기 위한 read-only archive 입니다.
 # 현재 정본은 lifetime.yaml → tree.yaml → progress.yaml 을 기준으로 관리합니다.
 

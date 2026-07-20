@@ -5,13 +5,11 @@
 as_of: "2026-05-18"
 person: parksejong
 birth_year: 1988
-birth_month_day: "09-12"
 life_target_age: 100          # 만나이 기준
 life_end_year: 2088           # 1988 + 100
 
 # 나이 표기 규칙: 모든 나이는 만나이 (대한민국 법정 기준)
-# 만나이 = 생일 지남: 현재연도 - 출생연도 / 생일 전: 현재연도 - 출생연도 - 1
-# 예) 2026-03 기준 → 생일(9/12) 미도래 → 만 37세
+# 정확한 생일은 private profile에서만 관리한다.
 age_convention: "만나이 (대한민국 법정 기준) — schema.yaml#conventions.age 참조"
 
 # ─────────────────────────────────────────

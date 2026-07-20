@@ -40,7 +40,7 @@ secondary:
 reading_profile:
   total_recorded: 180
   period: "2021-2026"
-  data: "private/05_interests/reading/ (연도별 파일) + reading/stats.yaml"
+  data: "private/profile/reading/ (private operating repo companion)"
   top_category: "뇌과학 (63권, 35%)"
   yearly_avg: 30권
   peak_year: "2022 (44권)"

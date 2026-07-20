@@ -2,22 +2,28 @@
 # tree.yaml 기준 각 목표의 현재 진척과 근거를 기록합니다.
 # 이벤트 발생 시 갱신하고, 월간 리뷰 때 한 번 더 정리합니다.
 
-as_of: "2026-05-30"
+as_of: "2026-07-20"
 tracking_basis: "tree.yaml"
+
+current_execution_window:
+  primary_goal_id: "G-AI-04"
+  period: "2026-07-11 - 2026-08-21"
+  checkpoint: "2026-08-20 - 2026-08-21 중간발표"
 
 goal_progress:
   - id: "G-LIFE-RECORD"
     title: "박세종 생애 기록 데이터 저장소 고도화"
     status: in_progress
-    completion_pct: 5
+    completion_pct: 15
     milestones:
       - step: "Hupository를 생애 기록과 AI 코칭 저장소로 재정의"
         status: completed
         date: "2026-05-18"
         note: "AGENTS.md 최상위 맥락에 삶의 객관 기록, 후대/AI 복원 가능성, 지식 상속, 2027-2037 목표를 반영했다."
       - step: "공개 정본 목표/가치/현재상태 재정렬"
-        status: in_progress
-        target: "2026-05"
+        status: completed
+        date: "2026-07-20"
+        note: "공개·private 경계를 물리적으로 분리하고 now/decision/project dashboard를 현재 판단 중심으로 축소했다."
     notes: >
       Hupository의 최상위 목적은 단기 프로젝트 관리가 아니라,
       박세종의 삶을 후대와 인공지능이 읽을 수 있는 장기 데이터로 남기는 것이다.
@@ -135,7 +141,7 @@ goal_progress:
       합격 자체는 완료됐고, 이후의 AI 네트워크·팀빌딩·제품 검증 실행은 G-AI-04에서 추적한다.
 
   - id: "G-AI-04"
-    title: "SW마에스트로 Team 310 — 휴포짓 개인 맥락 AI 코칭 서비스와 기획심의 검증"
+    title: "SW마에스트로 Team 310 — 휴포짓 제품·고객 검증과 중간발표"
     status: in_progress
     completion_pct: 25
     milestones:
@@ -166,14 +172,17 @@ goal_progress:
         date: "2026-05-18"
         note: "VC 멘토링에서 개인 맞춤형 AX 서비스 방향이 좋다는 피드백과 추가 베타 고객 신호가 생겼다. 기획심의 전에는 이를 고객군, BM, 첫 output 문장으로 압축해야 한다."
       - step: "멘토 3인 매칭과 기획심의 준비"
+        status: completed
+        date: "2026-05-29"
+      - step: "중간발표용 핵심 제품 흐름·데모·고객 근거 연결"
         status: in_progress
-        target: "2026-05"
-      - step: "중간점검 / 최종점검 / 데모데이"
+        target: "2026-08-20 - 2026-08-21"
+      - step: "최종점검 / 데모데이"
         status: planned
-        target: "2026-08 - 2026-12"
+        target: "2026-11 - 2026-12"
     notes: >
-      현재 핵심은 휴포짓 상위 철학 아래 개인의 고민, 목표, 제약, 감정, 선택지를
-      AI가 읽을 수 있는 구조로 바꾸고 다음 행동을 제안하는 루프를 기획심의 evidence로 증명하는 것이다.
+      현재 핵심은 휴포짓 상위 철학 아래 개인의 흩어진 맥락을 구조화하고
+      출처 있는 결과와 다음 행동을 돕는 핵심 사용자 흐름을 중간발표에서 증명하는 것이다.
       2026-05-13 기준 Team 310은 2인팀으로 고정됐고,
       MIRI/Jjinro는 이후 적용 vertical 후보로 보관한다.
       2026-05-11 - 2026-05-13에는 프리랜서 전문가/강사/IR 지식노동자 유형의 베타 고객 신호가 생기면서,
@@ -182,6 +191,7 @@ goal_progress:
       2026년 첫 검증과 매출은 Huposit 축의 맥락 정리와 반복 업무 해결에서 만든다는 제품 순서를 고정했다.
       6월 구현 범위는 고객용 웹 입력, 맥락 확인, Markdown/DB 기반 검색, 출처 표시 리포트, 사람 승인 흐름으로 좁혔다.
       2026-05-18에는 1인 프리랜서·소규모 사업자를 위한 개인 맞춤형 AX 컨설팅이 초기 BM 언어로 부상했다.
+      2026-07-11 - 2026-08-21에는 상세 기록보다 동작하는 제품 데모, 고객 근거, 발표 서사를 우선한다.
       이 목표는 G-AI-03의 합격 이후 경로이며, 2026-11 말 SW마에스트로 수료 시점에
       3억 규모 seed 투자 검토가 가능한 팀·제품 상태를 만드는 현재 최상위 실행 축이다.
 

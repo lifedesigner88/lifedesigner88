@@ -1,0 +1,14 @@
+# 2026-07-20 구조 정리 때 08_now에서 내려온 직전 상태의 공개 요약
+
+archived_on: "2026-07-20"
+covers_through: "2026-07-06"
+archive_reason: "현재 상태 파일에서 과거 팀 재편·기획심의·구현 이력을 분리하고 중간발표 구간만 남김"
+
+summary:
+  - "Hupository의 평생 생애 기록과 지식 상속 목적을 최상위에 두었다."
+  - "Team 310은 2인팀으로 재편됐고 외부 멘토 지원 구조를 활용했다."
+  - "휴포짓은 개인 맥락 구조화와 출처 있는 결과, 사람 승인 흐름을 핵심 방향으로 좁혔다."
+  - "5월 기획심의 뒤 문서·기획 중심 단계에서 실제 제품 개발 단계로 이동했다."
+  - "7월 초 인증·세션 기반 제품 골격을 만들고 데모데이까지의 개발 순서를 역산하기 시작했다."
+
+private_full_source: "private/archive/2026/current-state/snapshot-2026-07-06.full.yaml (private operating repo only)"

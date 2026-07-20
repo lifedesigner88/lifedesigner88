@@ -29,7 +29,8 @@ year_review_posts:
 image_source:
   type: "user_provided_chat_image"
   description: "2007년-2026년 월별 활동 키워드가 적힌 타임라인 이미지"
-raw_dump_files:
-  blog_year_reviews_raw: "10_artifacts/source_dumps/blog_year_reviews_raw.json"
-  timeline_image_keywords: "10_artifacts/source_dumps/timeline_image_keywords.yaml"
-  resume_snapshot_2026_03: "10_artifacts/source_dumps/resume_snapshot_2026_03.yaml"
+
+source_policy:
+  public_layer: "공개 데이터가 근거로 삼는 외부 링크와 출처 유형만 기록"
+  private_layer: "원문 dump와 민감한 생애 자료는 private companion에서 관리"
+  removed_legacy_note: "과거 source dump 폴더는 2026-03에 제거됨"

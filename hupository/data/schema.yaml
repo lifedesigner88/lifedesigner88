@@ -49,17 +49,21 @@ layers:
       - soft.yaml
 
   04_story:
-    purpose: "서사 컨텍스트 — LLM이 사람을 깊이 이해하기 위한 레이어"
+    purpose: "외부 독자가 생애 흐름을 이해하기 위한 공개 안전 서사"
     format: markdown
-    visibility_default: network
+    visibility_default: public
     files:
       - arc.yaml               # 삶의 버전 히스토리 요약
+      - version_history.yaml   # 공개 가능한 시대별 압축 요약
       - chapters/*.md          # 시대별 서사
 
   05_interests:
     purpose: "관심사 — 매칭 신호"
     format: yaml
     visibility_default: public
+    files:
+      - interests.yaml
+    private_companion: "private/profile/reading/ (상위 private operating repo only)"
 
   06_goals:
     purpose: "목표 및 현재 탐색 중인 것"
@@ -68,7 +72,6 @@ layers:
     files:
       - lifetime.yaml   # 평생 사명 + 10년 단위 목표 (최상위)
       - tree.yaml       # 현재 10년의 장기→중간→단기 목표 계층 (lifetime 아래)
-      - goals.yaml      # 레거시 목표 목록 (read-only archive)
       - progress.yaml   # tree.yaml 기준 진척도 (how far)
     hierarchy: "lifetime.yaml → tree.yaml → progress.yaml"
 
@@ -107,6 +110,7 @@ layers:
     files:
       - now_snapshots/{YYYY-MM}.yaml
       - decisions/{YYYY-MM}.yaml
+      - goals/legacy-goals.yaml
     operating_rule: >
       08_now 에서 내려온 과거 스냅샷과 종료/대체된 결정을 보관한다.
       현재 코칭에서는 기본 입력이 아니며, 과거 맥락 추적이 필요할 때만 읽는다.
@@ -179,9 +183,13 @@ confidence_scale:
 
 visibility_levels:
   public: "누구나 볼 수 있음"
-  network: "연결된 사람만"
-  private: "본인만"
-  secret: "암호화 또는 저장 안 함"
+  network: "연결된 사람만 — public mirror 밖의 private companion에 저장"
+  private: "본인만 — public mirror 밖의 private companion에 저장"
+  secret: "암호화된 별도 저장소를 쓰거나 저장하지 않음"
+
+publication_boundary: >
+  이 schema가 다루는 hupository/data의 실제 파일은 모두 public이다.
+  비공개 등급은 메타데이터만 붙여 같은 폴더에 두지 않고 private/로 물리적으로 분리한다.
 
 matching_vector_dimensions:
   - learning_drive       # 학습 욕구

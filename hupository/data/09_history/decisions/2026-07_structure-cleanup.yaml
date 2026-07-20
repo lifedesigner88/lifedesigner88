@@ -1,0 +1,54 @@
+# 2026-07-20 live decision 정리 기록
+
+archived_on: "2026-07-20"
+archive_reason: "현재 실행을 직접 바꾸지 않는 결정, 종료된 사건, 현재 상태로 흡수된 결정을 live layer에서 분리"
+private_full_source: "private/archive/2026/current-state/decisions-through-D054.full.yaml (private operating repo only)"
+
+archived_decision_ids:
+  - D009
+  - D011
+  - D012
+  - D021
+  - D022
+  - D024
+  - D025
+  - D026
+  - D027
+  - D028
+  - D029
+  - D030
+  - D031
+  - D032
+  - D033
+  - D034
+  - D035
+  - D036
+  - D038
+  - D039
+  - D040
+  - D041
+  - D042
+  - D043
+  - D044
+  - D045
+  - D046
+  - D047
+  - D049
+  - D050
+  - D051
+  - D052
+
+retained_live_decision_ids:
+  - D037
+  - D048
+  - D053
+  - D054
+
+promoted_after_cleanup:
+  - D055
+
+durable_outcomes:
+  - "삶과 성장을 설계할 구조를 만든다는 문제의식은 목표와 가치 레이어에 흡수됐다."
+  - "2027-2037 창업가 성장 인프라와 300명 일자리 생태계 목표는 lifetime/tree에 유지된다."
+  - "Team 310의 현재 팀 형태와 다음 마감은 snapshot에 압축됐다."
+  - "과거 제품명·세그먼트·기획심의 전술은 현재 제품 정본으로 사용하지 않는다."
