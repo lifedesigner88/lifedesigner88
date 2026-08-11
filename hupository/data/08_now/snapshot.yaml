@@ -1,12 +1,12 @@
 # 현재 상태 스냅샷
 # 지금도 유효한 상태·제약·다음 마감만 유지합니다.
 
-as_of: "2026-07-20"
+as_of: "2026-07-29"
 visibility: public
 
 operating_context:
   primary_focus: "SW마에스트로 Team 310 중간발표 준비"
-  focus_window: "2026-07-11 - 2026-08-21"
+  focus_window: "2026-07-11 - 2026-08-20"
   next_review_on: "2026-08-22"
 
 active_tracks:
@@ -28,18 +28,19 @@ active_tracks:
     status: active
     priority: 1
     team_shape: "2인팀"
-    current_phase: "2026-08-20 - 2026-08-21 중간발표 준비"
-    product_direction: "개인의 흩어진 맥락을 구조화해 출처 있는 결과와 선명한 다음 행동을 돕는 서비스"
+    current_phase: "2026-08-20 중간발표 준비"
+    customer_hypothesis: "슬라이드 자산을 반복 사용하는 발표자와 교육자"
+    product_direction: "기존 슬라이드를 구조화·저장·검색하고, 재사용 이유와 사람 승인을 거쳐 다음 발표를 개선하는 좁은 제품 루프"
     current_focus:
-      - "중간발표에서 보여줄 핵심 사용자 흐름 고정"
-      - "동작하는 제품 데모 안정화"
-      - "고객 검증 근거와 발표 서사 연결"
-      - "팀 역할을 작은 실행 단위로 유지"
+      - "PPTX 입력·구조화·저장·검색·추천 이유의 수직 흐름 완성"
+      - "실제 자료 제공·베타 사용·반복 사용으로 이어지는 고객 행동 근거 확보"
+      - "기반 기능 진척과 핵심 제품 가치 검증을 분리해 판단"
+      - "중간발표 필수 결과를 창업자가 독립적으로 끝낼 수 있는 범위로 유지"
     canonical_sources:
       product_and_validation: "../team-huposit"
       implementation: "../app-huposit"
     next_milestone:
-      date: "2026-08-20 - 2026-08-21"
+      date: "2026-08-20"
       label: "중간발표"
 
 secondary_tracks:
@@ -54,6 +55,7 @@ secondary_tracks:
 constraints:
   simultaneous_focus_capacity: 1
   team_capacity: "창업자 주도 2인팀"
+  critical_path: "중간발표 필수 제품·고객검증·베타·발표 결과는 창업자 1인이 완수 가능한 범위로 계획"
   recording_capacity: "상세 daily 대신 일정·결정·지속 상태만 최소 보존"
   recovery_note: "발표 준비와 제품 개발이 지속될 수 있도록 회복 시간을 함께 보호한다."
 
@@ -68,6 +70,7 @@ focus_priority:
     focus: "최소 기록 연속성 유지"
 
 open_questions:
-  - "중간발표에서 반드시 동작해야 하는 최소 흐름은 무엇인가?"
-  - "고객 문제와 제품 가치를 가장 잘 증명할 근거는 무엇인가?"
+  - "PPTX 수직 제품 루프가 중간발표 전 실제 자료로 끝까지 동작하는가?"
+  - "후보 모집이 실제 자료 제공·베타 사용·반복 사용으로 전환되는가?"
+  - "완료된 기반 작업이 아니라 고객 가치 증명에 남은 가장 큰 공백은 무엇인가?"
   - "중간발표 이후 어떤 기록을 복원하고 어떤 기록은 공백으로 인정할 것인가?"

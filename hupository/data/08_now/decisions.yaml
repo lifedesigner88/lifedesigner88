@@ -1,6 +1,6 @@
 # 현재 실행을 직접 움직이는 live decision만 유지합니다.
 
-as_of: "2026-07-20"
+as_of: "2026-07-29"
 archive_ref: "../09_history/decisions/2026-07_structure-cleanup.yaml"
 
 selection_rule:
@@ -8,10 +8,19 @@ selection_rule:
   archive: "종료된 사건, 대체된 전략, 현재 상태로 흡수된 결정"
 
 decisions:
+  - id: "D056"
+    date: "2026-07-29"
+    effective_from: "2026-07-20"
+    decision: "중간발표 필수 결과는 창업자가 독립적으로 완수 가능한 범위로 계획하고, 팀원의 산출물은 준비되는 즉시 통합하되 선행조건으로 두지 않는다."
+    rationale: "2인팀의 학습 속도와 역할 차이가 핵심 제품·고객검증·발표 경로를 막지 않게 하면서도 팀원의 성장을 병행하기 위해서다."
+    execution_rule: "기반 작업의 완료율과 고객 가치가 검증된 핵심 제품 완성도를 분리해 보고, PPTX 입력부터 검색·추천 이유까지의 수직 루프와 실제 고객 행동을 우선한다."
+    status: active
+    review_on: "2026-08-20"
+
   - id: "D055"
     date: "2026-07-20"
     effective_from: "2026-07-11"
-    decision: "2026-08-20 - 2026-08-21 중간발표까지 상세 daily 기록을 줄이고 발표 준비와 제품 실행을 우선한다."
+    decision: "2026-08-20 중간발표까지 상세 daily 기록을 줄이고 발표 준비와 제품 실행을 우선한다."
     rationale: "동시 집중 용량이 제한된 시기에 기록 완성도보다 실행 결과를 먼저 보호한다."
     recording_rule: "캘린더 일정, 중요한 결정, 다음 주에도 유효한 상태 변화만 최소 기록한다."
     status: active
