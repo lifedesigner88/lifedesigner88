@@ -1,7 +1,7 @@
 # 현재 상태 스냅샷
 # 지금도 유효한 상태·제약·다음 마감만 유지합니다.
 
-as_of: "2026-07-29"
+as_of: "2026-08-19"
 visibility: public
 
 operating_context:
@@ -28,9 +28,9 @@ active_tracks:
     status: active
     priority: 1
     team_shape: "2인팀"
-    current_phase: "2026-08-20 중간발표 준비"
+    current_phase: "2026-08-20 - 2026-08-21 중간발표 준비"
     customer_hypothesis: "슬라이드 자산을 반복 사용하는 발표자와 교육자"
-    product_direction: "기존 슬라이드를 구조화·저장·검색하고, 재사용 이유와 사람 승인을 거쳐 다음 발표를 개선하는 좁은 제품 루프"
+    product_direction: "기존 PPTX를 원본 비보관 입력으로 받아 발표 가능한 .hup 구조로 발전시키고, 개인 슬라이드의 재사용과 새 발표자료 구성을 돕는 서비스"
     current_focus:
       - "PPTX 입력·구조화·저장·검색·추천 이유의 수직 흐름 완성"
       - "실제 자료 제공·베타 사용·반복 사용으로 이어지는 고객 행동 근거 확보"
@@ -38,10 +38,10 @@ active_tracks:
       - "중간발표 필수 결과를 창업자가 독립적으로 끝낼 수 있는 범위로 유지"
     canonical_sources:
       product_and_validation: "../team-huposit"
-      implementation: "../app-huposit"
+      implementation: "../310/huposit"
     next_milestone:
-      date: "2026-08-20"
-      label: "중간발표"
+      date: "2026-08-21"
+      label: "중간발표 (발표 슬롯 16:20)"
 
 secondary_tracks:
   status: maintenance_until_midterm
