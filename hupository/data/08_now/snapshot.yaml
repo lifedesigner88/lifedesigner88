@@ -1,13 +1,13 @@
 # 현재 상태 스냅샷
 # 지금도 유효한 상태·제약·다음 마감만 유지합니다.
 
-as_of: "2026-08-19"
+as_of: "2026-08-27"
 visibility: public
 
 operating_context:
-  primary_focus: "SW마에스트로 Team 310 중간발표 준비"
-  focus_window: "2026-07-11 - 2026-08-20"
-  next_review_on: "2026-08-22"
+  primary_focus: "SW마에스트로 Team 310 최종발표 범위의 제품 완성"
+  focus_window: "2026-08-22 - 2026-12-03"
+  next_review_on: "2026-09-01"
 
 active_tracks:
   hupository_lifelong_record:
@@ -22,55 +22,78 @@ active_tracks:
       defer:
         - "매일의 상세 서사"
         - "캘린더만으로 확인할 수 없는 감정·대화·성과의 추정"
-    review_on: "2026-08-22"
+    review_on: "2026-09-01"
 
   sw_maestro_17:
     status: active
     priority: 1
     team_shape: "2인팀"
-    current_phase: "2026-08-20 - 2026-08-21 중간발표 준비"
+    current_phase: "중간발표 일정 이후 2026-12-03 최종발표 범위 완성"
     customer_hypothesis: "슬라이드 자산을 반복 사용하는 발표자와 교육자"
     product_direction: "기존 PPTX를 원본 비보관 입력으로 받아 발표 가능한 .hup 구조로 발전시키고, 개인 슬라이드의 재사용과 새 발표자료 구성을 돕는 서비스"
     current_focus:
-      - "PPTX 입력·구조화·저장·검색·추천 이유의 수직 흐름 완성"
-      - "실제 자료 제공·베타 사용·반복 사용으로 이어지는 고객 행동 근거 확보"
-      - "기반 기능 진척과 핵심 제품 가치 검증을 분리해 판단"
-      - "중간발표 필수 결과를 창업자가 독립적으로 끝낼 수 있는 범위로 유지"
+      - "PPTX 파싱·HTML/asset 생성·.hup 저장의 종단 간 흐름 완성"
+      - "키워드+벡터 검색·RAG·슬라이드 재사용의 구현과 검색 품질 검증"
+      - "AI 덱 생성·슬라이드 편집·크레딧 흐름을 실제 사용자 자료로 검증"
+      - "실제 자료 제공·베타 사용·반복 사용·구매 신호를 분리해 기록"
+      - "단독 툴 판매에 한정하지 않고 지식·프로젝트 발전·발표·피드백·사람 연결을 묶은 유료 커뮤니티 파일럿에서 사업성을 검증"
     canonical_sources:
       product_and_validation: "../team-huposit"
       implementation: "../310/huposit"
+    implementation_status:
+      checked_at: "2026-08-27T15:52:37+09:00"
+      branch: "dev == origin/dev"
+      commit: "c5d58deb1336bd96b00bd250d0a88f54482cfb48"
+      remote_main_commit: "59bb7640b5d665139bd8ea73bb199c0daa41dd26"
+      working_tree: "clean"
+      implemented:
+        - "인증·계정, 폴더·덱·슬라이드와 immutable slide version"
+        - "SlideContentV1 렌더링, 콘솔 작업대와 발표 화면"
+        - "Celery·Gemini 기반 AI 덱 생성과 SSE 진행 스트림"
+        - "콘솔 AI 채팅 기반 슬라이드 편집"
+        - "크레딧 잔액·원장·관리자 지급과 슬라이드 편집 차감"
+        - "관리자 권한·superadmin bootstrap·사용자 관리와 랜딩 페이지"
+        - "PPTX source private storage 직접 업로드·검증·ingest queue·worker source validation"
+      incomplete_or_unverified:
+        - "PPTX 실제 파싱과 HTML/asset 생성"
+        - ".hup 종단 간 변환과 영구 asset release"
+        - "키워드+벡터 검색, RAG, 슬라이드 재사용 제품 흐름"
+        - "origin/dev 기능의 origin/main 병합 및 운영 배포 여부"
+      search_note: "pgvector 기반 PostgreSQL 인프라는 준비돼 있으나 검색 애플리케이션 구현은 확인되지 않았다. turbopuffer 채택도 현재 코드에서 확인되지 않는다."
     next_milestone:
-      date: "2026-08-21"
-      label: "중간발표 (발표 슬롯 16:20)"
+      date: "2026-12-03"
+      label: "SW마에스트로 최종발표·제품 범위 완성"
 
 secondary_tracks:
-  status: maintenance_until_midterm
+  status: maintenance_during_product_completion
   tracks:
     - "Soma:ON"
     - "영어 학습"
     - "세종클래스와 공개 콘텐츠"
     - "지역 청년 활동"
-  rule: "중간발표 준비 시간을 침식하지 않는 필수 일정만 유지한다."
+  rule: "최종발표 제품 완성의 집중 시간을 침식하지 않는 필수 일정만 유지한다."
 
 constraints:
   simultaneous_focus_capacity: 1
   team_capacity: "창업자 주도 2인팀"
-  critical_path: "중간발표 필수 제품·고객검증·베타·발표 결과는 창업자 1인이 완수 가능한 범위로 계획"
+  critical_path: "최종발표 필수 제품·고객검증 결과는 창업자 1인이 완수 가능한 범위로 계획"
   recording_capacity: "상세 daily 대신 일정·결정·지속 상태만 최소 보존"
-  recovery_note: "발표 준비와 제품 개발이 지속될 수 있도록 회복 시간을 함께 보호한다."
+  recovery_note: "제품 개발과 고객 검증이 지속될 수 있도록 회복 시간을 함께 보호한다."
 
 focus_priority:
   - priority: 1
-    focus: "중간발표용 핵심 데모와 발표 근거"
+    focus: "PPTX-.hup-검색·재사용의 종단 간 제품 흐름"
   - priority: 2
-    focus: "제품 핵심 흐름 안정화"
+    focus: "실제 사용자 자료 기반의 생성·편집·검색 품질 검증"
   - priority: 3
     focus: "2인팀 실행 리듬과 역할 경계"
   - priority: 4
     focus: "최소 기록 연속성 유지"
 
 open_questions:
-  - "PPTX 수직 제품 루프가 중간발표 전 실제 자료로 끝까지 동작하는가?"
-  - "후보 모집이 실제 자료 제공·베타 사용·반복 사용으로 전환되는가?"
+  - "PPTX 파싱부터 .hup 저장까지 실제 자료로 끝까지 동작하는가?"
+  - "키워드+벡터 검색을 pgvector로 시작할지 외부 검색 서비스로 분리할지 어떤 측정값으로 결정할 것인가?"
+  - "후보 모집이 실제 자료 제공·베타 사용·반복 사용·구매 신호로 전환되는가?"
   - "완료된 기반 작업이 아니라 고객 가치 증명에 남은 가장 큰 공백은 무엇인가?"
-  - "중간발표 이후 어떤 기록을 복원하고 어떤 기록은 공백으로 인정할 것인가?"
+  - "중간발표 결과와 피드백 중 확인 가능한 기록은 무엇인가?"
+  - "유료 발표 커뮤니티 참가자가 실제 자료를 휴포짓으로 발전시키고 행사 뒤 재사용·재방문·재결제하는가?"
